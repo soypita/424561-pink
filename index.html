@@ -6,7 +6,9 @@
 </head>
 <body>
 <header class="header">
-  <img class="header__logo-image" src="http://placehold.it/75x22" width="75px" height="22px" alt="Pink">
+  <a class="header__logo" href="index.html">
+    <img class="header__logo-image" src="http://placehold.it/75x22" width="75px" height="22px" alt="Pink">
+  </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav__list site-list">
@@ -27,6 +29,7 @@
 </header>
 <main class="main">
   <h1 class="visually-hidden">Приложение Pink</h1>
+  <section class="intro">
   <section class="download">
     <h2 class="visually-hidden">Приложение Pink в магазинах</h2>
     <a class="download__shop button" href="https://www.apple.com/itunes/">Скачать приложение</a>
@@ -45,30 +48,39 @@
       Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
     </p>
   </section>
+  </section>
   <section class="info">
-    <p class="info__promo">Устали от серости мегаполиса?</p>
-    <p class="info__promo">Нам есть, что вам предложить!</p>
-    <ul class="info__list">
-      <li class="info__item">
-        <h3 class="info__title">Поднимает настроение</h3>
-        <p class="info__description">
-          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-        </p>
-      </li>
-      <li class="info__item">
-        <h3 class="info__title">Меняет мир вокруг</h3>
-        <p class="info__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-          эффект</p>
-      </li>
-      <li class="info__item">
-        <h3 class="info__title">Заводит новых друзей</h3>
-        <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul>
+    <p class="info__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+    <div class="info__advantage info__advantage--mood">
+      <h3 class="info__title">Поднимает настроение</h3>
+      <p class="info__description">
+        Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+      </p>
+    </div>
+    <div class="info__advantage info__advantage--world">
+      <h3 class="info__title">Меняет мир вокруг</h3>
+      <p class="info__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+        эффект
+      </p>
+    </div>
+    <div class="info__advantage info__advantage--friends">
+      <h3 class="info__title">Заводит новых друзей</h3>
+      <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+    </div>
   </section>
   <section class="reivew">
     <h2 class="visually-hidden">Отзывы покупателей</h2>
     <div class="reivew__list slider__list">
+      <blockquote class="reviews__item slider__item">
+        <cite class="reviews__author-name">Николай Петров</cite>
+        <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      </blockquote>
+      <blockquote class="reviews__item slider__item">
+        <cite class="reviews__author-name">Николай Петров</cite>
+        <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      </blockquote>
       <blockquote class="reviews__item slider__item">
         <cite class="reviews__author-name">Николай Петров</cite>
         <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
@@ -84,39 +96,39 @@
   <section class="kits">
     <h2 class="visually-hidden">Варианты комплектации приложения</h2>
     <div class="kits__list list__slider">
-      <article class="kits__item kits__item--base slider__item">
-        <p class="kits__title">
-        <h3 class="kits__name">База</h3>
-        <span class="kits__price">1,99 USD</span>
+      <div class="kit kit--base slider__item">
+        <p class="kit__title">
+        <b class="kit__name">База</b>
+        <span class="kit__price">1,99 USD</span>
         </p>
-        <ul class="kits__features">
-          <li class="kits__feature">Розовый Фильтр</li>
-          <li class="kits__feature">Смайлики</li>
-          <li class="kits__feature">Комментарии</li>
+        <ul class="kit__features-list">
+          <li class="kit__feature-filter kit__feature-filter--base">Розовый Фильтр</li>
+          <li class="kit__feature-smile kit__feature-smile--base">Смайлики</li>
+          <li class="kit__feature-comment kit__feature-comment--base">Комментарии</li>
         </ul>
-      </article>
-      <article class="kits__item kits__item--standart slider__item">
-        <p class="price__title">
-        <h3 class="price__name">Стандарт</h3>
-        <span class="price__value">3,99 USD</span>
+      </div>
+      <div class="kit kit--standard slider__item">
+        <p class="kit__title">
+        <b class="kit__name">Стандарт</b>
+        <span class="kit__price">3,99 USD</span>
         </p>
-        <ul class="kits__features">
-          <li class="kits__feature">Розовый Фильтр</li>
-          <li class="kits__feature">Смайлики</li>
-          <li class="kits__feature">Комментарии</li>
+        <ul class="kit__features-list">
+          <li class="kit__feature-filter kit__feature-filter--standard">Розовый Фильтр</li>
+          <li class="kit__feature-smile kit__feature-smile--standard">Смайлики</li>
+          <li class="kit__feature-comment kit__feature-comment--standard">Комментарии</li>
         </ul>
-      </article>
-      <article class="kits__item kits__item--unlimited slider__item">
-        <p class="kits__title">
-        <h3 class="kits__name">Анлим</h3>
-        <span class="kits__price">9,99 USD</span>
+      </div>
+      <div class="kit kit--unlimited slider__item">
+        <p class="kit__title">
+        <b class="kit__name">Анлим</b>
+        <span class="kit__price">9,99 USD</span>
         </p>
-        <ul class="kits__features">
-          <li class="kits__feature">Розовый Фильтр</li>
-          <li class="kits__feature">Смайлики</li>
-          <li class="kits__feature">Комментарии</li>
+        <ul class="kit__features-list">
+          <li class="kit__feature-filter kit__feature-filter--unlimited">Розовый Фильтр</li>
+          <li class="kit__feature-smile kit__feature-smile--unlimited">Смайлики</li>
+          <li class="kit__feature-comment kit__feature-comment--unlimited">Комментарии</li>
         </ul>
-      </article>
+      </div>
     </div>
     <p class="kits__toggles slider__toggles">
       <button class="slider__toggle" type="button">1</button>
@@ -125,24 +137,24 @@
     </p>
   </section>
 </main>
+<section class="contacts">
+  <h2 class="visually-hidden">Контакты разработчика</h2>
+  <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+  <p class="contacts__description contacts__description-phone">
+    <b>Звоните:</b>
+    +7 (812) 555-66-66
+  </p>
+  <p class="contacts__description contacts__description-mail">
+    <b>Пишите:</b>
+    mail@htmlacademy.ru
+  </p>
+  <p class="contacts__description contacts__description-address">
+    <b>Приезжайте в гости:</b>
+    ул. Большая
+    Конюшенная, 19/8
+  </p>
+</section>
 <footer class="footer">
-  <section class="contacts">
-    <h2 class="visually-hidden">Контакты разработчика</h2>
-    <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-    <p class="contacts__description contacts__description-phone">
-      <b>Звоните:</b>
-      +7 (812) 555-66-66
-    </p>
-    <p class="contacts__description contacts__description-mail">
-      <b>Пишите:</b>
-      mail@htmlacademy.ru
-    </p>
-    <p class="contacts__description contacts__description-address">
-      <b>Приезжайте в гости:</b>
-      ул. Большая
-      Конюшенная, 19/8
-    </p>
-  </section>
 </footer>
 </body>
 </html>
