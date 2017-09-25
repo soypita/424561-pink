@@ -1,0 +1,6 @@
+@mixin set-fonts($size: $base-font-size, $weight: $base-font-weight, $height: $base-line-height) {
+  font-family: $base-font;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
