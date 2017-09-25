@@ -1,3 +1,25 @@
 @import "visually-hidden";
 @import "variables";
 @import "mixins";
+@import "button";
+////////////////////////////
+@import "header";
+@import "main-nav";
+@import "site-list";
+@import "intro";
+@import "download";
+///////////////////////////
+@import "main";
+@import "info";
+@import "reviews";
+@import "slider";
+@import "kits";
+@import "competition-form";
+@import "users-photo";
+@import "photo-card";
+@import "photo-upload";
+//////////////////////////////
+@import "contacts";
+@import "footer";
+/////////////////////////////
+@import "modal";
