@@ -1,0 +1,11 @@
+.reviews {
+  .reviews__author-name {
+    @include set-fonts($title-font-size, $bold-font-weight, 30px);
+    color: black;
+    font-style: normal;
+  }
+
+  .reviews__text {
+    line-height: 30px;
+  }
+}

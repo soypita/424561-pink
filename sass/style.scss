@@ -1,25 +1,28 @@
-@import "visually-hidden";
-@import "variables";
-@import "mixins";
-@import "button";
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/normalize";
+@import "general/global";
+@import "blocks/visually-hidden";
+@import "blocks/button";
 ////////////////////////////
-@import "header";
-@import "main-nav";
-@import "site-list";
-@import "intro";
-@import "download";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/intro";
+@import "blocks/download";
 ///////////////////////////
-@import "main";
-@import "info";
-@import "reviews";
-@import "slider";
-@import "kits";
-@import "competition-form";
-@import "users-photo";
-@import "photo-card";
-@import "photo-upload";
+@import "blocks/main";
+@import "blocks/info";
+@import "blocks/reviews";
+@import "blocks/slider";
+@import "blocks/kits";
+@import "blocks/competition-form";
+@import "blocks/users-photo";
+@import "blocks/photo-card";
+@import "blocks/photo-upload";
 //////////////////////////////
-@import "contacts";
-@import "footer";
+@import "blocks/contacts";
+@import "blocks/footer";
 /////////////////////////////
-@import "modal";
+@import "blocks/modal";

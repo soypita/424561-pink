@@ -7,39 +7,44 @@
 </head>
 <body>
 <header class="header">
-  <a class="header__logo">
-    <img class="header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink-logo">
-  </a>
   <nav class="main-nav">
+    <a class="header__logo">
+      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+    </a>
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item-current">
-        <a>Главная</a>
+        <a class="main-nav__link">Главная</a>
       </li>
       <li class="site-list__item">
-        <a href="photo.html">Фотографии</a>
+        <a class="main-nav__link" href="photo.html">Фотографии</a>
       </li>
       <li class="site-list__item">
-        <a href="form.html">Конкурс</a>
+        <a class="main-nav__link" href="form.html">Конкурс</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Html academy</a>
+        <a class="main-nav__link" href="#">Html academy</a>
       </li>
     </ul>
   </nav>
   <section class="intro">
     <section class="download">
       <h2 class="visually-hidden">Приложение Pink в магазинах</h2>
-      <a class="download__shop button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+      <a class="button button--download-shop" href="https://www.apple.com/itunes/">Скачать приложение</a>
       <ul class="download__list">
         <li class="download__item">
-          <a class="download__link download__link--ios" href="https://www.apple.com/ios/app-store/">IOS</a>
+          <a class="download__link download__link--ios" href="https://www.apple.com/ios/app-store/">
+            <span class="visually-hidden">IOS</span>
+          </a>
         </li>
         <li class="download__item">
-          <a class="download__link download__link--android" href="https://play.google.com/store">Android</a>
+          <a class="download__link download__link--android" href="https://play.google.com/store">
+            <span class="visually-hidden">Android</span></a>
         </li>
         <li class="download__item">
-          <a class="download__link download__link--windows" href="https://www.microsoft.com/store/apps?rtc=1">Windows</a>
+          <a class="download__link download__link--windows" href="https://www.microsoft.com/store/apps?rtc=1">
+            <span class="visually-hidden">Windows</span>
+          </a>
         </li>
       </ul>
       <p class="download__info">
@@ -143,11 +148,11 @@
   <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
   <p class="contacts__field">
     <span class="contacts__field-title">Звоните:</span>
-    <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+    <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
   </p>
   <p class="contacts__field">
     <span class="contacts__field-title">Пишите:</span>
-    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   </p>
   <p class="contacts__field">
     <span class="contacts__field-title">Приезжайте в гости:</span>
