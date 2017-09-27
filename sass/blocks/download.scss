@@ -11,8 +11,9 @@
   }
 
   .download__info {
+    @include reset();
+
     color: #dfdfe0;
     font-weight: 300;
-    @include reset();
   }
 }
