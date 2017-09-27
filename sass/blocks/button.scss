@@ -4,11 +4,22 @@
   vertical-align: middle;
   word-wrap: break-word;
   border: none;
+  outline: none;
 
   &--download-shop {
     color: #ffffff;
     border: solid 2px white;
     border-radius: 10px;
     font-weight: $bold-font-weight;
+  }
+
+  &--competition-form,
+  &--modal-action {
+    color: white;
+    background-color: $green;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }

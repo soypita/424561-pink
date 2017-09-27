@@ -3,17 +3,14 @@
 
   color: #ffffff;
 
-  background-color: #283645;
+  background-color: $dark-blue;
+
+  .main-nav__list {
+    @include reset();
+    list-style: none;
+  }
 
   .main-nav__link {
     color: #ffffff;
   }
-  .main-nav__list {
-    list-style: none;
-  }
-
-  .main-nav__toggle {
-  }
-
-
 }

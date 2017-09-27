@@ -1,4 +1,6 @@
 .reviews {
+  @include reset();
+
   .reviews__author-name {
     @include set-fonts($title-font-size, $bold-font-weight, 30px);
     color: black;
@@ -6,6 +8,19 @@
   }
 
   .reviews__text {
+    @include reset();
     line-height: 30px;
+  }
+
+  .reviews__list {
+    @include reset();
+  }
+
+  .reviews__item {
+    @include reset();
+  }
+
+  .reviews__toggles {
+    @include reset();
   }
 }

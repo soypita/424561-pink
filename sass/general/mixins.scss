@@ -4,3 +4,8 @@
   font-weight: $weight;
   line-height: $height;
 }
+
+@mixin reset() {
+  padding: 0;
+  margin: 0;
+}

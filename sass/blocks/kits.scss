@@ -1,8 +1,15 @@
 .kits {
+  @include reset();
+
   .kits__title {
+    @include reset();
     color: #ffffff;
     text-transform: uppercase;
     background-color: #283645;
+  }
+
+  .kits__list {
+    @include reset();
   }
 
   .kits__name {
@@ -18,8 +25,13 @@
   }
 
   .kits__features-list {
+    @include reset();
     list-style: none;
     text-transform: uppercase;
     line-height: 30px;
+  }
+
+  .kits__toggles {
+    @include reset();
   }
 }

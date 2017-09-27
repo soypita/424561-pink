@@ -1,14 +1,19 @@
 .photo-upload {
-  background-color: #f2f2f2;
-  .users-photo__promo {
-    background-color: white;
-  }
-
   .photo-upload__upload-button,
   .photo-upload__discard-button {
-    color: #d22856;
-    border: solid 2px #d22856;
+    color: $red;
+    border: solid 2px $red;
     border-radius: 10px;
     font-weight: $bold-font-weight;
+  }
+
+  .photo-upload__promo {
+    @include reset();
+  }
+
+  background-color: $grey;
+
+  .photo-upload__media {
+    @include reset();
   }
 }

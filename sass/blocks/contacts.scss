@@ -1,10 +1,12 @@
 .contacts {
   .contacts__field {
+    @include reset();
     color: #df798f;
     font-size: 24px;
   }
 
   .contacts__title {
+    @include reset();
     font-weight: 300;
     font-size: 24px;
     text-transform: uppercase;

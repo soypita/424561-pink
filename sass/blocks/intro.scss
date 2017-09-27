@@ -1,9 +1,13 @@
 .intro {
+  @include reset();
+
   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
 
   .intro__title {
+    @include reset();
     color: #ffffff;
     font-size: 24px;
     font-weight: 300;
   }
+
 }

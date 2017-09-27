@@ -2,4 +2,12 @@
   .footer__social-list {
     list-style: none;
   }
+
+  .footer__developer {
+    line-height: 18px;
+    color: $dark-blue;
+    position: relative;
+    fill: $red;
+  }
+
 }

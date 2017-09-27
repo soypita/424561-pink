@@ -1,5 +1,10 @@
-.users-photo__promo {
-  color: #797f86;
-  line-height: 30px;
-  font-size: 14px;
+.users-photo {
+  .users-photo__promo {
+    @include reset();
+    line-height: 30px;
+    font-size: 14px;
+    background-color: white;
+
+  }
+
 }

@@ -1,0 +1,58 @@
+.competition-form {
+  .competition-form__description {
+    @include reset();
+    color: $dark-blue;
+    line-height: 30px;
+  }
+
+  .competition-form__fieldset {
+    @include reset();
+    border: none;
+  }
+
+  .competition-form__field {
+    @include reset();
+  }
+
+  .competition-form__label {
+    color: $dark-blue;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .competition-form__label--user-info {
+    color: $red;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .competition-form__input,
+  .competition-form__textarea {
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark-blue;
+    overflow: auto;
+    resize: none;
+    outline: none;
+  }
+
+  .competition-form__title {
+    @include reset();
+    line-height: 18px;
+    color: $red;
+    text-transform: uppercase;
+  }
+
+  .competition-form__list {
+    @include reset();
+  }
+
+  .competition-form__sign {
+    color: $red;
+  }
+
+  .competition-form__description--require {
+    text-transform: uppercase;
+  }
+}
