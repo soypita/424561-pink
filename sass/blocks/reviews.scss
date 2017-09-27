@@ -1,6 +1,8 @@
 .reviews {
   @include reset();
 
+  padding-top: 50px;
+
   .reviews__author-name {
     @include set-fonts($title-font-size, $bold-font-weight, 30px);
     color: black;
@@ -9,6 +11,8 @@
 
   .reviews__text {
     @include reset();
+    padding-top: 10px;
+    padding-bottom: 30px;
     line-height: 30px;
   }
 

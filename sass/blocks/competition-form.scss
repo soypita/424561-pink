@@ -1,17 +1,27 @@
 .competition-form {
+  padding-top: 50px;
+
   .competition-form__description {
     @include reset();
+    padding-bottom: 45px;
     color: $dark-blue;
     line-height: 30px;
   }
 
   .competition-form__fieldset {
     @include reset();
+    padding-top: 35px;
     border: none;
+    padding-bottom: 20px;
+  }
+
+  .competition-form__fieldset--inputs {
+    background-color: $grey;
   }
 
   .competition-form__field {
     @include reset();
+    padding-bottom: 20px;
   }
 
   .competition-form__label {
@@ -46,6 +56,7 @@
 
   .competition-form__list {
     @include reset();
+    padding-top: 30px;
   }
 
   .competition-form__sign {
@@ -54,5 +65,11 @@
 
   .competition-form__description--require {
     text-transform: uppercase;
+    padding-top: 40px;
+
+  }
+
+  .competition-form__title--emoti {
+    padding-bottom: 30px;
   }
 }

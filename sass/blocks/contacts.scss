@@ -1,12 +1,16 @@
 .contacts {
+  padding-top: 50px;
+
   .contacts__field {
     @include reset();
+    padding-bottom: 20px;
     color: #df798f;
     font-size: 24px;
   }
 
   .contacts__title {
     @include reset();
+    padding-bottom: 40px;
     font-weight: 300;
     font-size: 24px;
     text-transform: uppercase;

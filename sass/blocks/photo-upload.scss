@@ -1,4 +1,5 @@
 .photo-upload {
+  padding-top: 50px;
   .photo-upload__upload-button,
   .photo-upload__discard-button {
     color: $red;
@@ -9,11 +10,15 @@
 
   .photo-upload__promo {
     @include reset();
+    padding-bottom: 50px;
   }
-
-  background-color: $grey;
 
   .photo-upload__media {
     @include reset();
+  }
+
+  .photo-upload__processing {
+    background-color: $grey;
+    padding-bottom: 40px;
   }
 }

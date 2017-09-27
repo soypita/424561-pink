@@ -1,8 +1,11 @@
 .kits {
   @include reset();
+  padding-top: 120px;
 
   .kits__title {
     @include reset();
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #283645;
@@ -33,5 +36,18 @@
 
   .kits__toggles {
     @include reset();
+    padding-top: 30px;
+  }
+
+  .kits__feature-filter,
+  .kits__feature-smile,
+  .kits__feature-comment {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: solid 2px $grey;
+  }
+
+  .kits__feature-comment {
+    border-bottom: solid 2px $grey;
   }
 }

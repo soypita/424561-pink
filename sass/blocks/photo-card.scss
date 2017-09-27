@@ -1,10 +1,14 @@
 .photo-card {
+  padding-top: 15px;
+  
   .photo-card__description {
-    background-color: #f2f2f2;
+    background-color: $grey;
+    padding-bottom: 20px;
   }
 
   .photo-card__title {
     @include reset();
+    padding-top: 15px;
   }
 
   .photo-card__user-name {
@@ -14,7 +18,7 @@
 
   .photo-card__like-button {
     font-size: 12px;
-    color: #df8fa0;
+    color: $red;
     text-transform: uppercase;
   }
 }

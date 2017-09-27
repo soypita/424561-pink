@@ -1,3 +1,19 @@
 .header {
   @include reset();
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &--index {
+    position: relative;
+  }
+
+  &--index::after {
+    content: "";
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+  }
 }

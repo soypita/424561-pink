@@ -1,10 +1,13 @@
 .users-photo {
+
+  padding-top: 50px;
+
   .users-photo__promo {
     @include reset();
     line-height: 30px;
     font-size: 14px;
     background-color: white;
-
+    padding-bottom: 50px;
   }
 
 }

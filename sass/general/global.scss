@@ -1,6 +1,6 @@
 body {
   @include set-fonts();
-
+  box-sizing: border-box;
   color: $base-font-color;
 }
 

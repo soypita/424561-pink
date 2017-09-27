@@ -1,14 +1,18 @@
 .info {
   @include reset();
 
+  padding-top: 50px;
+
   .info__title {
     @include set-fonts($title-font-size, $bold-font-weight, 10px);
     @include reset();
+    padding-bottom: 20px;
     color: black;
   }
 
   .info__promo {
     @include reset();
+    padding-bottom: 35px;
     font-size: $promo-font-size;
     color: #283645;
   }
@@ -19,6 +23,7 @@
 
   .info__description {
     @include reset();
+    padding-bottom: 35px;
   }
 
   .info__advantage--friends::after {
@@ -28,5 +33,6 @@
     height: 320px;
     background-image: url("../../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
+    background-position-y: 35px;
   }
 }
