@@ -1,0 +1,30 @@
+.reviews {
+  @include reset();
+
+  padding-top: 50px;
+
+  .reviews__author-name {
+    @include set-fonts($title-font-size, $bold-font-weight, 30px);
+    color: black;
+    font-style: normal;
+  }
+
+  .reviews__text {
+    @include reset();
+    padding-top: 10px;
+    padding-bottom: 30px;
+    line-height: 30px;
+  }
+
+  .reviews__list {
+    @include reset();
+  }
+
+  .reviews__item {
+    @include reset();
+  }
+
+  .reviews__toggles {
+    @include reset();
+  }
+}

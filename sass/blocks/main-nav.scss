@@ -1,0 +1,16 @@
+.main-nav {
+  @include set-fonts($title-font-size, $bold-font-weight, 32px);
+
+  color: #ffffff;
+
+  background-color: $dark-blue;
+
+  .main-nav__list {
+    @include reset();
+    list-style: none;
+  }
+
+  .main-nav__link {
+    color: #ffffff;
+  }
+}

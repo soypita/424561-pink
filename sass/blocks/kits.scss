@@ -1,0 +1,53 @@
+.kits {
+  @include reset();
+  padding-top: 120px;
+
+  .kits__title {
+    @include reset();
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #283645;
+  }
+
+  .kits__list {
+    @include reset();
+  }
+
+  .kits__name {
+    font-size: 18px;
+    font-weight: $bold-font-weight;
+    line-height: 30px;
+  }
+
+  .kits__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .kits__features-list {
+    @include reset();
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+
+  .kits__toggles {
+    @include reset();
+    padding-top: 30px;
+  }
+
+  .kits__feature-filter,
+  .kits__feature-smile,
+  .kits__feature-comment {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: solid 2px $grey;
+  }
+
+  .kits__feature-comment {
+    border-bottom: solid 2px $grey;
+  }
+}

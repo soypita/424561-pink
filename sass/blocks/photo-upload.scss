@@ -1,0 +1,25 @@
+.photo-upload {
+  padding-top: 50px;
+
+  .photo-upload__upload-button,
+  .photo-upload__discard-button {
+    color: $red;
+    border: solid 2px $red;
+    border-radius: 10px;
+    font-weight: $bold-font-weight;
+  }
+
+  .photo-upload__promo {
+    @include reset();
+    padding-bottom: 50px;
+  }
+
+  .photo-upload__media {
+    @include reset();
+  }
+
+  .photo-upload__processing {
+    background-color: $grey;
+    padding-bottom: 40px;
+  }
+}

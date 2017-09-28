@@ -1,0 +1,24 @@
+.photo-card {
+  padding-top: 15px;
+
+  .photo-card__description {
+    background-color: $grey;
+    padding-bottom: 20px;
+  }
+
+  .photo-card__title {
+    @include reset();
+    padding-top: 15px;
+  }
+
+  .photo-card__user-name {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .photo-card__like-button {
+    font-size: 12px;
+    color: $red;
+    text-transform: uppercase;
+  }
+}

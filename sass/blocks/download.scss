@@ -1,0 +1,19 @@
+.download {
+
+  background-color: $dark-blue;
+
+  padding-top: 25px;
+
+  padding-bottom: 35px;
+
+  .download__list {
+    list-style: none;
+  }
+
+  .download__info {
+    @include reset();
+
+    color: #dfdfe0;
+    font-weight: 300;
+  }
+}
