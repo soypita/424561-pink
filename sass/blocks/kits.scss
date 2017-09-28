@@ -9,22 +9,33 @@
     color: #ffffff;
     text-transform: uppercase;
     background-color: #283645;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .kits__list {
     @include reset();
+    display: flex;
+  }
+
+  .kits__item {
+    min-width: 280px;
   }
 
   .kits__name {
     font-size: 18px;
     font-weight: $bold-font-weight;
     line-height: 30px;
+    margin: 0 auto;
   }
 
   .kits__price {
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
+    margin: 0 auto;
+
   }
 
   .kits__features-list {

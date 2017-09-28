@@ -1,4 +1,8 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   @include reset();
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -12,8 +16,32 @@
     position: absolute;
     width: 258px;
     height: 286px;
-    bottom: 0;
+    bottom: 165px;
     left: 0;
     background-image: url("../img/iphone-hand-mobile@1x.png");
   }
+
+  .header__logo {
+    margin-right: 12px;
+  }
+
+  .header__logo-wrapper {
+    background-color: $dark-blue;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    &--index::after {
+      content: "";
+      position: absolute;
+      width: 258px;
+      height: 286px;
+      bottom: 0;
+      left: 390px;
+      background-image: url("../img/iphone-hand-mobile@1x.png");
+    }
+  }
+
+}
+

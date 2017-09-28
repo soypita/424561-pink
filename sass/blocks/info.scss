@@ -1,6 +1,9 @@
 .info {
   @include reset();
-
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding-top: 50px;
 
   .info__title {
@@ -12,12 +15,18 @@
 
   .info__promo {
     @include reset();
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 35px;
     font-size: $promo-font-size;
     color: #283645;
+    text-align: center;
   }
 
   .info__advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #f2f2f2;
   }
 
@@ -31,6 +40,7 @@
     display: block;
     width: 157px;
     height: 320px;
+    margin: 0 auto;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position-y: 35px;

@@ -1,10 +1,9 @@
 .intro {
   @include reset();
   padding-top: 40px;
-  padding-bottom: 240px;
 
   &--index {
-    padding-bottom: 262px;
+    margin-top: 262px;
   }
 
 
@@ -13,5 +12,12 @@
     color: #ffffff;
     font-size: 24px;
     font-weight: 300;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      margin-top: 0;
+      margin-bottom: 100px;
+    }
   }
 }

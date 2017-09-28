@@ -1,6 +1,8 @@
 .contacts {
   padding-top: 50px;
 
+  text-align: center;
+
   .contacts__field {
     @include reset();
     padding-bottom: 20px;
