@@ -7,12 +7,15 @@
   <title>Pink-Form</title>
 </head>
 <body>
+<div class="container">
 <header class="header">
   <nav class="main-nav">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
-    </a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="header__logo-wrapper">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+      </a>
+      <button class="button button--nav-toggle" type="button">Открыть меню</button>
+    </div>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
         <a class="main-nav__link" href="index.html">Главная</a>
@@ -32,6 +35,8 @@
     <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </section>
 </header>
+</div>
+<div class="container">
 <main class="main">
   <h1 class="visually-hidden">Конкурс от Pink</h1>
   <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
@@ -58,9 +63,9 @@
       </p>
     </fieldset>
     <fieldset class="competition-form__fieldset competition-form__fieldset--inputs">
-      <p class="competition-form__title">Ваши безбашенные
+      <legend class="competition-form__title">Ваши безбашенные
         достижения в путешествии
-      </p>
+      </legend>
       <ul class="competition-form__list">
         <li class="competition-form__item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
@@ -108,9 +113,9 @@
       </p>
     </fieldset>
     <fieldset class="competition-form__fieldset competition-form__fieldset--inputs">
-      <p class="competition-form__title">С каким приложением
+      <legend class="competition-form__title">С каким приложением
         путешествовали?
-      </p>
+      </legend>
       <ul class="competition-form__list">
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--radio" type="radio"
@@ -129,9 +134,9 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="competition-form__fieldset">
-      <p class="competition-form__title competition-form__title--emoti">Опишите свои эмоции
-      </p>
+    <fieldset class="competition-form__fieldset competition-form__fieldset--textarea">
+      <legend class="competition-form__title competition-form__title">Опишите свои эмоции
+      </legend>
       <textarea class="competition-form__textarea" id="user-emotions" name="user-emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </fieldset>
@@ -141,6 +146,8 @@
     </p>
   </form>
 </main>
+</div>
+<div class="container">
 <footer class="footer">
   <a class="footer__logo" href="index.html">
     <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink-logo">
@@ -169,6 +176,9 @@
     </svg>
   </a>
 </footer>
+</div>
+
+<div class="container">
 <section class="modal modal--request">
   <h2 class="modal__title">Ваша заявка отправлена</h2>
   <p class="modal__description">
@@ -179,6 +189,9 @@
     <button class="button button--modal-action">Закрыть окно</button>
   </p>
 </section>
+</div>
+
+<div class="container">
 <section class="modal modal--error">
   <h2 class="modal__title">Что то пошло не так!</h2>
   <p class="modal__description">
@@ -186,5 +199,6 @@
   </p>
   <button class="button button--modal-action">Ок</button>
 </section>
+</div>
 </body>
 </html>

@@ -18,7 +18,7 @@
     position: absolute;
     width: 258px;
     height: 286px;
-    bottom: 150px;
+    bottom: 105px;
     left: 0;
     background-image: url("../img/iphone-hand-mobile@1x.png");
   }
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
       &--index::after {
-        bottom: 34px;
+        bottom: 0;
         left: 345px;
       }
   }

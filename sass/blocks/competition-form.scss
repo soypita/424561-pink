@@ -1,25 +1,41 @@
 .competition-form {
   padding-top: 50px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   .competition-form__description {
     @include reset();
+    padding: 0 20px;
     padding-bottom: 45px;
     color: $dark-blue;
     line-height: 30px;
+    text-align: center;
   }
 
   .competition-form__fieldset {
+    display: flex;
+    flex-direction: column;
     @include reset();
+    padding: 0 20px;
     padding-top: 35px;
     border: none;
     padding-bottom: 20px;
   }
 
   .competition-form__fieldset--inputs {
+    position:relative;
     background-color: $grey;
   }
+  .competition-form__fieldset--textarea {
+    position: relative;
+  }
 
-  .competition-form__field {
+
+    .competition-form__field {
+    display: flex;
+    flex-direction: column;
     @include reset();
     padding-bottom: 20px;
   }
@@ -49,14 +65,18 @@
 
   .competition-form__title {
     @include reset();
+    position: absolute;
+    top: 0;
+    //padding-top: 80px;
     line-height: 18px;
     color: $red;
+    text-align: center;
     text-transform: uppercase;
   }
 
   .competition-form__list {
     @include reset();
-    padding-top: 30px;
+    list-style: none;
   }
 
   .competition-form__sign {
@@ -68,7 +88,29 @@
     padding-top: 40px;
   }
 
-  .competition-form__title--emoti {
-    padding-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    .competition-form__fieldset {
+      padding-top: 0px;
+    }
+
+    .competition-form__title {
+      text-align: center;
+      position: static;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: white;
+    }
+    .competition-form__fieldset--inputs,
+    .competition-form__fieldset--textarea {
+      border-width: 2px;
+      border-style: groove;
+      border-color: $grey;
+      border-image: initial;
+      background-color: white;
+    }
+
+    .competition-form__textarea {
+      width: 100%;
+    }
   }
 }
