@@ -38,4 +38,31 @@
     background-repeat: no-repeat;
     background-color: #eae6dd;
   }
+
+  @media (min-width: $tablet-width) {
+    .contacts__base-information {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .contacts__field--mail,
+    .contacts__field--tel {
+      display: flex;
+      flex-direction: column;
+    }
+    .contacts__field--tel {
+      width: 230px
+    }
+
+    .contacts__field--mail {
+      width: 250px
+    }
+
+    .contacts__field--address {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 }

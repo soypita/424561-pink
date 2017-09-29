@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
@@ -21,7 +21,7 @@
     color: #ffffff;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: $tablet-width;
   }
 }

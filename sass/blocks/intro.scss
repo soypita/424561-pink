@@ -6,7 +6,6 @@
     margin-top: 262px;
   }
 
-
   .intro__title {
     @include reset();
     color: #ffffff;
@@ -14,10 +13,22 @@
     font-weight: 300;
   }
 
+  .intro__title--index {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     &--index {
       margin-top: 0;
       margin-bottom: 100px;
     }
+
+    .intro__title--index {
+      display: block;
+      width: 300px;
+      text-align: center;
+
+    }
+
   }
 }

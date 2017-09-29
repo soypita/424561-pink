@@ -1,6 +1,8 @@
 .footer {
   padding-top: 40px;
-
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
   .footer__social-list {
     list-style: none;
   }
@@ -10,5 +12,15 @@
     color: $dark-blue;
     position: relative;
     fill: $red;
+  }
+
+  &--index {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

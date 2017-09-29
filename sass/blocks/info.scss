@@ -1,7 +1,7 @@
 .info {
-  @include reset();
-  width: 280px;
+  //@include reset();
   display: flex;
+  width: 100%;
   flex-direction: column;
   text-align: center;
   padding-top: 50px;
@@ -15,9 +15,9 @@
 
   .info__promo {
     @include reset();
+    padding-bottom: 35px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 35px;
     font-size: $promo-font-size;
     color: #283645;
     text-align: center;
@@ -27,6 +27,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    //width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #f2f2f2;
   }
 
@@ -44,5 +47,15 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position-y: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    .info__advantage {
+      padding-left: 340px;
+    }
+    .info__advantage--friends::after {
+      @include hidden();
+    }
   }
 }
