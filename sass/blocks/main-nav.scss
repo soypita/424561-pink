@@ -12,6 +12,8 @@
 
   .main-nav__list {
     @include reset();
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0 auto;
     flex-grow: 1;
@@ -21,7 +23,17 @@
     color: #ffffff;
   }
 
-  @media screen and (min-width: $tablet-width) {
-    width: $tablet-width;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+
+    .main-nav__list {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
+    }
   }
 }

@@ -24,4 +24,11 @@
     text-transform: uppercase;
   }
 
+  @media (min-width: $desktop-width) {
+
+    &--nav-toggle {
+      display: none;
+    }
+
+  }
 }

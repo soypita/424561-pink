@@ -65,4 +65,14 @@
       width: 100%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .contacts__field--address {
+      width: auto;
+    }
+
+    .contacts__field--mail {
+      order: 1;
+    }
+  }
 }

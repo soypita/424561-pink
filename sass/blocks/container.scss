@@ -6,13 +6,13 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width - 40px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width - 40px;
+    width: $desktop-width;
   }
 }
 

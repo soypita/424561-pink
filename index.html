@@ -9,13 +9,13 @@
 <body>
 <div class="container">
 <header class="header header--index ">
-  <div class="header__logo-wrapper">
-    <a class="header__logo">
-      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
-    </a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-  </div>
     <nav class="main-nav">
+      <div class="header__logo-wrapper">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+        </a>
+        <button class="button button--nav-toggle" type="button">Открыть меню</button>
+      </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item-current">
           <a class="main-nav__link">Главная</a>
@@ -36,7 +36,6 @@
       на жизнь
       иначе!</h1>
     <section class="download">
-      <div class="container container--flex-column">
         <h2 class="visually-hidden">Приложение Pink в магазинах</h2>
         <a class="button button--download-shop" href="https://www.apple.com/itunes/">Скачать приложение</a>
         <ul class="download__list">
@@ -58,7 +57,6 @@
         <p class="download__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
-      </div>
     </section>
   </section>
 </header>
@@ -68,6 +66,7 @@
   <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="info">
       <p class="info__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+      <div class="info__wrapper">
       <div class="info__advantage info__advantage--mood">
         <h3 class="info__title">Поднимает настроение</h3>
         <p class="info__description">
@@ -83,6 +82,7 @@
       <div class="info__advantage info__advantage--friends">
         <h3 class="info__title">Заводит новых друзей</h3>
         <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
       </div>
     </section>
   <section class="effect">

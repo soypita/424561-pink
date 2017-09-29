@@ -1,7 +1,15 @@
 .effect {
   display: none;
 
+  .effect__promo {
+    @include reset();
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
   }
 }
