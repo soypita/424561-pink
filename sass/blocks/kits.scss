@@ -1,36 +1,31 @@
 .kits {
-  @include reset();
   padding-top: 120px;
-
-
+  width: 100%;
 
   .kits__title {
-    @include reset();
     padding-top: 25px;
     padding-bottom: 25px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #283645;
-    display: flex;
-    flex-direction: column;
   }
 
   .kits__table {
-    display: table;
     table-layout: fixed;
+
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+
     transform: translateX(-540px);
+
     margin: 0 auto;
+
+    word-wrap: break-word;
+
+    border-collapse: collapse;
   }
 
   .kits__title {
     text-align: center;
-  }
-
-  .kits__row {
-    display: table-row;
   }
 
   .kits__title,
@@ -38,11 +33,15 @@
   .kits__feature-smile,
   .kits__feature-comment {
     text-transform: uppercase;
-    display: table-cell;
+
     border: 1px solid $grey;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
     width: 280px;
   }
-
 
   .kits__title--empty {
     background-color: white;
@@ -69,7 +68,6 @@
     padding-top: 30px;
     text-align: center;
   }
-
 
   @media (min-width: $tablet-width) {
     .kits__table {
