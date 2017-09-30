@@ -1,4 +1,9 @@
 .photo-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   padding-top: 50px;
 
   .photo-upload__upload-button,

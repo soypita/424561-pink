@@ -1,5 +1,9 @@
 .users-photo {
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 50px;
 
   .users-photo__promo {
@@ -8,5 +12,7 @@
     font-size: 14px;
     background-color: white;
     padding-bottom: 50px;
+    text-align: center;
   }
+
 }
