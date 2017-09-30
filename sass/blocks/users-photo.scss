@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 50px;
+  flex-wrap: wrap;
 
   .users-photo__promo {
     @include reset();
@@ -13,6 +14,12 @@
     background-color: white;
     padding-bottom: 50px;
     text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
   }
 
 }
