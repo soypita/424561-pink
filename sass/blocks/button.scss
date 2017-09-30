@@ -23,14 +23,11 @@
     font-weight: 700;
     text-transform: uppercase;
     align-self: center;
-
   }
 
   @media (min-width: $desktop-width) {
-
     &--nav-toggle {
       display: none;
     }
-
   }
 }

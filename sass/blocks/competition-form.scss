@@ -18,6 +18,7 @@
   .competition-form__fieldset {
     display: flex;
     flex-direction: column;
+
     @include reset();
     padding: 0 20px;
     padding-top: 35px;
@@ -26,17 +27,18 @@
   }
 
   .competition-form__fieldset--inputs {
-    position:relative;
+    position: relative;
     background-color: $grey;
   }
+
   .competition-form__fieldset--textarea {
     position: relative;
   }
 
-
-    .competition-form__field {
+  .competition-form__field {
     display: flex;
     flex-direction: column;
+
     @include reset();
     padding-bottom: 20px;
   }
@@ -48,7 +50,7 @@
   }
 
   .competition-form__label--user-info,
-  competition-form__label--contact-info {
+  .competition-form__label--contact-info {
     color: $red;
     font-size: 14px;
     line-height: 30px;
@@ -94,11 +96,13 @@
   .competition-form__title--contact-info {
     display: none;
   }
+
   .competition-form__footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   @media (min-width: $tablet-width) {
     .competition-form__fieldset {
       padding-top: 0px;
@@ -111,9 +115,10 @@
       padding-bottom: 15px;
       background-color: white;
     }
+
     .competition-form__fieldset--inputs,
     .competition-form__fieldset--textarea,
-    .competition-form__fieldset--contact-info{
+    .competition-form__fieldset--contact-info {
       border-width: 2px;
       border-style: groove;
       border-color: $grey;
@@ -149,6 +154,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
+
     .competition-form__fieldset--contact-info {
       width: 100%;
     }
@@ -156,6 +162,7 @@
     .competition-form__fieldset--textarea {
       width: 100%;
     }
+
     .competition-form__fieldset {
       flex-grow: 1;
     }
@@ -167,6 +174,5 @@
     .competition-form__footer {
       width: 100%;
     }
-
   }
 }

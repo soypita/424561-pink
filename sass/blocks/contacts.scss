@@ -46,17 +46,19 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
+
     .contacts__field--mail,
     .contacts__field--tel {
       display: flex;
       flex-direction: column;
     }
+
     .contacts__field--tel {
-      width: 230px
+      width: 230px;
     }
 
     .contacts__field--mail {
-      width: 250px
+      width: 250px;
     }
 
     .contacts__field--address {

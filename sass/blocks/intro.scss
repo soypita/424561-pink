@@ -2,6 +2,7 @@
   @include reset();
   padding-top: 40px;
   width: 100%;
+
   &--index {
     margin-top: 262px;
   }
@@ -36,8 +37,6 @@
       display: block;
       width: 300px;
       text-align: center;
-
     }
-
   }
 }
