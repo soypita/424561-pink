@@ -54,6 +54,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-top: solid 2px $grey;
+    border-left: solid 2px $grey;
   }
 
   .kits__feature-comment {
@@ -66,12 +67,6 @@
 
   .kits__title--table {
     opacity: 0;
-  }
-
-  .kits__feature-filter,
-  .kits__feature-smile,
-  .kits__feature-comment {
-    border-left: solid 2px $grey;
   }
 
   .kits__feature-filter--unlimited,
