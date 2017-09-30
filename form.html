@@ -45,17 +45,17 @@
       заполните форму ниже:
     </p>
     <fieldset class="competition-form__fieldset">
-      <p class="competition-form__field">
+      <p class="competition-form__field competition-form__field--user-info">
         <label for="user-surname" class="competition-form__label competition-form__label--user-info">Фамилия:</label>
         <input class="competition-form__input" type="text" id="user-surname" name="user-surname"
                 placeholder="Укажите фамилию *">
       </p>
-      <p class="competition-form__field">
+      <p class="competition-form__field competition-form__field--user-info">
         <label for="user-name" class="competition-form__label competition-form__label--user-info">Имя:</label>
         <input class="competition-form__input" type="text" id="user-name" name="user-name"
                 placeholder="Введите ваше имя *">
       </p>
-      <p class="competition-form__field">
+      <p class="competition-form__field competition-form__field--user-info">
         <label for="user-patronymic"
                 class="competition-form__label competition-form__label--user-info">Отчество:</label>
         <input class="competition-form__input" type="text" id="user-patronymic" name="user-patronymic"
@@ -99,15 +99,16 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="competition-form__fieldset">
+    <fieldset class="competition-form__fieldset competition-form__fieldset--contact-info">
+      <legend class="competition-form__title competition-form__title--contact-info">Контактная информация</legend>
       <p class="competition-form__field">
-        <label for="user-phone" class="competition-form__label competition-form__label--user-info">Номер
+        <label for="user-phone" class="competition-form__label competition-form__label--contact-info">Номер
           телефона</label>
         <input class="competition-form__input" type="tel" id="user-phone" name="user-phone"
                 placeholder="Номер, пожалуйста">
       </p>
       <p class="competition-form__field">
-        <label for="user-mail" class="competition-form__label competition-form__label--user-info">Адрес почты</label>
+        <label for="user-mail" class="competition-form__label competition-form__label--contact-info">Адрес почты</label>
         <input class="competition-form__input" type="email" id="user-mail" name="user-mail"
                 placeholder="Введите почту *">
       </p>
@@ -140,10 +141,12 @@
       <textarea class="competition-form__textarea" id="user-emotions" name="user-emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </fieldset>
-    <button class="button button--competition-form" type="submit">Отправить форму</button>
-    <p class="competition-form__description competition-form__description--require">
-      <sup class="competition-form__sign">*</sup> — обязательные поля
-    </p>
+    <div class="competition-form__footer">
+      <button class="button button--competition-form" type="submit">Отправить форму</button>
+      <p class="competition-form__description competition-form__description--require">
+        <sup class="competition-form__sign">*</sup> — обязательные поля
+      </p>
+    </div>
   </form>
 </main>
 </div>
