@@ -8,6 +8,7 @@
     color: #ffffff;
     text-transform: uppercase;
     background-color: #283645;
+    text-align: center;
   }
 
   .kits__table {
@@ -22,10 +23,6 @@
     word-wrap: break-word;
 
     border-collapse: collapse;
-  }
-
-  .kits__title {
-    text-align: center;
   }
 
   .kits__title,
@@ -72,7 +69,7 @@
   @media (min-width: $tablet-width) {
     .kits__table {
       table-layout: fixed;
-      transform: translateX(0px);
+      transform: translateX(0);
       width: 620px;
     }
 
