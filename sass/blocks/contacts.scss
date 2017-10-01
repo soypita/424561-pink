@@ -1,5 +1,7 @@
 .contacts {
+  width: 100%;
   padding-top: 50px;
+  padding-bottom: 50px;
 
   text-align: center;
 
@@ -37,9 +39,11 @@
     background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-color: #eae6dd;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
     .contacts__base-information {
       display: flex;
       flex-direction: row;
