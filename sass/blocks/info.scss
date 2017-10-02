@@ -1,10 +1,10 @@
 .info {
-  //@include reset();
   display: flex;
   width: 100%;
   flex-direction: column;
   text-align: center;
-  padding-top: 50px;
+  background-color: $grey;
+
 
   .info__title {
     @include set-fonts($title-font-size, $bold-font-weight, 10px);
@@ -15,19 +15,19 @@
 
   .info__promo {
     @include reset();
+    width: 100%;
+    margin: 0 auto;
     padding-bottom: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: $promo-font-size;
-    color: #283645;
     text-align: center;
+    background-color: white;
+    padding-top: 50px;
   }
 
   .info__advantage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -49,13 +49,18 @@
   }
 
   .info__wrapper {
+    width: 320px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: $grey;
   }
 
   @media (min-width: $tablet-width) {
     text-align: left;
+
+    .info__wrapper {
+      width: $tablet-width;
+    }
 
     .info__advantage {
       padding-left: 340px;
@@ -68,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     .info__wrapper {
+      width: $desktop-width;
       flex-direction: row;
       justify-content: space-between;
     }

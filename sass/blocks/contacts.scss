@@ -5,6 +5,11 @@
 
   text-align: center;
 
+  .contacts_wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   .contacts__field {
     @include reset();
     padding-bottom: 20px;
@@ -45,6 +50,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
 
+    .contacts_wrapper {
+      width: $tablet-width;
+    }
+
     .contacts__base-information {
       display: flex;
       flex-direction: row;
@@ -76,6 +85,10 @@
   @media (min-width: $desktop-width) {
     .contacts__field--address {
       width: auto;
+    }
+
+    .contacts_wrapper {
+      width: $desktop-width;
     }
 
     .contacts__field--mail {

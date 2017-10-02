@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="header header--index ">
-  <div class="container container--header container--index">
+  <div class="header__wrapper header__wrapper--index">
   <nav class="main-nav">
       <div class="header__logo-wrapper">
         <a class="header__logo">
@@ -62,41 +62,44 @@
   </div>
 </header>
 <main class="main">
-  <div class="container">
   <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="info">
-      <p class="info__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-      <div class="info__wrapper">
-      <div class="info__advantage info__advantage--mood">
-        <h3 class="info__title">Поднимает настроение</h3>
-        <p class="info__description">
-          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-        </p>
-      </div>
-      <div class="info__advantage info__advantage--world">
-        <h3 class="info__title">Меняет мир вокруг</h3>
-        <p class="info__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-          эффект
-        </p>
-      </div>
-      <div class="info__advantage info__advantage--friends">
-        <h3 class="info__title">Заводит новых друзей</h3>
-        <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-      </div>
+        <p class="info__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <div class="info__wrapper">
+          <div class="info__advantage info__advantage--mood">
+            <h3 class="info__title">Поднимает настроение</h3>
+            <p class="info__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </div>
+          <div class="info__advantage info__advantage--world">
+            <h3 class="info__title">Меняет мир вокруг</h3>
+            <p class="info__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект
+            </p>
+          </div>
+          <div class="info__advantage info__advantage--friends">
+            <h3 class="info__title">Заводит новых друзей</h3>
+            <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
     </section>
   <section class="effect">
-    <h2 class="effect__promo">Эффект
-      на 24 часа!</h2>
-    <p class="effect__description">
-      Британские ученые провели исследования
-      и доказали, что положительный эффект
-      от использования приложения длится
-      целые сутки!
-    </p>
-    <a class="effect__link" href="#">Узнать больше об исследовании</a>
+    <div class="effect_wrapper">
+      <h2 class="effect__promo">Эффект
+        на 24 часа!</h2>
+      <p class="effect__description">
+        Британские ученые провели исследования
+        и доказали, что положительный эффект
+        от использования приложения длится
+        целые сутки!
+      </p>
+      <a class="effect__link" href="#">Узнать больше об исследовании</a>
+    </div>
   </section>
   <section class="reviews">
+    <h2 class="visually-hidden">Отзывы покупателей</h2>
+    <div class="reviews__wrapper">
       <div class="reviews__list slider">
         <blockquote class="reviews__item slider__item">
           <cite class="reviews__author-name">Николай Петров</cite>
@@ -121,10 +124,11 @@
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
+      </div>
     </div>
-    <h2 class="visually-hidden">Отзывы покупателей</h2>
   </section>
   <section class="kits">
+    <div class="kits_wrapper">
     <h2 class="visually-hidden">Варианты комплектации приложения</h2>
     <table class="kits__table slider">
       <tr class="kits__row">
@@ -167,11 +171,11 @@
       <button class="slider__toggle" type="button">2</button>
       <button class="slider__toggle" type="button">3</button>
     </p>
+    </div>
   </section>
-  </div>
 </main>
 <section class="contacts">
-  <div class="container">
+  <div class="contacts_wrapper">
   <h2 class="visually-hidden">Контакты разработчика</h2>
     <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
   <div class="contacts__base-information">
@@ -192,7 +196,7 @@
   </div>
 </section>
 <footer class="footer footer--index">
-  <div class="container container--footer">
+  <div class="footer__wrapper">
   <a class="footer__logo" href="index.html">
     <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink-logo">
   </a>

@@ -1,14 +1,21 @@
 .kits {
   padding-top: 120px;
   width: 100%;
-  overflow-x: hidden;
+
+  .kits_wrapper {
+    width: 320px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  background-color: $grey;
 
   .kits__title {
     padding-top: 25px;
     padding-bottom: 25px;
     color: #ffffff;
     text-transform: uppercase;
-    background-color: #283645;
+    background-color: $dark-blue;
     text-align: center;
   }
 
@@ -35,6 +42,12 @@
     border: 1px solid $grey;
 
     width: 280px;
+  }
+
+  .kits__feature-filter,
+  .kits__feature-smile,
+  .kits__feature-comment {
+    background-color: white;
   }
 
   .kits__title--empty {
@@ -64,6 +77,11 @@
   }
 
   @media (min-width: $tablet-width) {
+
+    .kits_wrapper {
+      width: $tablet-width;
+    }
+
     .kits__table {
       table-layout: fixed;
       transform: translateX(0);
@@ -80,6 +98,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    .kits_wrapper {
+      width: $desktop-width;
+    }
+
     .kits__table {
       width: 940px;
     }

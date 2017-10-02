@@ -1,11 +1,17 @@
 .users-photo {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-  flex-wrap: wrap;
+
+
+  .users-photo__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
 
   .users-photo__promo {
     @include reset();
@@ -18,6 +24,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    .users-photo__wrapper {
+      flex-direction: row;
+      width: $tablet-width;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .users-photo__wrapper {
+      width: $desktop-width;
+    }
   }
 }
