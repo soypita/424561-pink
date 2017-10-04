@@ -4,7 +4,7 @@
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
 
   .header__wrapper {
     width: 320px;
@@ -20,7 +20,7 @@
     position: absolute;
     width: 258px;
     height: 286px;
-    bottom: 105px;
+    bottom: 0;
     left: 0;
     background-image: url("../img/iphone-hand-mobile@1x.png");
   }
@@ -33,6 +33,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    padding-top: 21px;
+    padding-bottom: 18px;
     background-color: transparent;
   }
 
@@ -49,6 +51,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-size: cover;
+
     .header__wrapper {
       width: $desktop-width;
       padding-bottom: 245px;

@@ -12,6 +12,7 @@
 
   .main-nav__list {
     @include reset();
+    width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;

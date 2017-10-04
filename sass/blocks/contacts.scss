@@ -1,7 +1,6 @@
 .contacts {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 45px;
 
   text-align: center;
 
@@ -12,17 +11,26 @@
 
   .contacts__field {
     @include reset();
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    line-height: 25px;
     color: #df798f;
     font-size: 24px;
   }
 
+  .contacts__field--address {
+    width: 226px;
+    line-height: 30px;
+  }
+
   .contacts__title {
     @include reset();
-    padding-bottom: 40px;
+    padding-bottom: 34px;
     font-weight: 300;
     font-size: 24px;
-    text-transform: uppercase;
+    line-height: 28px;
   }
 
   .contacts__field-title {
