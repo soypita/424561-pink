@@ -1,5 +1,21 @@
 .photo-upload {
-  padding-top: 50px;
+  width: 100%;
+
+  .photo-upload__form {
+    width: 100%;
+    background-color: $grey;
+  }
+
+  .photo-upload__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
 
   .photo-upload__upload-button,
   .photo-upload__discard-button {
@@ -11,6 +27,10 @@
 
   .photo-upload__promo {
     @include reset();
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 
@@ -18,8 +38,27 @@
     @include reset();
   }
 
-  .photo-upload__processing {
-    background-color: $grey;
-    padding-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    .photo-upload__wrapper {
+      width: $tablet-width;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .photo-upload__processing-body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .photo-upload__form {
+      background-color: white;
+    }
+
+    .photo-upload__wrapper {
+      width: 940px;
+      background-color: $grey;
+    }
   }
 }

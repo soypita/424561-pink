@@ -1,6 +1,17 @@
 .users-photo {
+  width: 100%;
 
-  padding-top: 50px;
+
+  .users-photo__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
 
   .users-photo__promo {
     @include reset();
@@ -8,5 +19,20 @@
     font-size: 14px;
     background-color: white;
     padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    .users-photo__wrapper {
+      flex-direction: row;
+      width: $tablet-width;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .users-photo__wrapper {
+      width: $desktop-width;
+    }
   }
 }

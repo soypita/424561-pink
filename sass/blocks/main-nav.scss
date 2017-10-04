@@ -1,4 +1,9 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
 
   color: #ffffff;
@@ -7,10 +12,28 @@
 
   .main-nav__list {
     @include reset();
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    margin: 0 auto;
+    flex-grow: 1;
   }
 
   .main-nav__link {
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+
+    .main-nav__list {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
+    }
   }
 }

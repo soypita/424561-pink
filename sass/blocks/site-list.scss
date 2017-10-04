@@ -3,4 +3,10 @@
     text-transform: uppercase;
   }
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    .site-list__item {
+      display: block;
+    }
+  }
 }

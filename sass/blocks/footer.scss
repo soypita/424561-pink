@@ -1,5 +1,13 @@
 .footer {
-  padding-top: 40px;
+  width: 100%;
+
+  .footer__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 
   .footer__social-list {
     list-style: none;
@@ -10,5 +18,28 @@
     color: $dark-blue;
     position: relative;
     fill: $red;
+  }
+
+  &--index {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .footer__wrapper {
+      width: $tablet-width;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--index {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .footer__wrapper {
+      width: $desktop-width;
+    }
   }
 }

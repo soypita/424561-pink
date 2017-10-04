@@ -1,5 +1,14 @@
 .contacts {
+  width: 100%;
   padding-top: 50px;
+  padding-bottom: 50px;
+
+  text-align: center;
+
+  .contacts_wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
 
   .contacts__field {
     @include reset();
@@ -35,5 +44,55 @@
     background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-color: #eae6dd;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+
+    .contacts_wrapper {
+      width: $tablet-width;
+    }
+
+    .contacts__base-information {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .contacts__field--mail,
+    .contacts__field--tel {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contacts__field--tel {
+      width: 230px;
+    }
+
+    .contacts__field--mail {
+      width: 250px;
+    }
+
+    .contacts__field--address {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .contacts__field--address {
+      width: auto;
+    }
+
+    .contacts_wrapper {
+      width: $desktop-width;
+    }
+
+    .contacts__field--mail {
+      order: 1;
+    }
   }
 }

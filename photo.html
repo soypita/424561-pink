@@ -2,48 +2,54 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>Pink-Photo</title>
 </head>
 <body>
 <header class="header">
-  <nav class="main-nav">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
-    </a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a class="main-nav__link" href="index.html">Главная</a>
-      </li>
-      <li class="site-list__item site-list__item--current">
-        <a class="main-nav__link">Фотографии</a>
-      </li>
-      <li class="site-list__item">
-        <a class="main-nav__link" href="form.html">Конкурс</a>
-      </li>
-      <li class="site-list__item">
-        <a class="main-nav__link" href="#">Html academy</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__wrapper">
+    <nav class="main-nav">
+      <div class="header__logo-wrapper">
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+        </a>
+        <button class="button button--nav-toggle" type="button">Открыть меню</button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item-current">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link" href="#">Html academy</a>
+        </li>
+      </ul>
+    </nav>
   <section class="intro intro--photo">
     <h1 class="intro__title intro__title--photo">Фотографии
       пользователей</h1>
   </section>
+  </div>
 </header>
 <main class="main">
   <section class="users-photo">
+    <div class="users-photo__wrapper">
     <h2 class="users-photo__promo">
       Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?
     </h2>
     <article class="users-photo__item photo-card photo-card--best">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/panorama-mobile@1x.jpg"
+              width="320" height="137" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/panorama-mobile@1x.jpg"
-                width="320" height="137" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Анна</b> (5 минут назад)
         </p>
@@ -55,11 +61,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/photo-car-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/photo-car-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Левон</b> (5 часов назад)
         </p>
@@ -70,11 +76,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/photo-drumset-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/photo-drumset-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Антон</b> (12 часов назад)
         </p>
@@ -85,11 +91,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/photo-window-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/photo-window-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Борис</b> (20 часов назад)
         </p>
@@ -100,11 +106,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/photo-fair-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/photo-fair-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Сергей</b> (25 часов назад)
         </p>
@@ -115,11 +121,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a class="photo-card__full-link" href="#">
+        <img class="photo-card__user-picture" src="img/photo-pov-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a class="photo-card__full-link" href="#">
-          <img class="photo-card__user-picture" src="img/photo-pov-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Максим</b> (40 часов назад)
         </p>
@@ -130,11 +136,11 @@
       </div>
     </article>
     <article class="users-photo__item photo-card">
+      <a href="#">
+        <img class="photo-card__user-picture" src="img/photo-wing-mobile@1x.jpg" width="280"
+              height="180" alt="User picture">
+      </a>
       <div class="photo-card__description">
-        <a href="#">
-          <img class="photo-card__user-picture" src="img/photo-wing-mobile@1x.jpg" width="280"
-                height="180" alt="User picture">
-        </a>
         <p class="photo-card__title">
           <b class="photo-card__user-name">Надежда</b> (45 часов назад)
         </p>
@@ -144,50 +150,57 @@
         <a class="button photo-card__like-button" href="#">Нравится: 2560</a>
       </div>
     </article>
+    </div>
   </section>
-  <form class="photo-upload" method="post" action="https://echo.htmlacademy.ru">
-    <h2 class="photo-upload__promo">
+  <section class="photo-upload">
+    <p class="photo-upload__promo">
       Затмите их всех!
       Выкладывайте все, что накопилось в телефоне!
-    </h2>
-    <div class="photo-upload__processing">
+    </p>
+  <form class="photo-upload__form" method="post" action="https://echo.htmlacademy.ru">
+    <div class="photo-upload__wrapper">
       <p class="photo-upload__media">
         <img class="photo-upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
               alt="User picture for upload">
       </p>
-      <div class="photo-upload__filters">
-      </div>
+      <div class="photo-upload__processing-body">
+      <div class="photo-upload__filters"></div>
       <button type="submit" class="photo-upload__upload-button">Запостить</button>
       <button type="reset" class="photo-upload__discard-button">Отмена</button>
+      </div>
     </div>
   </form>
+  </section>
 </main>
 <footer class="footer">
-  <a class="footer__logo" href="index.html">
-    <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink-logo">
-  </a>
-  <ul class="footer__social-list">
-    <li class="footer__social-item">
-      <a class="footer__social-link footer__social-link--twitter" href="#">
-        <span class="visually-hidden">Twitter</span></a>
-    </li>
-    <li class="footer__social-item">
-      <a class="footer__social-link footer__social-link--facebook" href="#">
-        <span class="visually-hidden">Facebook</span>
-      </a>
-    </li>
-    <li class="footer__social-item">
-      <a class="footer__social-link footer__social-link--youtube" href="#">
-        <span class="visually-hidden">Youtube</span>
-      </a>
-    </li>
-  </ul>
-  <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
-    Разработано
-    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+  <div class="footer__wrapper">
+    <a class="footer__logo" href="index.html">
+      <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink-logo">
+    </a>
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--twitter" href="#">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--facebook" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--youtube" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
       <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
     </svg>
-  </a>
+    </a>
+  </div>
 </footer>
 </body>
 </html>

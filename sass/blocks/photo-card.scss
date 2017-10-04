@@ -1,9 +1,15 @@
 .photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   padding-top: 15px;
 
   .photo-card__description {
     background-color: $grey;
     padding-bottom: 20px;
+    width: 280px;
   }
 
   .photo-card__title {
@@ -20,5 +26,20 @@
     font-size: 12px;
     color: $red;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--best {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    width: 320px;
+
+    &--best {
+      width: 100%;
+    }
   }
 }
