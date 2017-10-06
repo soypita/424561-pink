@@ -1,10 +1,12 @@
 .download {
-  width: 320px;
+  width: 100%;
+
   background-color: $dark-blue;
 
   position: absolute;
 
-  padding-top: 28px;
+  padding-top: 29px;
+  margin-top: 388px;
 
   text-align: center;
 
@@ -63,8 +65,11 @@
     top: 26px;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-color: transparent;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: left;
 
     .download__info {
       width: 350px;
@@ -77,6 +82,7 @@
     .download__list {
       padding-top: 13px;
       padding-bottom: 1px;
+      padding-left: 180px;
     }
 
     .download__link--ios::before {
@@ -93,7 +99,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 50px;
 
     .download__list {

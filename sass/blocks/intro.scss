@@ -1,17 +1,22 @@
 .intro {
   @include reset();
   width: 100%;
-
   background-color: $dark-blue;
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image:  url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: center -71px;
+  background-position: center 0px;
+  margin-top: -64px;
+  padding-top: 70px;
+  padding-bottom: 20px;
 
   &--index {
-    margin-bottom: 265px;
-    padding-top: 393px;
+    padding-bottom: 388px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center 0px;
+    background-color: $dark-blue;
   }
+
 
   .intro__title {
     @include reset();
@@ -34,35 +39,27 @@
     margin: 0 auto;
   }
 
-  &--index::after {
-    content: "";
-    position: absolute;
-    width: 258px;
-    height: 286px;
-    bottom: 0;
-    left: 0;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-  }
-
   @media (min-width: $tablet-width) {
+    background-color: transparent;
+
     &--index {
       margin-top: 0;
-      padding-bottom: 382px;
+      padding-top: 42px;
+      padding-bottom: 355px;
       margin-bottom: 0;
-    }
-
-    &--index::after {
-      bottom: 0;
-      left: 345px;
+      background-position: center bottom, center 0px;
+      background-color: $dark-blue;
     }
 
     .intro__title--index {
       display: block;
       width: 245px;
+      margin: 0 auto;
       text-align: center;
       font-size: 40px;
       padding-top: 49px;
-      padding-left: 48px;
+      padding-bottom: 25px;
+      padding-right: 318px;
       line-height: 49px;
       font-weight: 300;
     }

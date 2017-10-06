@@ -4,6 +4,7 @@
   flex-direction: column;
   text-align: center;
   background-color: $grey;
+  padding-top: 56px;
 
 
   .info__title {
@@ -46,6 +47,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding-top: 0;
 
     .info__wrapper {
       width: $tablet-width;
