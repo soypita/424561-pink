@@ -57,9 +57,18 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    padding-top: 45px;
 
     .contacts_wrapper {
       width: $tablet-width;
+    }
+
+    .contacts__title {
+      font-size: 40px;
+      line-height: 50px;
+      width: 415px;
+      margin: 0 auto;
+      padding-bottom: 41px;
     }
 
     .contacts__base-information {
@@ -67,6 +76,10 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    .contacts__field-title {
+      padding-bottom: 6px;
     }
 
     .contacts__field--mail,
@@ -77,6 +90,7 @@
 
     .contacts__field--tel {
       width: 230px;
+      padding-left: 12px;
     }
 
     .contacts__field--mail {
@@ -86,7 +100,12 @@
     .contacts__field--address {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 300px;
+      padding-top: 21px;
+    }
+
+    &:after {
+      height: 371px;
     }
   }
 

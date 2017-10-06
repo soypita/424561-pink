@@ -42,6 +42,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 72px;
+
     .reviews__item {
       display: flex;
       flex-direction: column;
@@ -49,16 +51,25 @@
 
     .reviews__author-name {
       order: 1;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     .reviews__author-information {
       display: block;
       order: 2;
+      margin-top: 5px;
     }
 
     .reviews__wrapper {
       width: $tablet-width;
     }
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {

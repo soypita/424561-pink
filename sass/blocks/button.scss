@@ -29,6 +29,15 @@
     align-self: center;
   }
 
+  @media (min-width: $tablet-width) {
+    &--download-shop {
+      margin-left: 20px;
+      width: 296px;
+      margin-top: 3px;
+      padding-top: 15px;
+      padding-bottom: 17px;
+    }
+  }
   @media (min-width: $desktop-width) {
     &--nav-toggle {
       display: none;

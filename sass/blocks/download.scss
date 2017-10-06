@@ -65,5 +65,17 @@
 
   @media screen and (min-width: $tablet-width) {
     background-color: transparent;
+
+    .download__info {
+      width: 350px;
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 109px;
+      padding-left: 0;
+    }
+
+    .download__list {
+      padding-bottom: 1px;
+    }
   }
 }

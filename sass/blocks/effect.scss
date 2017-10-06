@@ -16,6 +16,33 @@
 
     .effect_wrapper {
       width: $tablet-width;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: 100px;
+    }
+
+    .effect__promo {
+      margin-left: auto;
+      font-size: 30px;
+      line-height: 34px;
+      font-weight: 700;
+      margin-right: 117px;
+      width: 214px;
+    }
+
+    .effect__description {
+      width: 320px;
+      margin-left: auto;
+      margin-right: 10px;
+      margin-bottom: 8px;
+    }
+
+    .effect__link {
+      width: 240px;
+      margin-left: auto;
+      margin-right: 91px;
+      text-decoration: underline;
     }
   }
 
