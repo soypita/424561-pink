@@ -1,6 +1,4 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0 auto;
 
@@ -24,17 +22,35 @@
     color: #ffffff;
   }
 
+  .main-nav__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 100%;
+    .main-nav__wrapper {
+      width: $tablet-width;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    line-height: 18px;
+    vertical-align: middle;
+    background-color: rgba(40, 54, 69, 0.8);
+    padding-top: 45px;
 
     .main-nav__list {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-start;
       margin: 0;
+      padding-left: 6px;
+    }
+
+    .main-nav__wrapper {
+      flex-direction: row;
+      width: $desktop-width;
     }
   }
 }

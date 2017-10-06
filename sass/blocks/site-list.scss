@@ -16,6 +16,20 @@
   @media (min-width: $desktop-width) {
     .site-list__item {
       display: block;
+      border: none;
+      margin-right: 82px;
+      text-transform: none;
+      font-weight: 400;
+      padding-top: 0px;
+      padding-bottom: 10px;
+    }
+
+    .site-list__item:nth-child(1) {
+      border: none;
+    }
+
+    .site-list__item:last-of-type {
+      margin-right: 0;
     }
   }
 }

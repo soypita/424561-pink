@@ -70,12 +70,39 @@
       width: 350px;
       font-size: 18px;
       line-height: 24px;
-      padding-top: 109px;
+      padding-top: 97px;
       padding-left: 0;
     }
 
     .download__list {
+      padding-top: 13px;
       padding-bottom: 1px;
+    }
+
+    .download__link--ios::before {
+      right: 65px;
+    }
+
+    .download__link--android::before {
+      right: -16px;
+      top: 23px;
+    }
+
+    .download__link--windows::before {
+      left: 44px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 50px;
+
+    .download__list {
+      padding-top: 32px;
+    }
+
+    .download__info {
+      padding-top: 117px;
+      width: 325px;
     }
   }
 }
