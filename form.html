@@ -8,41 +8,40 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__wrapper">
     <nav class="main-nav">
-      <div class="header__logo-wrapper">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
-        </a>
-        <button class="button button--nav-toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+          </a>
+          <button class="button button--nav-toggle" type="button">Открыть меню</button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item-current">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
       </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item-current">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="#">Html academy</a>
-        </li>
-      </ul>
     </nav>
   <section class="intro intro--form">
     <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </section>
-  </div>
 </header>
 <main class="main">
   <h1 class="visually-hidden">Конкурс от Pink</h1>
   <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
     <div class="competition-form__wrapper">
     <p class="competition-form__description">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
-      заполните форму ниже:
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
     </p>
     <fieldset class="competition-form__fieldset">
       <p class="competition-form__field competition-form__field--user-info">
@@ -67,7 +66,7 @@
         достижения в путешествии
       </legend>
       <ul class="competition-form__list">
-        <li class="competition-form__item">
+        <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="shark" id="shark" checked>
           <label for="shark" class="competition-form__label">Сделал селфи с акулой</label>
