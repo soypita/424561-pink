@@ -45,15 +45,14 @@
   .intro__title--form,
   .intro__title--photo {
     padding: 0 20px;
-    padding-top: 30px;
-    padding-bottom: 55px;
+    padding-top: 23px;
+    padding-bottom: 36px;
     text-align: center;
     line-height: 28px;
     margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
 
     .intro__wrapper {
       width: $tablet-width;
@@ -69,6 +68,17 @@
       padding-bottom: 355px;
       margin-bottom: 0;
       background-color: $dark-blue;
+    }
+
+    &--form {
+      padding-top: 109px;
+      padding-bottom: 45px;
+    }
+
+    .intro__title--form {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 60px;
     }
 
     .intro__title--index {
@@ -96,12 +106,20 @@
       left: 355px;
     }
 
+    &--form {
+      padding-bottom: 64px;
+    }
+
     .intro__title--index {
       font-size: 50px;
       line-height: 59px;
       padding-left: 0px;
       padding-top: 70px;
       margin-right: 360px;
+    }
+
+    .intro__title--form {
+      width: 790px;
     }
 
     &--index {

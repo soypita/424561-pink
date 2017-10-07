@@ -4,7 +4,7 @@
   .footer__wrapper {
     width: 320px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 50px;
     text-align: center;
     padding-bottom: 10px;
   }
@@ -60,6 +60,7 @@
   @media (min-width: $desktop-width) {
     .footer__wrapper {
       width: $desktop-width;
+      padding-top: 32px;
     }
 
     &--index {
