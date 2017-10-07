@@ -6,9 +6,13 @@
   position: absolute;
 
   padding-top: 29px;
-  margin-top: 388px;
 
   text-align: center;
+
+  .download__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
 
   .download__list {
     list-style: none;
@@ -67,9 +71,13 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    margin-top: 0;
+    margin-top: -354px;
     padding-top: 0;
     text-align: left;
+
+    .download__wrapper {
+      width: $tablet-width;
+    }
 
     .download__info {
       width: 350px;
@@ -100,7 +108,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+
+    margin-top: -428px;
+    padding-top: 22px;
+
+    .download__wrapper {
+      width: $desktop-width;
+    }
 
     .download__list {
       padding-top: 32px;
@@ -109,6 +123,19 @@
     .download__info {
       padding-top: 117px;
       width: 325px;
+    }
+
+    .download__link--ios::before {
+      right: 74px;
+    }
+
+    .download__link--android::before {
+      right: -4px;
+      top: 23px;
+    }
+
+    .download__link--windows::before {
+      left: 35px;
     }
   }
 }

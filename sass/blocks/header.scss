@@ -36,16 +36,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-size: cover;
-
     .header__wrapper {
       width: $desktop-width;
     }
 
     .header__logo-wrapper {
       width: 160px;
-      margin-right: 170px;
       background: none;
+      margin-right: 119px;
       padding-top: 0;
     }
   }
