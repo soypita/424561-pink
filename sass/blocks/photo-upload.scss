@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 23px;
   }
 
   .photo-upload__upload-button,
@@ -23,12 +23,27 @@
     border: solid 2px $red;
     border-radius: 10px;
     font-weight: $bold-font-weight;
+    width: 277px;
+  }
+
+  .photo-upload__upload-button {
+    margin-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+  }
+
+  .photo-upload__discard-button {
+    margin-bottom: 42px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
   }
 
   .photo-upload__promo {
     @include reset();
     text-align: center;
-    width: 320px;
+    width: 212px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -36,6 +51,7 @@
 
   .photo-upload__media {
     @include reset();
+    padding-bottom: 195px;
   }
 
   @media (min-width: $tablet-width) {
