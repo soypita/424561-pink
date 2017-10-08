@@ -30,22 +30,16 @@
     color: #ffffff;
   }
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     line-height: 18px;
     vertical-align: middle;
     background-color: rgba(40, 54, 69, 0.8);
     padding-top: 45px;
 
-
     .main-nav__wrapper {
       width: $desktop-width;
       flex-direction: row;
     }
-
 
     .main-nav__list {
       width: 480px;
@@ -54,6 +48,5 @@
       margin: 0;
       padding-left: 6px;
     }
-
   }
 }
