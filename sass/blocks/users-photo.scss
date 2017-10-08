@@ -20,6 +20,7 @@
     background-color: white;
     padding-bottom: 34px;
     text-align: center;
+    margin: 0 auto;
     width: 279px;
   }
 
@@ -28,9 +29,19 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 91px;
+
     .users-photo__wrapper {
       flex-direction: row;
-      width: $tablet-width;
+      width: $tablet-width - 40px;
+      padding-top: 32px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+
+    .users-photo__promo {
+      font-size: 18px;
+      width: 495px;
     }
   }
 

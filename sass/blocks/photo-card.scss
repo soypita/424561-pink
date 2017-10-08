@@ -46,8 +46,47 @@
   }
 
   @media (min-width: $tablet-width) {
+    align-self: baseline;
     &--best {
       width: 100%;
+      padding-top: 43px;
+    }
+
+    .photo-card__user-picture {
+      width: 300px;
+      height: 300px;
+    }
+
+    .photo-card__user-picture--best {
+      width: 660px;
+      height: 510px;
+    }
+
+
+    .photo-card__description--best {
+      width: 620px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .photo-card__title--best {
+      order: 0;
+      padding-top: 23px;
+      padding-left: 9px;
+    }
+
+    .photo-card__like-button--best {
+      order: 1;
+      margin-left: auto;
+      margin-right: 57px;
+      padding-top: 24px;
+    }
+
+    .photo-card__user-comment--best {
+      order: 2;
+      width: 100%;
+      padding-left: 10px;
+      padding-bottom: 3px;
     }
   }
 

@@ -79,10 +79,20 @@
       padding-bottom: 45px;
     }
 
+    &--photo {
+      padding-top: 113px;
+      padding-bottom: 74px;
+    }
+
     .intro__title--form {
       font-size: 50px;
       font-weight: 300;
       line-height: 60px;
+    }
+
+    .intro__title--photo {
+      font-size: 50px;
+      line-height: 59px;
     }
 
     .intro__title--index {
