@@ -148,6 +148,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
+    margin-bottom: 15px;
 
     .competition-form__wrapper {
       width: $tablet-width;
@@ -317,6 +318,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
     .competition-form__wrapper {
       width: $desktop-width;
       flex-direction: row;

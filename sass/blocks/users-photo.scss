@@ -3,19 +3,19 @@
 
 
   .users-photo__wrapper {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 44px;
     flex-wrap: wrap;
   }
 
   .users-photo__promo {
     @include reset();
     line-height: 30px;
+    padding-top: 44px;
     font-size: 14px;
     background-color: white;
     padding-bottom: 34px;
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 91px;
+    padding-top: 47px;
 
     .users-photo__wrapper {
       flex-direction: row;
@@ -37,6 +37,10 @@
       padding-top: 32px;
       padding-left: 1px;
       padding-right: 1px;
+    }
+
+    .users-photo__item {
+      width: 300px;
     }
 
     .users-photo__promo {
@@ -47,7 +51,15 @@
 
   @media (min-width: $desktop-width) {
     .users-photo__wrapper {
-      width: $desktop-width;
+      width: $desktop-width - 20px;
+    }
+
+    .users-photo__promo {
+      width: 640px;
+    }
+
+    .users-photo__item {
+      margin-bottom: 36px;
     }
   }
 }
