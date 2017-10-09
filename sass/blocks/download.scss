@@ -1,13 +1,22 @@
 .download {
-  width: 320px;
+  width: 100%;
+
   background-color: $dark-blue;
 
-  padding-top: 15px;
+  position: absolute;
+
+  padding-top: 29px;
 
   text-align: center;
 
+  .download__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   .download__list {
     list-style: none;
+    padding-bottom: 85px;
   }
 
   .download__info {
@@ -15,13 +24,118 @@
 
     color: #dfdfe0;
     font-weight: 300;
+    padding-left: 19px;
+    padding-bottom: 30px;
 
     width: 280px;
 
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  .download__link {
+    position: relative;
+  }
+
+  .download__link::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 55px;
+  }
+
+  .download__link--ios::before {
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 75px;
+    top: 20px;
+  }
+
+  .download__link--android::before {
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -4px;
+    top: 25px;
+  }
+
+  .download__link--windows::before {
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 35px;
+    top: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
     background-color: transparent;
+    margin-top: -354px;
+    padding-top: 0;
+    text-align: left;
+
+    .download__wrapper {
+      width: $tablet-width;
+    }
+
+    .download__info {
+      width: 350px;
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 97px;
+      padding-left: 0;
+    }
+
+    .download__list {
+      padding-top: 13px;
+      padding-bottom: 1px;
+      padding-left: 180px;
+    }
+
+    .download__link--ios::before {
+      right: 65px;
+    }
+
+    .download__link--android::before {
+      right: -16px;
+      top: 23px;
+    }
+
+    .download__link--windows::before {
+      left: 44px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-top: -428px;
+    padding-top: 22px;
+
+    .download__wrapper {
+      width: $desktop-width;
+      //margin-right: 270px;
+    }
+
+    .download__list {
+      padding-top: 32px;
+    }
+
+    .download__info {
+      padding-top: 117px;
+      width: 325px;
+    }
+
+    .download__link--ios::before {
+      right: 74px;
+    }
+
+    .download__link--android::before {
+      right: -4px;
+      top: 23px;
+    }
+
+    .download__link--windows::before {
+      left: 35px;
+    }
   }
 }

@@ -8,8 +8,8 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__wrapper">
-    <nav class="main-nav">
+  <nav class="main-nav">
+    <div class="main-nav__wrapper">
       <div class="header__logo-wrapper">
         <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
@@ -27,24 +27,24 @@
           <a class="main-nav__link">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a class="main-nav__link" href="#">Html academy</a>
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
   <section class="intro intro--form">
     <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </section>
-  </div>
 </header>
 <main class="main">
   <h1 class="visually-hidden">Конкурс от Pink</h1>
   <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
     <div class="competition-form__wrapper">
     <p class="competition-form__description">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
-      заполните форму ниже:
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span class="competition-form__description-invite">Пожалуйста, заполните форму ниже:</span>
     </p>
-    <fieldset class="competition-form__fieldset">
+    <div class="competition-form__fieldset competition-form__fieldset--user-info">
       <p class="competition-form__field competition-form__field--user-info">
         <label for="user-surname" class="competition-form__label competition-form__label--user-info">Фамилия:</label>
         <input class="competition-form__input" type="text" id="user-surname" name="user-surname"
@@ -61,90 +61,91 @@
         <input class="competition-form__input" type="text" id="user-patronymic" name="user-patronymic"
                 placeholder="Ну и отчество тоже">
       </p>
-    </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--inputs">
-      <legend class="competition-form__title">Ваши безбашенные
+    </div>
+    <div class="competition-form__fieldset competition-form__fieldset--inputs competition-form__fieldset--achiev">
+      <h2 class="competition-form__title competition-form__title--achiev">Ваши безбашенные
         достижения в путешествии
-      </legend>
-      <ul class="competition-form__list">
-        <li class="competition-form__item">
+      </h2>
+      <ul class="competition-form__list competition-form__list--achiev">
+        <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="shark" id="shark" checked>
-          <label for="shark" class="competition-form__label">Сделал селфи с акулой</label>
+          <label for="shark" class="competition-form__label competition-form__label--check">Сделал селфи с акулой</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="beach" id="beach" checked>
-          <label for="beach" class="competition-form__label">Обгорел на пляже</label>
+          <label for="beach" class="competition-form__label competition-form__label--check">Обгорел на пляже</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="norris" id="norris">
-          <label for="norris" class="competition-form__label">Видел Чака Норриса</label>
+          <label for="norris" class="competition-form__label competition-form__label--check">Видел Чака Норриса</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="souvenirs" id="souvenirs">
-          <label for="souvenirs" class="competition-form__label">Накупил сувениров</label>
+          <label for="souvenirs" class="competition-form__label competition-form__label--check">Накупил сувениров</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="tower" id="tower" checked>
-          <label for="tower" class="competition-form__label">Удержал башню</label>
+          <label for="tower" class="competition-form__label competition-form__label--check">Удержал башню</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--checkbox" type="checkbox"
                   name="hotel" id="hotel" checked>
-          <label for="hotel" class="competition-form__label">Разгромил отель</label>
+          <label for="hotel" class="competition-form__label competition-form__label--check">Разгромил отель</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--contact-info">
-      <legend class="competition-form__title competition-form__title--contact-info">Контактная информация</legend>
-      <p class="competition-form__field">
+    </div>
+    <div class="competition-form__fieldset competition-form__fieldset--contact-info">
+      <h2 class="competition-form__title competition-form__title--contact-info">Контактная информация</h2>
+      <p class="competition-form__field competition-form__field--contact">
         <label for="user-phone" class="competition-form__label competition-form__label--contact-info">Номер
           телефона</label>
-        <input class="competition-form__input" type="tel" id="user-phone" name="user-phone"
+        <input class="competition-form__input competition-form__input--contact" type="tel" id="user-phone" name="user-phone"
                 placeholder="Номер, пожалуйста">
       </p>
-      <p class="competition-form__field">
+      <p class="competition-form__field competition-form__field--contact">
         <label for="user-mail" class="competition-form__label competition-form__label--contact-info">Адрес почты</label>
-        <input class="competition-form__input" type="email" id="user-mail" name="user-mail"
+        <input class="competition-form__input competition-form__input--contact" type="email" id="user-mail" name="user-mail"
                 placeholder="Введите почту *">
       </p>
-    </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--inputs">
-      <legend class="competition-form__title">С каким приложением
+    </div>
+    <div class="competition-form__fieldset competition-form__fieldset--inputs competition-form__fieldset--variant">
+      <h2 class="competition-form__title">С каким приложением
         путешествовали?
-      </legend>
+      </h2>
       <ul class="competition-form__list">
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--radio" type="radio"
                   name="versions-group" id="ios" checked>
-          <label for="ios" class="competition-form__label">Pink для iOS</label>
+          <label for="ios" class="competition-form__label competition-form__label--check">Pink для iOS</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--radio" type="radio"
                   name="versions-group" id="android">
-          <label for="android" class="competition-form__label">Pink на Android</label>
+          <label for="android" class="competition-form__label competition-form__label--check">Pink на Android</label>
         </li>
         <li class="competition-form__list-item">
           <input class="visually-hidden competition-form__input competition-form__input--radio" type="radio"
                   name="versions-group" id="windows">
-          <label for="windows" class="competition-form__label">Windows Phone</label>
+          <label for="windows" class="competition-form__label competition-form__label--check">Windows Phone</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="competition-form__fieldset competition-form__fieldset--textarea">
-      <legend class="competition-form__title competition-form__title">Опишите свои эмоции
-      </legend>
+    </div>
+    <div class="competition-form__fieldset competition-form__fieldset--textarea">
+      <h2 class="competition-form__title competition-form__title--textarea ">Опишите свои эмоции
+      </h2>
       <textarea class="competition-form__textarea" id="user-emotions" name="user-emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-    </fieldset>
+    </div>
     <div class="competition-form__footer">
       <button class="button button--competition-form" type="submit">Отправить форму</button>
       <p class="competition-form__description competition-form__description--require">
-        <sup class="competition-form__sign">*</sup> — обязательные поля
+        <sup class="competition-form__sign">*</sup> — обязательные
+        <span class="competition-form__description--hide">для заполнения</span> поля
       </p>
     </div>
     </div>

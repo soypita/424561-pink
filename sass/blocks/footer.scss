@@ -4,7 +4,7 @@
   .footer__wrapper {
     width: 320px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 39px;
     text-align: center;
     padding-bottom: 10px;
   }
@@ -35,11 +35,46 @@
     &--index {
       display: block;
     }
+
+    .footer__logo,
+    .footer__developer {
+      display: block;
+    }
+
+    .footer__logo {
+      padding-left: 20px;
+    }
+
+    .footer__developer {
+      padding-right: 61px;
+      position: relative;
+      padding-top: 15px;
+    }
+
+    svg {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     .footer__wrapper {
       width: $desktop-width;
+      padding-top: 32px;
+    }
+
+    &--index {
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
+
+    .footer__logo {
+      padding-left: 10px;
+    }
+
+    .footer__developer {
+      font-size: 18px;
     }
   }
 }

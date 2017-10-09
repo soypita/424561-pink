@@ -1,8 +1,7 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
 
@@ -10,8 +9,16 @@
 
   background-color: $dark-blue;
 
+  .main-nav__wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
   .main-nav__list {
     @include reset();
+    width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -23,17 +30,23 @@
     color: #ffffff;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    line-height: 18px;
+    vertical-align: middle;
+    background-color: rgba(40, 54, 69, 0.8);
+    padding-top: 45px;
+
+    .main-nav__wrapper {
+      width: $desktop-width;
+      flex-direction: row;
+    }
 
     .main-nav__list {
+      width: 480px;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-start;
       margin: 0;
+      padding-left: 6px;
     }
   }
 }

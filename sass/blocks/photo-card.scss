@@ -6,15 +6,33 @@
   text-align: center;
   padding-top: 15px;
 
+  .photo-card__user-picture {
+    display: block;
+  }
+
   .photo-card__description {
     background-color: $grey;
     padding-bottom: 20px;
-    width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    justify-content: flex-start;
   }
 
   .photo-card__title {
     @include reset();
-    padding-top: 15px;
+    padding-top: 18px;
+    margin-right: auto;
+    margin-left: 18px;
+  }
+
+  .photo-card__user-comment {
+    @include reset();
+    margin-right: auto;
+    margin-left: 17px;
+    text-align: left;
+    padding-bottom: 11px;
   }
 
   .photo-card__user-name {
@@ -23,14 +41,85 @@
   }
 
   .photo-card__like-button {
+    margin-top: auto;
     font-size: 12px;
     color: $red;
     text-transform: uppercase;
+    margin-right: auto;
+    margin-left: 17px;
+    padding-left: 32px;
+  }
+
+  .photo-card__description--best {
+    width: 280px;
   }
 
   @media (min-width: $tablet-width) {
+    align-self: baseline;
+
     &--best {
       width: 100%;
+      padding-top: 43px;
+    }
+
+    .photo-card__user-picture {
+      width: 300px;
+      height: 300px;
+    }
+
+    .photo-card__user-picture--best {
+      width: 660px;
+      height: 510px;
+    }
+
+    .photo-card__description {
+      min-height: 135px;
+    }
+
+    .photo-card__like-button {
+      margin-left: 28px;
+      margin-right: auto;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    .photo-card__title {
+      margin-top: 3px;
+      margin-right: auto;
+      margin-left: 28px;
+    }
+
+    .photo-card__user-comment {
+      margin-left: 28px;
+      margin-right: auto;
+    }
+
+    .photo-card__description--best {
+      width: 620px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: auto;
+    }
+
+    .photo-card__title--best {
+      order: 0;
+      margin-top: 0;
+      padding-top: 23px;
+    }
+
+    .photo-card__like-button--best {
+      @include reset();
+      order: 1;
+      margin-left: auto;
+      margin-right: 57px;
+      padding-top: 24px;
+      margin-top: 0;
+    }
+
+    .photo-card__user-comment--best {
+      order: 2;
+      width: 100%;
+      padding-bottom: 3px;
     }
   }
 
@@ -40,6 +129,20 @@
 
     &--best {
       width: 100%;
+      padding-top: 55px;
+    }
+
+    .photo-card__user-picture {
+      height: 400px;
+    }
+
+    .photo-card__user-picture--best {
+      width: 1200px;
+      height: 506px;
+    }
+
+    .photo-card__description--best {
+      width: 937px;
     }
   }
 }

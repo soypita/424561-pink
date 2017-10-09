@@ -1,7 +1,6 @@
 .contacts {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 45px;
 
   text-align: center;
 
@@ -12,17 +11,26 @@
 
   .contacts__field {
     @include reset();
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    line-height: 25px;
     color: #df798f;
     font-size: 24px;
   }
 
+  .contacts__field--address {
+    width: 226px;
+    line-height: 30px;
+  }
+
   .contacts__title {
     @include reset();
-    padding-bottom: 40px;
+    padding-bottom: 34px;
     font-weight: 300;
     font-size: 24px;
-    text-transform: uppercase;
+    line-height: 28px;
   }
 
   .contacts__field-title {
@@ -49,9 +57,18 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    padding-top: 45px;
 
     .contacts_wrapper {
       width: $tablet-width;
+    }
+
+    .contacts__title {
+      font-size: 40px;
+      line-height: 50px;
+      width: 415px;
+      margin: 0 auto;
+      padding-bottom: 41px;
     }
 
     .contacts__base-information {
@@ -59,6 +76,10 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    .contacts__field-title {
+      padding-bottom: 6px;
     }
 
     .contacts__field--mail,
@@ -69,6 +90,7 @@
 
     .contacts__field--tel {
       width: 230px;
+      padding-left: 12px;
     }
 
     .contacts__field--mail {
@@ -78,13 +100,37 @@
     .contacts__field--address {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 300px;
+      padding-top: 21px;
+    }
+
+    &::after {
+      height: 371px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 65px;
+
     .contacts__field--address {
-      width: auto;
+      width: 300px;
+      padding-top: 10px;
+    }
+
+    .contacts__field--tel {
+      padding-left: 33px;
+      padding-top: 13px;
+      margin-right: 0;
+    }
+
+    .contacts__title {
+      font-size: 50px;
+      width: 480px;
+      line-height: 60px;
+    }
+
+    .contacts__field-title {
+      padding-bottom: 25px;
     }
 
     .contacts_wrapper {
@@ -93,6 +139,11 @@
 
     .contacts__field--mail {
       order: 1;
+      padding-top: 15px;
+    }
+
+    &::after {
+      height: 493px;
     }
   }
 }

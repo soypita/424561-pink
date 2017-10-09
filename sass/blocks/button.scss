@@ -10,8 +10,12 @@
     width: 280px;
     color: #ffffff;
     border: solid 2px white;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: $bold-font-weight;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   &--competition-form,
@@ -23,11 +27,42 @@
     font-weight: 700;
     text-transform: uppercase;
     align-self: center;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--download-shop {
+      margin-left: 20px;
+      width: 296px;
+      margin-top: 3px;
+      padding-top: 15px;
+      padding-bottom: 17px;
+    }
+
+    &--competition-form {
+      width: 297px;
+      margin-left: 21px;
+      margin-top: 47px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     &--nav-toggle {
       display: none;
+    }
+
+    &--competition-form {
+      margin-top: 0;
+      width: 299px;
+      margin-left: 10px;
+    }
+
+    &--download-shop {
+      margin-left: 10px;
+      font-size: 21px;
+      line-height: 18px;
     }
   }
 }
