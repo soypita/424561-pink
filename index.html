@@ -12,9 +12,12 @@
     <div class="main-nav__wrapper">
     <div class="header__logo-wrapper">
       <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink-logo">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Pink-logo">
+        </picture>
       </a>
-      <button class="button button--nav-toggle" type="button">Открыть меню</button>
+      <button class="button button--nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item-current">
@@ -123,10 +126,10 @@
           <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
             вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="reviews__toggles">
+          <button class="reviews__toggle reviews__toggle--first" type="button"><span class="visually-hidden">1</span></button>
+          <button class="reviews__toggle reviews__toggle--second" type="button"><span class="visually-hidden">2</span></button>
+          <button class="reviews__toggle reviews__toggle--third" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>
     </div>
@@ -142,7 +145,7 @@
           <b class="kits__name">База</b>
           <span class="kits__price">1,99 USD</span>
         </th>
-        <th class="kits__title">
+        <th class="kits__title  kits__title--hit">
           <b class="kits__name">Стандарт</b>
           <span class="kits__price">3,99 USD</span>
         </th>
@@ -152,28 +155,28 @@
         </th>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-filter">Розовый Фильтр</td>
-        <td class="kits__feature-filter">Розовый Фильтр</td>
-        <td class="kits__feature-filter">Розовый Фильтр</td>
-        <td class="kits__feature-filter">Розовый Фильтр</td>
+        <td class="kits__feature-check">Розовый Фильтр</td>
+        <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
+        <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
+        <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-smile">Смайлики</td>
-        <td class="kits__feature-smile">Смайлики</td>
-        <td class="kits__feature-smile">Смайлики</td>
-        <td class="kits__feature-smile">Смайлики</td>
+        <td class="kits__feature-check">Смайлики</td>
+        <td class="kits__feature-check kits__feature-check--no">Смайлики</td>
+        <td class="kits__feature-check kits__feature-check--yes">Смайлики</td>
+        <td class="kits__feature-check kits__feature-check--yes">Смайлики</td>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-comment">Комментарии</td>
-        <td class="kits__feature-comment">Комментарии</td>
-        <td class="kits__feature-comment">Комментарии</td>
-        <td class="kits__feature-comment">Комментарии</td>
+        <td class="kits__feature-check">Комментарии</td>
+        <td class="kits__feature-check kits__feature-check--no">Комментарии</td>
+        <td class="kits__feature-check kits__feature-check--no">Комментарии</td>
+        <td class="kits__feature-check kits__feature-check--yes">Комментарии</td>
       </tr>
     </table>
-    <p class="kits__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
+    <p class="kits__toggles">
+      <button class="kits__toggle" type="button"><span class="visually-hidden">1</span></button>
+      <button class="kits__toggle" type="button"><span class="visually-hidden">2</span></button>
+      <button class="kits__toggle" type="button"><span class="visually-hidden">3</span></button>
     </p>
     </div>
   </section>
@@ -198,6 +201,7 @@
     </p>
   </div>
   </div>
+  <div class="contacts__map"></div>
 </section>
 <footer class="footer footer--index">
   <div class="footer__wrapper">

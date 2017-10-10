@@ -2,7 +2,7 @@
   width: 100%;
 
   padding-top: 41px;
-  padding-bottom: 24px;
+  padding-bottom: 48px;
   text-align: center;
 
   .reviews__author-name {
@@ -27,6 +27,7 @@
 
   .reviews__list {
     @include reset();
+    position: relative;
   }
 
   .reviews__item {
@@ -35,11 +36,24 @@
 
   .reviews__toggles {
     @include reset();
+    position: absolute;
+    bottom: 16px;
+    left: 40%;
   }
 
   .reviews__wrapper {
     width: 320px;
     margin: 0 auto;
+  }
+
+  .reviews__toggle {
+    height: 11px;
+    padding-left: 0px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: #283645;
+    background-color: white;
+    margin-right: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -70,6 +84,11 @@
       font-size: 18px;
       line-height: 30px;
       padding-bottom: 34px;
+    }
+
+    .reviews__toggles {
+      top: 221px;
+      left: 45%;
     }
   }
 

@@ -32,6 +32,15 @@
     width: 280px;
   }
 
+  &--nav-toggle {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-width) {
     &--download-shop {
       margin-left: 20px;
@@ -45,6 +54,9 @@
       width: 297px;
       margin-left: 21px;
       margin-top: 47px;
+    }
+    &--nav-toggle {
+      margin-top: 17px;
     }
   }
 

@@ -3,6 +3,20 @@
   padding-top: 45px;
 
   text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 79.905px;
+    top: 368px;
+    left: 0;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   .contacts_wrapper {
     width: 320px;
@@ -44,20 +58,20 @@
     font-size: 24px;
   }
 
-  &::after {
-    content: "";
-    display: block;
+  .contacts__map {
     width: 100%;
-    height: 421px;
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-repeat: no-repeat;
+    min-height: 213px;
     background-color: #eae6dd;
-    background-position: center;
+    background-image: url("../img/icon-map-marker.svg"),
+    url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-mobile@2x.jpg");
-      background-size: 320px auto;
+      background: url("../img/icon-map-marker.svg") no-repeat center 107px,
+      #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
+      background-size: auto, 320px auto;
     }
   }
 
@@ -110,14 +124,27 @@
       padding-top: 21px;
     }
 
-    &::after {
-      height: 371px;
-      background-image: url("../img/bg-map-tablet@1x.jpg");
+    .contacts__map {
+      min-height: 371px;
+      background-image: url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position-y: 188px, -353px;
+      background-size: auto, auto;
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-map-tablet@2x.jpg");
-        background-size: 700px auto;
+        background: url("../img/icon-map-marker.svg") no-repeat,
+        #eae6dd url("../img/bg-map-tablet@2x.jpg")no-repeat;
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y: 188px, -353px;
+        background-size: auto, 700px auto;
       }
+    }
+
+    &::after {
+      top: 408px;
+      height: 70.905px;
     }
   }
 
@@ -154,8 +181,8 @@
       padding-top: 15px;
     }
 
-    &::after {
-      height: 493px;
+    .contacts__map {
+      min-height: 493px;
       background-image: url("../img/bg-map-desktop@1x.jpg");
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
