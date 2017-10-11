@@ -65,7 +65,7 @@
   .kits__feature-check:not(:first-of-type)::after {
     content: "";
     position: absolute;
-    width: 27px;
+    width: 30px;
     height: 27px;
     right: 21px;
     background-position: center;
@@ -223,6 +223,11 @@
     padding-top: 61px;
     padding-bottom: 94px;
 
+    &::before {
+      height: 110px;
+      top: -105px;
+    }
+
     .kits_wrapper {
       width: $desktop-width;
     }
@@ -254,6 +259,22 @@
       padding-bottom: 19px;
       font-size: 18px;
       padding-left: 21px;
+    }
+
+    .kits__title--hit {
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+
+    .kits__title--hit::before {
+      left: 6px;
+      top: 7px;
+    }
+
+    .kits__feature-check:not(:first-of-type)::after {
+      width: 30px;
+      right: 43%;
     }
   }
 }

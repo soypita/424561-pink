@@ -6,7 +6,7 @@
     @include reset();
   }
 
-  .effect_wrapper {
+  .effect__wrapper {
     width: 320px;
     margin: 0 auto;
   }
@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: block;
 
-    .effect_wrapper {
+    .effect__wrapper {
       width: $tablet-width;
       position: relative;
       display: flex;
@@ -23,7 +23,7 @@
       padding-top: 100px;
     }
 
-    .effect_wrapper::before {
+    .effect__wrapper::before {
       position: absolute;
       display: block;
       content: "24";
@@ -46,7 +46,7 @@
       background-repeat: no-repeat;
     }
 
-    .effect_wrapper::after {
+    .effect__wrapper::after {
       position: absolute;
       content: "";
       display: inline-block;
@@ -89,7 +89,7 @@
     background-color: $grey;
     padding-bottom: 111px;
 
-    .effect_wrapper {
+    .effect__wrapper {
       width: $desktop-width;
       padding-top: 120px;
     }
@@ -114,6 +114,26 @@
       color: #d22856;
       width: 400px;
       padding-top: 23px;
+    }
+
+    .effect__wrapper::before {
+      font-size: 120px;
+      line-height: 186.84px;
+      left: -17px;
+      width: 351px;
+      background-size: 301px;
+      padding-top: 137px;
+      padding-left: 0;
+      top: -12px;
+    }
+
+    .effect__wrapper::after {
+      left: 47px;
+      top: 110px;
+      z-index: 3;
+      width: 223px;
+      height: 223px;
+      box-shadow: 0 0 0 11pt #d22856;
     }
   }
 }

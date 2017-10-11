@@ -162,7 +162,7 @@
       background-image: url("../img/iphone-hand-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+        (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
         background-size: 1050px auto;
       }
@@ -190,6 +190,7 @@
 
     &--index {
       padding-bottom: 432px;
+      margin-top: -119px;
       margin-bottom: 0;
     }
 
