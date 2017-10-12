@@ -59,25 +59,17 @@
   }
 
   .kits__feature-check:not(:first-of-type) {
-    position: relative;
-  }
-
-  .kits__feature-check:not(:first-of-type)::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 27px;
-    right: 21px;
     background-position: center;
     background-repeat: no-repeat;
+    background-position-x: 96%;
   }
 
-  .kits__feature-check--yes::after {
+  .kits__feature-check--yes {
     background-image: url("../img/icon-yes.svg");
     background-size: 31px;
   }
 
-  .kits__feature-check--no::after {
+  .kits__feature-check--no {
     background-image: url("../img/icon-no.svg");
   }
 
@@ -193,10 +185,7 @@
 
     .kits__feature-check:not(:first-of-type) {
       font-size: 0;
-    }
-
-    .kits__feature-check:not(:first-of-type)::after {
-      right: 40%;
+      background-position: center;
     }
 
     .kits__title {
@@ -270,11 +259,6 @@
     .kits__title--hit::before {
       left: 6px;
       top: 7px;
-    }
-
-    .kits__feature-check:not(:first-of-type)::after {
-      width: 30px;
-      right: 43%;
     }
   }
 }
