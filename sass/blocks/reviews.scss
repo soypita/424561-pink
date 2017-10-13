@@ -118,17 +118,17 @@
     }
 
     .reviews__list::before {
-       position: absolute;
-       content: "";
-       width: 22px;
-       height: 42px;
-       left: 10px;
-       top: 42px;
-       background-image: url("../img/icon-review-arrow-left.svg");
-       background-position: center;
-       background-repeat: no-repeat;
-       opacity: 0.3;
-     }
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 42px;
+      left: 10px;
+      top: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3;
+    }
 
     .reviews__list::after {
       position: absolute;
