@@ -69,8 +69,7 @@
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background: url("../img/icon-map-marker.svg") no-repeat center 107px,
-      #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
+      background: url("../img/icon-map-marker.svg") no-repeat center 107px, #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
       background-size: auto, 320px auto;
     }
   }
@@ -165,6 +164,8 @@
 
     .contacts__field--mail {
       margin-right: 33px;
+      order: 1;
+      padding-top: 15px;
     }
 
     .contacts__title {
@@ -179,11 +180,6 @@
 
     .contacts_wrapper {
       width: $desktop-width;
-    }
-
-    .contacts__field--mail {
-      order: 1;
-      padding-top: 15px;
     }
 
     .contacts__map {

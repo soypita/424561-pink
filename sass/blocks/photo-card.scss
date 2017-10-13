@@ -98,9 +98,10 @@
       width: 100%;
       padding-top: 43px;
     }
+
     .photo-card__full-link--best::before {
-      top: 53px;
       right: 128px;
+      top: 55px;
     }
 
 
@@ -166,10 +167,6 @@
       order: 2;
       width: 100%;
       padding-bottom: 3px;
-    }
-
-    .photo-card__full-link--best::before {
-      top: 55px;
     }
   }
 
