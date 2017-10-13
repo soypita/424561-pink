@@ -11,7 +11,7 @@
     width: 100%;
     top: 387px;
     left: 0;
-    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -63,13 +63,12 @@
     width: 100%;
     min-height: 213px;
     background-color: #eae6dd;
-    background-image: url("../img/icon-map-marker.svg"),
-    url("../img/bg-map-mobile@1x.png");
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background: url("../img/icon-map-marker.svg") no-repeat center 107px,
       #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
       background-size: auto, 320px auto;
@@ -127,15 +126,14 @@
 
     .contacts__map {
       min-height: 371px;
-      background-image: url("../img/icon-map-marker.svg"),
-      url("../img/bg-map-tablet@1x.jpg");
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat;
       background-position-y: 188px, -353px;
       background-size: auto, auto;
+
       @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-        background: url("../img/icon-map-marker.svg") no-repeat,
-        #eae6dd url("../img/bg-map-tablet@2x.jpg") no-repeat;
+        (min-resolution: $retina-dppx) {
+        background: url("../img/icon-map-marker.svg") no-repeat, #eae6dd url("../img/bg-map-tablet@2x.jpg") no-repeat;
         background-repeat: no-repeat, no-repeat;
         background-position-x: center, center;
         background-position-y: 188px, -353px;
@@ -190,15 +188,14 @@
 
     .contacts__map {
       min-height: 493px;
-      background-image: url("../img/icon-map-marker.svg"),
-      url("../img/bg-map-desktop@1x.jpg");
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
       background-position-y: 253px, -288px;
       background-size: auto;
+
       @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-        background: url("../img/icon-map-marker.svg") no-repeat,
-        #eae6dd url("../img/bg-map-desktop@2x.jpg") no-repeat;
+        (min-resolution: $retina-dppx) {
+        background: url("../img/icon-map-marker.svg") no-repeat, #eae6dd url("../img/bg-map-desktop@2x.jpg") no-repeat;
         background-repeat: no-repeat, no-repeat;
         background-position-x: center, center;
         background-position-y: 253px, -288px;
