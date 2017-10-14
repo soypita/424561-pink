@@ -16,6 +16,15 @@
     flex-direction: column;
   }
 
+  .main-nav__toggle {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .main-nav__list {
     @include reset();
     width: 100%;
@@ -50,7 +59,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &--closed .button--nav-toggle {
+  &--closed .main-nav__toggle {
     background-image: url("../img/icon-menu-burger.svg");
   }
 
@@ -63,6 +72,10 @@
     .main-nav__wrapper {
       width: $desktop-width;
       flex-direction: row;
+    }
+
+    .main-nav__toggle {
+      display: none;
     }
 
     .main-nav__list {

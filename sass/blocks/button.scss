@@ -16,6 +16,7 @@
     font-weight: $bold-font-weight;
     font-size: 18px;
     line-height: 18px;
+    outline: none;
   }
 
   &--download-shop:hover {
@@ -60,14 +61,14 @@
   }
 
 
-  &--nav-toggle {
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  //&--nav-toggle {
+  //  width: 24px;
+  //  height: 24px;
+  //  background-color: transparent;
+  //  background-image: url("../img/icon-menu-cross.svg");
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //}
 
   @media (min-width: $tablet-width) {
     &--download-shop {
@@ -90,9 +91,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--nav-toggle {
-      display: none;
-    }
+    //&--nav-toggle {
+    //  display: none;
+    //}
 
     &--competition-form {
       margin-top: 6px;

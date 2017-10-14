@@ -8,17 +8,17 @@
 </head>
 <body>
 <header class="header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper">
       <div class="header__logo-wrapper">
-        <a href="index.html" class="header__logo">
+        <a class="header__logo" href="index.html">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Pink-logo">
           </picture>
         </a>
-        <button class="button button--nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item-current">
