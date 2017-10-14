@@ -56,13 +56,13 @@
       margin: 0;
       padding-left: 6px;
     }
-  }
 
-  .main-nav__link:hover {
-    color: $red;
-  }
+    .main-nav__link:hover {
+      color: $red;
+    }
 
-  .main-nav__link:active {
-    color: #6a757f;
+    .main-nav__link:active {
+      color: #6a757f;
+    }
   }
 }
