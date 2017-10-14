@@ -91,6 +91,16 @@
     padding-bottom: 2px;
   }
 
+  .competition-form__input:hover,
+  .competition-form__textarea:hover {
+    border-color: $dark-blue;
+  }
+
+  .competition-form__input:focus,
+  .competition-form__textarea:focus {
+    border-color: #d22856;
+  }
+
   .competition-form__textarea {
     width: 255px;
     min-height: 168px;
@@ -202,6 +212,22 @@
     background-image: url("../img/icon-map-marker.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .competition-form__label--radio:hover::before {
+    box-shadow: 0 0 0 2px $dark-blue;
+  }
+
+  .competition-form__label--checkbox:hover::before {
+    outline-color: $dark-blue;
+  }
+
+  .competition-form__label--radio:active::before {
+    box-shadow: 0 0 0 2px $red;
+  }
+
+  .competition-form__label--checkbox:active::before {
+    outline-color: $red;
   }
 
   @media (min-width: $tablet-width) {

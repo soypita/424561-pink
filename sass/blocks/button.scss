@@ -18,6 +18,16 @@
     line-height: 18px;
   }
 
+  &--download-shop:hover {
+    color: $red;
+    background-color: white;
+  }
+
+  &--download-shop:active {
+    color: #f2ced5;
+    background-color: white;
+  }
+
   &--competition-form,
   &--modal-action {
     color: white;
@@ -31,6 +41,24 @@
     padding-bottom: 15px;
     width: 280px;
   }
+
+
+  &--competition-form:hover,
+  &--modal-action:hover {
+    background-color: #1c9b5e;
+  }
+
+  &--competition-form:active,
+  &--modal-action:active {
+    background-color: #1c9b5e;
+    color: #7dbd99;
+  }
+
+  &--competition-form:disabled,
+  &--modal-action:disabled {
+    background-color: #e5e5e5;
+  }
+
 
   &--nav-toggle {
     width: 24px;

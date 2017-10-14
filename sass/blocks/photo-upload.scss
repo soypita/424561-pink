@@ -27,6 +27,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 26px;
+    outline: none;
+  }
+
+  .photo-upload__upload-button:hover,
+  .photo-upload__discard-button:hover {
+    background-color: $red;
+    color: white;
+  }
+
+  .photo-upload__upload-button:active,
+  .photo-upload__discard-button:active {
+    background-color: $red;
+    color: #e08195;
   }
 
   .photo-upload__upload-button {

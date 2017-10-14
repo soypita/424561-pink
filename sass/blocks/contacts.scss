@@ -145,6 +145,16 @@
       background-size: contain;
       background-position-y: 13px;
     }
+
+    .contacts__link--mail:hover {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    .contacts__link--mail:active {
+      color: #ced0d2;
+      text-decoration: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

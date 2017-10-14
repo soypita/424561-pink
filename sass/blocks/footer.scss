@@ -45,6 +45,15 @@
     border: solid 3px $grey;
   }
 
+  .footer__social-link:hover {
+    border-color: $dark-blue;
+  }
+
+  .footer__social-link:active {
+    border-color: #e9ebec;
+    opacity: 0.3;
+  }
+
   .footer__social-link--twitter {
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
@@ -67,6 +76,14 @@
     position: absolute;
     top: -6px;
     right: -38px;
+  }
+
+  .footer__developer:hover .footer__develop-logo {
+    fill: $dark-blue;
+  }
+
+  .footer__developer:active .footer__develop-logo {
+    fill: #bec2c7;
   }
 
   .footer__logo {

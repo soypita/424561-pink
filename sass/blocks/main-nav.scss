@@ -30,6 +30,14 @@
     color: #ffffff;
   }
 
+  .main-nav__link:hover {
+    color: $red;
+  }
+
+  .main-nav__link:active {
+    color: #6f3750;
+  }
+
   @media (min-width: $desktop-width) {
     line-height: 18px;
     vertical-align: middle;
@@ -48,5 +56,13 @@
       margin: 0;
       padding-left: 6px;
     }
+  }
+
+  .main-nav__link:hover {
+    color: $red;
+  }
+
+  .main-nav__link:active {
+    color: #6a757f;
   }
 }
