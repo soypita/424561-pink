@@ -1,7 +1,6 @@
 .header {
   width: 100%;
 
-
   .header__wrapper {
     width: 320px;
     margin: 0 auto;
@@ -30,8 +29,8 @@
     }
 
     .header__logo-wrapper {
-      padding-top: 40px;
-      padding-bottom: 37px;
+      padding-top: 28px;
+      padding-bottom: 32px;
     }
   }
 
@@ -45,6 +44,12 @@
       background: none;
       margin-right: 119px;
       padding-top: 0;
+    }
+
+    .header__logo {
+      position: relative;
+      top: -18px;
+      left: -10px;
     }
   }
 }

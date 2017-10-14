@@ -2,7 +2,7 @@
   width: 100%;
 
   padding-top: 41px;
-  padding-bottom: 24px;
+  padding-bottom: 48px;
   text-align: center;
 
   .reviews__author-name {
@@ -27,6 +27,7 @@
 
   .reviews__list {
     @include reset();
+    position: relative;
   }
 
   .reviews__item {
@@ -35,11 +36,24 @@
 
   .reviews__toggles {
     @include reset();
+    position: absolute;
+    bottom: 16px;
+    left: 40%;
   }
 
   .reviews__wrapper {
     width: 320px;
     margin: 0 auto;
+  }
+
+  .reviews__toggle {
+    height: 11px;
+    padding-left: 0;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: #283645;
+    background-color: white;
+    margin-right: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -71,13 +85,62 @@
       line-height: 30px;
       padding-bottom: 34px;
     }
+
+    .reviews__toggles {
+      top: 221px;
+      left: 45%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 133px;
+    padding-bottom: 52px;
 
     .reviews__wrapper {
       width: $desktop-width;
+      position: relative;
+    }
+
+    .reviews__wrapper::before {
+      content: "";
+      position: absolute;
+      width: 79px;
+      height: 64px;
+      top: -100px;
+      left: 46%;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .reviews__list {
+      position: relative;
+    }
+
+    .reviews__list::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 42px;
+      left: 10px;
+      top: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3;
+    }
+
+    .reviews__list::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 42px;
+      right: 10px;
+      top: 42px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3;
     }
 
     .reviews__text {
@@ -95,6 +158,10 @@
     .reviews__author-information {
       font-size: 18px;
       line-height: 30px;
+    }
+
+    .reviews__toggles {
+      @include hidden();
     }
   }
 }

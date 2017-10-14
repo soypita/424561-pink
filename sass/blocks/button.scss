@@ -16,6 +16,17 @@
     font-weight: $bold-font-weight;
     font-size: 18px;
     line-height: 18px;
+    outline: none;
+  }
+
+  &--download-shop:hover {
+    color: $red;
+    background-color: white;
+  }
+
+  &--download-shop:active {
+    color: #f2ced5;
+    background-color: white;
   }
 
   &--competition-form,
@@ -32,6 +43,33 @@
     width: 280px;
   }
 
+
+  &--competition-form:hover,
+  &--modal-action:hover {
+    background-color: #1c9b5e;
+  }
+
+  &--competition-form:active,
+  &--modal-action:active {
+    background-color: #1c9b5e;
+    color: #7dbd99;
+  }
+
+  &--competition-form:disabled,
+  &--modal-action:disabled {
+    background-color: #e5e5e5;
+  }
+
+
+  //&--nav-toggle {
+  //  width: 24px;
+  //  height: 24px;
+  //  background-color: transparent;
+  //  background-image: url("../img/icon-menu-cross.svg");
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //}
+
   @media (min-width: $tablet-width) {
     &--download-shop {
       margin-left: 20px;
@@ -46,15 +84,19 @@
       margin-left: 21px;
       margin-top: 47px;
     }
+
+    &--nav-toggle {
+      margin-top: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    &--nav-toggle {
-      display: none;
-    }
+    //&--nav-toggle {
+    //  display: none;
+    //}
 
     &--competition-form {
-      margin-top: 0;
+      margin-top: 6px;
       width: 299px;
       margin-left: 10px;
     }

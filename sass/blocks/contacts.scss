@@ -3,6 +3,21 @@
   padding-top: 45px;
 
   text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 387px;
+    left: 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 205px;
+    background-position-y: 13px;
+  }
 
   .contacts_wrapper {
     width: 320px;
@@ -44,15 +59,19 @@
     font-size: 24px;
   }
 
-  &::after {
-    content: "";
-    display: block;
+  .contacts__map {
     width: 100%;
-    height: 421px;
-    background-image: url("../img/bg-map-mobile@1x.png");
-    background-repeat: no-repeat;
+    min-height: 213px;
     background-color: #eae6dd;
-    background-position: center;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background: url("../img/icon-map-marker.svg") no-repeat center 107px, #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
+      background-size: auto, 320px auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -104,8 +123,37 @@
       padding-top: 21px;
     }
 
+    .contacts__map {
+      min-height: 371px;
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position-y: 188px, -353px;
+      background-size: auto, auto;
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background: url("../img/icon-map-marker.svg") no-repeat, #eae6dd url("../img/bg-map-tablet@2x.jpg") no-repeat;
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y: 188px, -353px;
+        background-size: auto, 700px auto;
+      }
+    }
+
     &::after {
-      height: 371px;
+      top: 395px;
+      background-size: contain;
+      background-position-y: 13px;
+    }
+
+    .contacts__link--mail:hover {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    .contacts__link--mail:active {
+      color: #ced0d2;
+      text-decoration: none;
     }
   }
 
@@ -115,12 +163,19 @@
     .contacts__field--address {
       width: 300px;
       padding-top: 10px;
+      padding-left: 30px;
     }
 
     .contacts__field--tel {
-      padding-left: 33px;
+      padding-left: 17px;
       padding-top: 13px;
       margin-right: 0;
+    }
+
+    .contacts__field--mail {
+      margin-right: 33px;
+      order: 1;
+      padding-top: 15px;
     }
 
     .contacts__title {
@@ -137,13 +192,27 @@
       width: $desktop-width;
     }
 
-    .contacts__field--mail {
-      order: 1;
-      padding-top: 15px;
+    .contacts__map {
+      min-height: 493px;
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position-y: 253px, -288px;
+      background-size: auto;
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background: url("../img/icon-map-marker.svg") no-repeat, #eae6dd url("../img/bg-map-desktop@2x.jpg") no-repeat;
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y: 253px, -288px;
+        background-size: auto;
+      }
     }
 
     &::after {
-      height: 493px;
+      background-size: contain;
+      top: 360px;
+      background-position-y: 13px;
     }
   }
 }

@@ -6,7 +6,7 @@
     @include reset();
   }
 
-  .effect_wrapper {
+  .effect__wrapper {
     width: 320px;
     margin: 0 auto;
   }
@@ -14,12 +14,50 @@
   @media (min-width: $tablet-width) {
     display: block;
 
-    .effect_wrapper {
+    .effect__wrapper {
       width: $tablet-width;
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       padding-top: 100px;
+    }
+
+    .effect__wrapper::before {
+      position: absolute;
+      display: block;
+      content: "24";
+      z-index: 1;
+      text-align: center;
+      font-weight: 700;
+      width: 239px;
+      height: 281px;
+      left: 20px;
+      padding-top: 151px;
+      top: -18px;
+      font-size: 96px;
+      line-height: 149.47px;
+      vertical-align: middle;
+      color: #d22856;
+      background-color: transparent;
+      background-image: url("../img/icon-timer.svg");
+      background-size: 239px, 280px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .effect__wrapper::after {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      left: 50px;
+      top: 128px;
+      z-index: 3;
+      width: 177px;
+      height: 177px;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 0 0 0 9pt #d22856;
     }
 
     .effect__promo {
@@ -50,7 +88,7 @@
     background-color: $grey;
     padding-bottom: 111px;
 
-    .effect_wrapper {
+    .effect__wrapper {
       width: $desktop-width;
       padding-top: 120px;
     }
@@ -75,6 +113,26 @@
       color: #d22856;
       width: 400px;
       padding-top: 23px;
+    }
+
+    .effect__wrapper::before {
+      font-size: 120px;
+      line-height: 186.84px;
+      left: -17px;
+      width: 351px;
+      background-size: 301px;
+      padding-top: 137px;
+      padding-left: 0;
+      top: -12px;
+    }
+
+    .effect__wrapper::after {
+      left: 47px;
+      top: 110px;
+      z-index: 3;
+      width: 223px;
+      height: 223px;
+      box-shadow: 0 0 0 11pt #d22856;
     }
   }
 }
