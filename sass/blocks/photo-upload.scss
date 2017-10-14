@@ -78,6 +78,10 @@
   }
 
   .photo-upload__filter {
+    width: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
     margin-right: 35px;
   }
 
@@ -115,8 +119,8 @@
     fill: $dark-blue;
   }
 
-  .photo-upload__manipulator:nth-of-type(5),
-  .photo-upload__manipulator:nth-of-type(6) {
+  .photo-upload__manipulator:nth-of-type(2),
+  .photo-upload__manipulator:nth-of-type(3) {
     display: none;
   }
 
@@ -159,18 +163,18 @@
       width: 202px;
     }
 
-    .photo-upload__manipulator:nth-of-type(5),
-    .photo-upload__manipulator:nth-of-type(6) {
+    .photo-upload__manipulator:nth-of-type(2),
+    .photo-upload__manipulator:nth-of-type(3) {
       display: block;
     }
 
     .photo-upload__filter:nth-of-type(1) {
       order: 0;
-      left: -24px;
-      top: -3px;
+      left: -34px;
+      top: -7px;
     }
 
-    .photo-upload__manipulator:nth-of-type(4) {
+    .photo-upload__manipulator:nth-of-type(1) {
       order: 1;
       top: -24px;
       left: 43px;
@@ -178,11 +182,11 @@
 
     .photo-upload__filter:nth-of-type(2) {
       order: 2;
-      top: 38px;
-      left: -9px;
+      top: 35px;
+      left: -19px;
     }
 
-    .photo-upload__manipulator:nth-of-type(5) {
+    .photo-upload__manipulator:nth-of-type(2) {
       order: 3;
       top: 14px;
       left: 43px;
@@ -191,10 +195,10 @@
     .photo-upload__filter:nth-of-type(3) {
       order: 4;
       top: 71px;
-      left: -207px;
+      left: -18px;
     }
 
-    .photo-upload__manipulator:nth-of-type(6) {
+    .photo-upload__manipulator:nth-of-type(3) {
       order: 5;
       top: 54px;
       left: 43px;
@@ -302,7 +306,7 @@
       width: 288px;
     }
 
-    .photo-upload__manipulator:nth-of-type(4) {
+    .photo-upload__manipulator:nth-of-type(1) {
       top: 11px;
       left: 22px;
     }
@@ -312,7 +316,7 @@
       top: 12px;
     }
 
-    .photo-upload__manipulator:nth-of-type(5) {
+    .photo-upload__manipulator:nth-of-type(2) {
       top: 32px;
       left: 35px;
     }
@@ -322,7 +326,7 @@
       left: -340px;
     }
 
-    .photo-upload__manipulator:nth-of-type(6) {
+    .photo-upload__manipulator:nth-of-type(3) {
       top: 49px;
       left: 116px;
     }
