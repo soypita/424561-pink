@@ -1,4 +1,10 @@
 .site-list {
+  display: none;
+
+  &--no-js {
+    display: block;
+  }
+
   .site-list__item {
     text-align: center;
     text-transform: uppercase;

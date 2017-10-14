@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
 
+
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
 
   color: #ffffff;
@@ -38,10 +39,26 @@
     color: #6f3750;
   }
 
+
+  &--no-js .main-nav__list {
+    display: block;
+  }
+
+  &--closed .main-nav__list {
+    display: none;
+  }
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--closed .button--nav-toggle {
+    background-image: url("../img/icon-menu-burger.svg");
+  }
+
   @media (min-width: $desktop-width) {
     line-height: 18px;
     vertical-align: middle;
-    background-color: rgba(40, 54, 69, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     padding-top: 45px;
 
     .main-nav__wrapper {
@@ -50,6 +67,7 @@
     }
 
     .main-nav__list {
+      display: flex;
       width: 480px;
       flex-direction: row;
       justify-content: flex-start;
