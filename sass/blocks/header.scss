@@ -14,6 +14,11 @@
     margin-right: 12px;
   }
 
+  .header__logo-image--tablet,
+  .header__logo-image--desktop {
+    display: none;
+  }
+
   .header__logo-wrapper {
     display: flex;
     justify-content: space-between;
@@ -31,6 +36,14 @@
     .header__logo-wrapper {
       padding-top: 28px;
       padding-bottom: 32px;
+    }
+
+    .header__logo-image--mobile {
+      display: none;
+    }
+
+    .header__logo-image--tablet {
+      display: block;
     }
   }
 
@@ -50,6 +63,14 @@
       position: relative;
       top: -18px;
       left: -10px;
+    }
+
+    .header__logo-image--tablet {
+      display: none;
+    }
+
+    .header__logo-image--desktop {
+      display: block;
     }
   }
 }

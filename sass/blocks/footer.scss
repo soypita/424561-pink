@@ -91,6 +91,10 @@
     padding-top: 11px;
   }
 
+  .footer__logo-image--desktop {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     .footer__wrapper {
       width: $tablet-width - 40px;
@@ -163,6 +167,13 @@
     .footer__social-link {
       width: 44px;
       height: 44px;
+    }
+    .footer__logo-image--mobile {
+      display: none;
+    }
+
+    .footer__logo-image--desktop {
+      display: block;
     }
   }
 }
