@@ -41,29 +41,29 @@
     content: "";
     display: block;
     width: 50px;
-    height: 55px;
+    height: 61px;
   }
 
   .download__link--ios::before {
-    background-image: url("../img/logo-apple.svg");
+    background-image: url("../img/sprite-bg.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -855px -154px;
     right: 75px;
     top: 20px;
   }
 
   .download__link--android::before {
-    background-image: url("../img/logo-android.svg");
+    background-image: url("../img/sprite-bg.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -474px -254px;
     right: -4px;
     top: 25px;
   }
 
   .download__link--windows::before {
-    background-image: url("../img/logo-microsoft.svg");
+    background-image: url("../img/sprite-bg.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -558px -255px;
     left: 35px;
     top: 26px;
   }
@@ -113,7 +113,6 @@
 
     .download__wrapper {
       width: $desktop-width;
-      //margin-right: 270px;
     }
 
     .download__list {

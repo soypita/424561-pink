@@ -52,14 +52,49 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("img"))
 });
 
-var svgstore = require("gulp-svgstore");
+var svgSprite = require("gulp-svg-sprite");
 
-gulp.task("sprite", function() {
-  return gulp.src("img/*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
+var configBG = {
+  shape: {
+    dimension :{
+
+    },
+    spacing: {
+      padding : 20,
+      box : 'content'
+    }
+  },
+  mode: {
+    view: { //Activate the "css" mode
+      bust: false,
+      sprite: "../sprite/sprite.svg"
+    },
+  },
+};
+
+var configInl = {
+  shape: {
+    spacing: {
+      padding : 0
+    }
+  },
+  mode: {
+    symbol: {
+      sprite: "../../img/sprite/sprite-symbol.svg"
+    },
+  },
+};
+
+gulp.task("inlineSprite", function() {
+  return gulp.src("img/inline/*.svg")
+    .pipe(svgSprite(configInl))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("img"));
 });
 
+gulp.task("bgSprite", function() {
+  return gulp.src("img/bg/*.svg")
+    .pipe(svgSprite(configBG))
+    .pipe(rename("sprite-bg.svg"))
+    .pipe(gulp.dest("img"));
+});
