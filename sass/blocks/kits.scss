@@ -4,6 +4,8 @@
 
   position: relative;
 
+  background-color: $grey;
+
   &::before {
     content: "";
     position: absolute;
@@ -21,9 +23,36 @@
     width: 320px;
     margin: 0 auto;
     overflow-x: hidden;
+    position: relative;
+    padding-bottom: 100px;
   }
 
-  background-color: $grey;
+  .kits__toggles {
+    @include reset();
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 49px;
+    left: 41%;
+  }
+
+  .kits__toggle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 20px;
+    cursor: pointer;
+    vertical-align: top;
+    border-radius: 50%;
+    background: #bec2c7;
+  }
+
+  .kits__slide--first:checked ~ .kits__toggles .kits__toggle[for="kits-slider1"],
+  .kits__slide--second:checked ~ .kits__toggles .kits__toggle[for="kits-slider2"],
+  .kits__slide--third:checked ~ .kits__toggles .kits__toggle[for="kits-slider3"] {
+    box-shadow: 0 0 0 2px $dark-blue;
+    background-color: white;
+  }
 
   .kits__title {
     @include reset();
@@ -37,16 +66,22 @@
 
   .kits__table {
     table-layout: fixed;
-
     width: 100%;
-
-    transform: translateX(-539px);
-
     margin: 0 auto;
-
     word-wrap: break-word;
-
     border-collapse: collapse;
+  }
+
+  .kits__slide--first:checked ~ .kits__table {
+    transform: translateX(-256px);
+  }
+
+  .kits__slide--second:checked ~ .kits__table {
+    transform: translateX(-539px);
+  }
+
+  .kits__slide--third:checked ~ .kits__table {
+    transform: translateX(-817px);
   }
 
   .kits__title,
@@ -61,7 +96,7 @@
   .kits__feature-check:not(:first-of-type) {
     background-position: center;
     background-repeat: no-repeat;
-    background-position-x: 96%;
+    background-position-x: 92%;
   }
 
   .kits__feature-check--yes {
@@ -107,24 +142,6 @@
     margin: 0 auto;
   }
 
-  .kits__toggles {
-    @include reset();
-    padding-top: 33px;
-    padding-left: 9px;
-    padding-bottom: 41px;
-    text-align: center;
-  }
-
-  .kits__toggle {
-    height: 11px;
-    padding-left: 0;
-    border-radius: 50%;
-    border-width: 3px;
-    border-color: #283645;
-    background-color: white;
-    margin-right: 10px;
-  }
-
   .kits__title--hit {
     position: relative;
     background-image: url("../img/bg-hit.svg");
@@ -140,6 +157,12 @@
     height: 73px;
     left: 3px;
     top: 7px;
+  }
+
+  .kits__feature-check--first {
+    font-size: 0;
+    border: none;
+    background-color: transparent;
   }
 
   @media (min-width: $tablet-width) {

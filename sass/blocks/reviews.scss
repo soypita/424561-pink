@@ -27,42 +27,75 @@
 
   .reviews__list {
     @include reset();
-    position: relative;
   }
 
   .reviews__item {
     @include reset();
-  }
-
-  .reviews__toggles {
-    @include reset();
-    position: absolute;
-    bottom: 16px;
-    left: 40%;
+    display: flex;
+    flex-direction: column;
   }
 
   .reviews__wrapper {
     width: 320px;
     margin: 0 auto;
+    position: relative;
+  }
+
+  .reviews__toggles {
+    @include reset();
+    display: flex;
+    position: absolute;
+    bottom: 22px;
+    left: 41%;
   }
 
   .reviews__toggle {
-    height: 11px;
-    padding-left: 0;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 20px;
+    cursor: pointer;
+    vertical-align: top;
     border-radius: 50%;
-    border-width: 3px;
-    border-color: #283645;
+    background: #bec2c7;
+  }
+
+  .reviews__toggle-prev,
+  .reviews__toggle-next {
+    display: none;
+  }
+
+  .reviews__hide {
+    display: none;
+  }
+
+  .reviews__slide--first:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider1"],
+  .reviews__slide--second:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider2"],
+  .reviews__slide--third:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider3"] {
+    box-shadow: 0 0 0 2px $dark-blue;
     background-color: white;
-    margin-right: 10px;
+  }
+
+  .reviews__item--first,
+  .reviews__item--second,
+  .reviews__item--third {
+    display: none;
+  }
+
+  .reviews__slide--first:checked ~ .reviews__list .reviews__item--first {
+    display: block;
+  }
+
+  .reviews__slide--second:checked ~ .reviews__list .reviews__item--second {
+    display: block;
+  }
+
+  .reviews__slide--third:checked ~ .reviews__list .reviews__item--third {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
     margin-top: 72px;
-
-    .reviews__item {
-      display: flex;
-      flex-direction: column;
-    }
 
     .reviews__author-name {
       order: 1;
@@ -101,6 +134,11 @@
       position: relative;
     }
 
+    .reviews__toggle-prev,
+    .reviews__toggle-next {
+      display: block;
+    }
+
     .reviews__wrapper::before {
       content: "";
       position: absolute;
@@ -117,10 +155,12 @@
       position: relative;
     }
 
-    .reviews__list::before {
+    .reviews__toggle-prev {
       position: absolute;
-      content: "";
-      width: 22px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 25px;
       height: 42px;
       left: 10px;
       top: 42px;
@@ -130,10 +170,12 @@
       opacity: 0.3;
     }
 
-    .reviews__list::after {
+    .reviews__toggle-next {
       position: absolute;
-      content: "";
-      width: 22px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 25px;
       height: 42px;
       right: 10px;
       top: 42px;

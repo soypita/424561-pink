@@ -108,41 +108,53 @@
   <section class="reviews">
     <h2 class="visually-hidden">Отзывы покупателей</h2>
     <div class="reviews__wrapper">
+      <input class="reviews__slide reviews__slide--first visually-hidden" type="radio" name="reviews-slider" id="reviews-slider1" checked="checked">
+      <input class="reviews__slide reviews__slide--second visually-hidden" type="radio" name="reviews-slider" id="reviews-slider2">
+      <input class="reviews__slide reviews__slide--third visually-hidden" type="radio" name="reviews-slider" id="reviews-slider3">
+      <div class="reviews__toggles">
+        <label class="reviews__toggle" for="reviews-slider1"><span class="visually-hidden">1</span></label>
+        <label class="reviews__toggle" for="reviews-slider2"><span class="visually-hidden">2</span></label>
+        <label class="reviews__toggle" for="reviews-slider3"><span class="visually-hidden">3</span></label>
+      </div>
       <div class="reviews__list slider">
-        <blockquote class="reviews__item">
+        <button class="reviews__toggle-prev"></button>
+        <blockquote class="reviews__item reviews__item--first">
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__author-information">25 лет, водитель трамвая</p>
           <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
             вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
-        <blockquote class="reviews__item visually-hidden">
-          <cite class="reviews__author-name">Николай Петров</cite>
+        <blockquote class="reviews__item reviews__item--second">
+          <cite class="reviews__author-name">Илья Никонов</cite>
           <p class="reviews__author-information">25 лет, водитель трамвая</p>
           <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
             вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
-        <blockquote class="reviews__item visually-hidden">
-          <cite class="reviews__author-name">Николай Петров</cite>
+        <blockquote class="reviews__item reviews__item--third">
+          <cite class="reviews__author-name">Василий Никуличев</cite>
           <p class="reviews__author-information">25 лет, водитель трамвая</p>
           <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
             вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
-        <p class="reviews__toggles">
-          <button class="reviews__toggle reviews__toggle--first" type="button"><span class="visually-hidden">1</span></button>
-          <button class="reviews__toggle reviews__toggle--second" type="button"><span class="visually-hidden">2</span></button>
-          <button class="reviews__toggle reviews__toggle--third" type="button"><span class="visually-hidden">3</span></button>
-        </p>
+        <button class="reviews__toggle-next"></button>
       </div>
     </div>
   </section>
   <section class="kits">
-    <div class="kits_wrapper">
     <h2 class="visually-hidden">Варианты комплектации приложения</h2>
-    <table class="kits__table slider">
-      <tr class="kits__row">
-        <th class="kits__title kits__title--empty">
-        </th>
-        <th class="kits__title">
+    <div class="kits_wrapper">
+      <input class="kits__slide kits__slide--first visually-hidden" type="radio" name="kits-slider" id="kits-slider1">
+      <input class="kits__slide kits__slide--second visually-hidden" type="radio" name="kits-slider" id="kits-slider2" checked="checked">
+      <input class="kits__slide kits__slide--third visually-hidden" type="radio" name="kits-slider" id="kits-slider3">
+      <div class="kits__toggles">
+        <label class="kits__toggle" for="kits-slider1"><span class="visually-hidden">1</span></label>
+        <label class="kits__toggle" for="kits-slider2"><span class="visually-hidden">2</span></label>
+        <label class="kits__toggle" for="kits-slider3"><span class="visually-hidden">3</span></label>
+      </div>
+      <table class="kits__table slider">
+        <tr class="kits__row">
+          <th class="kits__title kits__title--empty"></th>
+          <th class="kits__title">
           <b class="kits__name">База</b>
           <span class="kits__price">1,99 USD</span>
         </th>
@@ -156,29 +168,24 @@
         </th>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-check">Розовый Фильтр</td>
+        <td class="kits__feature-check kits__feature-check--first">Розовый Фильтр</td>
         <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
         <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
         <td class="kits__feature-check kits__feature-check--yes">Розовый Фильтр</td>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-check">Смайлики</td>
+        <td class="kits__feature-check kits__feature-check--first">Смайлики</td>
         <td class="kits__feature-check kits__feature-check--no">Смайлики</td>
         <td class="kits__feature-check kits__feature-check--yes">Смайлики</td>
         <td class="kits__feature-check kits__feature-check--yes">Смайлики</td>
       </tr>
       <tr class="kits__row">
-        <td class="kits__feature-check">Комментарии</td>
+        <td class="kits__feature-check kits__feature-check--first">Комментарии</td>
         <td class="kits__feature-check kits__feature-check--no">Комментарии</td>
         <td class="kits__feature-check kits__feature-check--no">Комментарии</td>
         <td class="kits__feature-check kits__feature-check--yes">Комментарии</td>
       </tr>
     </table>
-    <p class="kits__toggles">
-      <button class="kits__toggle" type="button"><span class="visually-hidden">1</span></button>
-      <button class="kits__toggle" type="button"><span class="visually-hidden">2</span></button>
-      <button class="kits__toggle" type="button"><span class="visually-hidden">3</span></button>
-    </p>
     </div>
   </section>
 </main>
@@ -202,7 +209,9 @@
     </p>
   </div>
   </div>
-  <div class="contacts__map"></div>
+  <div class="contacts__map">
+    <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.32089461586226!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503756321000" style="border:0" allowfullscreen></iframe>
+  </div>
 </section>
 <footer class="footer footer--index">
   <div class="footer__wrapper">

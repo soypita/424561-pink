@@ -12,3 +12,61 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+var reviewsNextButton = document.querySelector('.reviews__toggle-next');
+var reviewsPrevButton = document.querySelector('.reviews__toggle-prev');
+var firstReview = document.querySelector('.reviews__slide--first');
+var secondReview = document.querySelector('.reviews__slide--second');
+var thirdReview = document.querySelector('.reviews__slide--third');
+
+var currentReview;
+
+reviewsNextButton.addEventListener('click', function() {
+
+  currentReview = firstReview.checked ? 0 : (secondReview.checked ? 1 : 2);
+
+  currentReview = (currentReview + 1) % 3;
+
+  console.log(currentReview);
+
+  switch (currentReview) {
+    case 0: {
+      firstReview.checked = true;
+      break;
+    }
+    case 1: {
+      secondReview.checked = true;
+      break;
+    }
+    case 2: {
+      thirdReview.checked = true;
+      break;
+    }
+  }
+});
+
+reviewsPrevButton.addEventListener('click', function() {
+
+  currentReview = firstReview.checked ? 0 : (secondReview.checked ? 1 : 2);
+
+  currentReview = ((currentReview - 1) + 3) % 3;
+
+  console.log(currentReview);
+
+  switch (currentReview) {
+    case 0: {
+      firstReview.checked = true;
+      break;
+    }
+    case 1: {
+      secondReview.checked = true;
+      break;
+    }
+    case 2: {
+      thirdReview.checked = true;
+      break;
+    }
+  }
+});
+
+

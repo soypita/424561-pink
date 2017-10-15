@@ -61,6 +61,7 @@
 
   .contacts__map {
     width: 100%;
+    position: relative;
     min-height: 213px;
     background-color: #eae6dd;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
@@ -72,6 +73,14 @@
       background: url("../img/icon-map-marker.svg") no-repeat center 107px, #eae6dd url("../img/bg-map-mobile@2x.jpg") no-repeat center;
       background-size: auto, 320px auto;
     }
+  }
+
+  .contacts__google-map {
+    width: 100%;
+    height: 213px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -138,6 +147,10 @@
         background-position-y: 188px, -353px;
         background-size: auto, 700px auto;
       }
+    }
+
+    .contacts__google-map {
+      height: 371px;
     }
 
     &::after {
@@ -207,6 +220,10 @@
         background-position-y: 253px, -288px;
         background-size: auto;
       }
+    }
+
+    .contacts__google-map {
+      height: 493px;
     }
 
     &::after {
