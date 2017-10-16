@@ -191,8 +191,8 @@
   }
 
   .competition-form__input--checkbox:checked + .competition-form__label--checkbox::before {
-    background-image: url("../img/icon-yes-red.svg");
-    background-position: center;
+    background-image: url("../img/sprite-bg.svg");
+    background-position: -3213px -232px;
     background-repeat: no-repeat;
   }
 
@@ -209,7 +209,7 @@
   }
 
   .competition-form__input--radio:checked + .competition-form__label--radio::before {
-    background-image: url("../img/icon-map-marker.svg");
+    background-image: url("../img/bg/icon-map-marker.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -415,8 +415,8 @@
       width: 62px;
       height: 60px;
       background-color: $grey;
-      background-image: url("../img/icon-phone.svg");
-      background-position: center;
+      background-image: url("../img/sprite-bg.svg");
+      background-position: -3199px -719px;
       background-repeat: no-repeat;
       border-radius: 2px;
       right: 53px;
@@ -429,8 +429,8 @@
       width: 62px;
       height: 60px;
       background-color: $grey;
-      background-image: url("../img/icon-mail.svg");
-      background-position: center;
+      background-image: url("../img/sprite-bg.svg");
+      background-position: -3199px -1715px;
       background-repeat: no-repeat;
       border-radius: 2px;
       right: 54px;

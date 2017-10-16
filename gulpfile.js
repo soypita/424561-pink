@@ -60,7 +60,7 @@ var configBG = {
 
     },
     spacing: {
-      padding : 20,
+      padding : 240,
       box : 'content'
     }
   },
