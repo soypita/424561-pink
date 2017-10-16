@@ -69,5 +69,3 @@ reviewsPrevButton.addEventListener('click', function() {
     }
   }
 });
-
-
