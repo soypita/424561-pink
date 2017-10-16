@@ -91,6 +91,16 @@
     padding-top: 11px;
   }
 
+  .footer__logo-image:hover {
+    fill: $red;
+  }
+
+  .footer__logo-image:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+
+
   .footer__logo-image--desktop {
     display: none;
   }

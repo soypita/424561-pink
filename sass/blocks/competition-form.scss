@@ -91,6 +91,7 @@
     padding-bottom: 2px;
   }
 
+
   .competition-form__input:hover,
   .competition-form__textarea:hover {
     border-color: $dark-blue;
@@ -106,6 +107,7 @@
     min-height: 168px;
     padding-top: 14px;
   }
+
 
   .competition-form__title {
     @include reset();
@@ -288,7 +290,7 @@
     .competition-form__fieldset--textarea,
     .competition-form__fieldset--contact-info {
       border-width: 2px;
-      border-style: groove;
+      border-style: solid;
       border-color: #e5e5e5;
       border-image: initial;
       background-color: white;
@@ -409,7 +411,7 @@
       padding-left: 9px;
     }
 
-    .competition-form__field--contact--phone::before {
+    .competition-form__field--phone::before {
       content: "";
       position: absolute;
       width: 62px;
@@ -423,7 +425,7 @@
       top: 44px;
     }
 
-    .competition-form__field--contact--mail::before {
+    .competition-form__field--mail::before {
       content: "";
       position: absolute;
       width: 62px;
@@ -631,12 +633,12 @@
       margin-right: 15px;
     }
 
-    .competition-form__field--contact--phone::before {
+    .competition-form__field--phone::before {
       top: 39px;
       left: 372px;
     }
 
-    .competition-form__field--contact--mail::before {
+    .competition-form__field--mail::before {
       right: 51px;
       top: 40px;
     }

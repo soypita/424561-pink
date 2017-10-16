@@ -39,6 +39,7 @@
     color: #ffffff;
   }
 
+
   .main-nav__link:hover {
     color: $red;
   }
@@ -67,7 +68,7 @@
   }
 
   .main-nav__toggle:hover {
-    background-position: -1774px -2449px;
+    background-position: -1770px -2453px
   }
 
   .main-nav__toggle:active {
@@ -108,6 +109,15 @@
 
     .main-nav__link:hover {
       color: $red;
+    }
+
+    .main-nav__link {
+      display: block;
+      min-height: 30px;
+    }
+
+    .main-nav__link--current {
+      border-bottom: solid 2px #ffffff;
     }
 
     .main-nav__link:active {

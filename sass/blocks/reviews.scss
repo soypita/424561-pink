@@ -185,6 +185,17 @@
       opacity: 0.3;
     }
 
+    .reviews__toggle-prev:hover,
+    .reviews__toggle-next:hover {
+      opacity: 0.6;
+    }
+
+    .reviews__toggle-prev:active,
+    .reviews__toggle-next:active {
+      opacity: 0.1;
+    }
+
+
     .reviews__text {
       width: 700px;
       margin: 0 auto;

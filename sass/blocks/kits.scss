@@ -11,7 +11,7 @@
     position: absolute;
     width: 100%;
     height: 100px;
-    top: -59px;
+    top: -27px;
     transform: rotate(180deg);
     background-image: url("../img/sprite-bg.svg");
     background-repeat: no-repeat;
@@ -97,8 +97,10 @@
   }
 
   .kits__feature-check--yes {
-    background-image: url("../img/sprite-bg.svg");
-    background-position: -2044px -2435px
+    background-image: url("../img/bg/icon-yes.svg");
+    background-position: right;
+    background-position-x: 229px;
+    background-size: 32px;
   }
 
   .kits__feature-check--no {
@@ -212,7 +214,8 @@
     }
 
     .kits__feature-check--yes {
-      background-position: -2209px -2438px;
+      background-position: center;
+      background-position-x: 54%;
     }
 
     .kits__feature-check--no {
@@ -300,7 +303,7 @@
     }
 
     .kits__feature-check--yes {
-      background-position: -2173px -2434px;
+      background-position-x: 51%;
     }
 
     .kits__feature-check--no {
