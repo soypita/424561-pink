@@ -3,6 +3,11 @@
   position: relative;
   z-index: 1;
 
+
+  &--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
 
   color: #ffffff;
@@ -48,18 +53,13 @@
     color: #6f3750;
   }
 
-  &--no-js .main-nav__list {
-    display: block;
-  }
-
   &--closed .main-nav__list {
     display: none;
   }
 
-  &--closed {
-    background-color: rgba(0, 0, 0, 0.3);
+  &--nojs .main-nav__list {
+    display: block;
   }
-
 
   .main-nav__toggle-logo {
     display: none;
