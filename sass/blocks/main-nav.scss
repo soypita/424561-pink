@@ -17,12 +17,12 @@
   }
 
   .main-nav__toggle {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
     background-color: transparent;
-    background-image: url("../img/icon-menu-cross.svg");
+    background-image: url("../img/sprite-bg.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -1267px -2450px;
   }
 
   .main-nav__list {
@@ -59,8 +59,27 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &--closed .main-nav__toggle {
-    background-image: url("../img/icon-menu-burger.svg");
+  .main-nav__toggle--close {
+    background-image: url("../img/sprite-bg.svg");
+    background-position: -1863px -1351px;
+    width: 52px;
+    height: 34px;
+  }
+
+  .main-nav__toggle:hover {
+    background-position: -1770px -2453px;
+  }
+
+  .main-nav__toggle:active {
+    background-position: -1855px -1895px;
+  }
+
+  .main-nav__toggle--close:hover {
+    background-position: -1323px -1895px;
+  }
+
+  .main-nav__toggle--close:active {
+    background-position: -792px -1892px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +108,15 @@
 
     .main-nav__link:hover {
       color: $red;
+    }
+
+    .main-nav__link {
+      display: block;
+      min-height: 30px;
+    }
+
+    .main-nav__link--current {
+      border-bottom: solid 2px #ffffff;
     }
 
     .main-nav__link:active {
