@@ -28,18 +28,36 @@
     padding-bottom: 15px;
     border-radius: 26px;
     outline: none;
+    background-color: #f2f2f2;
   }
 
-  .photo-upload__upload-button:hover,
-  .photo-upload__discard-button:hover {
+  .photo-upload__discard-button {
+    border: solid 3px $dark-blue;
+    color: $dark-blue;
+    opacity: 0.1;
+  }
+
+  .photo-upload__upload-button:hover {
     background-color: $red;
     color: white;
   }
 
-  .photo-upload__upload-button:active,
-  .photo-upload__discard-button:active {
+  .photo-upload__upload-button:active {
     background-color: $red;
     color: #e08195;
+  }
+
+  .photo-upload__discard-button:hover {
+    opacity: 0.3;
+
+  }
+
+  .photo-upload__discard-button:active {
+    opacity: 1;
+    color: #cdd0d3;
+    background-color: #b5b9be;
+    border: solid 3px #b5b9be;
+
   }
 
   .photo-upload__upload-button {
@@ -83,6 +101,7 @@
     outline: none;
     background-color: transparent;
     margin-right: 35px;
+    opacity: 0.3;
   }
 
   .photo-upload__filter:first-of-type {
@@ -94,7 +113,12 @@
     margin-top: 5px;
   }
 
+  .photo-upload__filter:hover {
+    opacity: 0.5;
+  }
+
   .photo-upload__filter--current {
+    opacity: 1;
     fill: $red;
   }
 
@@ -116,12 +140,16 @@
     right: 33px;
     border-radius: 50%;
     background-color: $grey;
-    fill: $dark-blue;
+    fill: $red;
   }
 
   .photo-upload__manipulator:nth-of-type(2),
   .photo-upload__manipulator:nth-of-type(3) {
     display: none;
+  }
+
+  .photo-upload__tumble--active {
+    background-color: $red;
   }
 
   @media (min-width: $tablet-width) {
