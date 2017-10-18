@@ -25,9 +25,13 @@ var firstFilter = document.querySelector('.photo-upload__filter:nth-of-type(1)')
 var secondFilter = document.querySelector('.photo-upload__filter:nth-of-type(2)');
 var thirdFilter = document.querySelector('.photo-upload__filter:nth-of-type(3)');
 
-var firstManipulator = document.querySelector('.photo-upload__manipulator:nth-of-type(1)').querySelector('.photo-upload__tumble');
-var secondManipulator = document.querySelector('.photo-upload__manipulator:nth-of-type(2)').querySelector('.photo-upload__tumble');
-var thirdManipulator = document.querySelector('.photo-upload__manipulator:nth-of-type(3)').querySelector('.photo-upload__tumble');
+var firstSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(1)');
+var secondSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(2)');
+var thirdSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(3)');
+
+var firstManipulator = firstSliderBlock.querySelector('.photo-upload__tumble');
+var secondManipulator = secondSliderBlock.querySelector('.photo-upload__tumble');
+var thirdManipulator = thirdSliderBlock.querySelector('.photo-upload__tumble');
 
 var currentFilter = 0;
 
@@ -36,16 +40,20 @@ firstFilter.addEventListener('click', function() {
     case 1: {
       secondFilter.classList.remove('photo-upload__filter--current');
       secondManipulator.classList.remove('photo-upload__tumble--active');
+      secondSliderBlock.classList.remove('photo-upload__manipulator--current');
       break;
     }
     case 2: {
       thirdFilter.classList.remove('photo-upload__filter--current');
       thirdManipulator.classList.remove('photo-upload__tumble--active');
+      thirdSliderBlock.classList.remove('photo-upload__manipulator--current');
       break;
     }
   }
   firstFilter.classList.add('photo-upload__filter--current');
   firstManipulator.classList.add('photo-upload__tumble--active');
+  firstSliderBlock.classList.add('photo-upload__manipulator--current');
+
   currentFilter = 0;
 });
 
@@ -54,16 +62,19 @@ secondFilter.addEventListener('click', function() {
     case 0: {
       firstFilter.classList.remove('photo-upload__filter--current');
       firstManipulator.classList.remove('photo-upload__tumble--active');
+      firstSliderBlock.classList.remove('photo-upload__manipulator--current');
       break;
     }
     case 2: {
       thirdFilter.classList.remove('photo-upload__filter--current');
       thirdManipulator.classList.remove('photo-upload__tumble--active');
+      thirdSliderBlock.classList.remove('photo-upload__manipulator--current');
       break;
     }
   }
   secondFilter.classList.add('photo-upload__filter--current');
   secondManipulator.classList.add('photo-upload__tumble--active');
+  secondSliderBlock.classList.add('photo-upload__manipulator--current');
   currentFilter = 1;
 });
 
@@ -72,15 +83,19 @@ thirdFilter.addEventListener('click', function() {
     case 0: {
       firstFilter.classList.remove('photo-upload__filter--current');
       firstManipulator.classList.remove('photo-upload__tumble--active');
+      firstSliderBlock.classList.remove('photo-upload__manipulator--current');
       break;
     }
     case 1: {
       secondFilter.classList.remove('photo-upload__filter--current');
       secondManipulator.classList.remove('photo-upload__tumble--active');
+      secondSliderBlock.classList.remove('photo-upload__manipulator--current');
+
       break;
     }
   }
   thirdFilter.classList.add('photo-upload__filter--current');
   thirdManipulator.classList.add('photo-upload__tumble--active');
+  thirdSliderBlock.classList.add('photo-upload__manipulator--current');
   currentFilter = 2;
 });
