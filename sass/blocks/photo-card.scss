@@ -74,7 +74,7 @@
   .photo-card__full-link--best::before {
     position: absolute;
     content: "Панорама дня";
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     width: 129px;
     height: 25px;
@@ -88,6 +88,7 @@
     top: 0;
     background-color: $red;
     color: white;
+    font-weight: 700;
   }
 
 
@@ -100,7 +101,7 @@
     }
 
     .photo-card__full-link--best::before {
-      right: 128px;
+      right: 19px;
       top: 55px;
     }
 

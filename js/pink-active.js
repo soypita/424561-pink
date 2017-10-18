@@ -1,17 +1,22 @@
 var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navToogleClose = document.querySelector('.main-nav__toggle');
+var navToggleCross = document.querySelector('.main-nav__toggle').querySelector('.main-nav__toggle-logo:nth-of-type(1)');
+var navToggleBurger = document.querySelector('.main-nav__toggle').querySelector('.main-nav__toggle-logo:nth-of-type(2)');
 
 navMain.classList.remove('main-nav--nojs');
-navToggle.classList.add('main-nav__toggle--close');
+navMain.classList.add('main-nav--closed');
+navToggleCross.classList.remove('main-nav__toggle--open');
+navToggleBurger.classList.add('main-nav__toggle--open');
 
-navToggle.addEventListener('click', function() {
+navToogleClose.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
-    navToggle.classList.remove('main-nav__toggle--close');
+    navToggleBurger.classList.remove('main-nav__toggle--open');
+    navToggleCross.classList.add('main-nav__toggle--open');
   } else {
     navMain.classList.add('main-nav--closed');
-    navToggle.classList.add('main-nav__toggle--close');
-  }
+    navToggleBurger.classList.add('main-nav__toggle--open');
+    navToggleCross.classList.remove('main-nav__toggle--open');  }
 });
 
 var reviewsNextButton = document.querySelector('.reviews__toggle-next');
@@ -69,3 +74,5 @@ reviewsPrevButton.addEventListener('click', function() {
     }
   }
 });
+
+
