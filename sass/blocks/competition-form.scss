@@ -1,5 +1,6 @@
 .competition-form {
   width: 100%;
+  margin-bottom: 11px;
 
   .competition-form__wrapper {
     width: 320px;
@@ -86,9 +87,9 @@
     outline: none;
     border-radius: 2px;
     border: solid 2px $grey;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 21px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
   }
 
   .competition-form__input:hover,
@@ -103,7 +104,7 @@
 
   .competition-form__textarea {
     width: 255px;
-    min-height: 168px;
+    min-height: 178px;
     padding-top: 14px;
   }
 
