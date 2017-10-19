@@ -24,9 +24,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "images": "gulp images",
     "webp": "gulp webp",
-    "sprite": "gulp inlineSprite",
-    "bg-sprite": "gulp bgSprite",
-    "build": "gulp style",
+    "build": "gulp build",
     "start": "gulp serve"
   },
   "browserslist": [
