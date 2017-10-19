@@ -91,7 +91,6 @@
     font-weight: 700;
   }
 
-
   @media (min-width: $tablet-width) {
     align-self: baseline;
 
@@ -104,7 +103,6 @@
       right: 19px;
       top: 55px;
     }
-
 
     .photo-card__description {
       min-height: 135px;
@@ -187,8 +185,9 @@
     .photo-card__description--best {
       width: 937px;
     }
+
     .photo-card__full-link--best::before {
-    right: 129px;
+      right: 129px;
     }
   }
 }

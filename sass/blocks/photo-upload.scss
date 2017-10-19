@@ -33,6 +33,7 @@
 
   .photo-upload__discard-button {
     border: solid 3px $dark-blue;
+    margin-bottom: 42px;
     color: $dark-blue;
     opacity: 0.1;
   }
@@ -49,7 +50,6 @@
 
   .photo-upload__discard-button:hover {
     opacity: 0.3;
-
   }
 
   .photo-upload__discard-button:active {
@@ -57,17 +57,12 @@
     color: #cdd0d3;
     background-color: #b5b9be;
     border: solid 3px #b5b9be;
-
   }
 
   .photo-upload__upload-button {
     margin-bottom: 11px;
   }
-
-  .photo-upload__discard-button {
-    margin-bottom: 42px;
-  }
-
+  
   .photo-upload__promo {
     @include reset();
     text-align: center;
