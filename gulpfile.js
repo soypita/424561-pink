@@ -114,7 +114,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "images", "webp", "inlineSprite", "bgSprite", done);
+  run("clean", "copy", "style", "inlineSprite", "bgSprite", done);
 });
 
 

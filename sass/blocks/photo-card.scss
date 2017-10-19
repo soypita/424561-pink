@@ -187,5 +187,8 @@
     .photo-card__description--best {
       width: 937px;
     }
+    .photo-card__full-link--best::before {
+    right: 129px;
+    }
   }
 }
