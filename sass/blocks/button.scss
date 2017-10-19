@@ -79,6 +79,13 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    &--modal-action {
+      width: 300px;
+    }
+
+   }
+
   @media (min-width: $desktop-width) {
     &--competition-form {
       margin-top: 6px;
@@ -90,6 +97,10 @@
       margin-left: 10px;
       font-size: 21px;
       line-height: 18px;
+    }
+
+    &--modal-request {
+      width: 460px;
     }
   }
 }

@@ -18,3 +18,41 @@ navToogleClose.addEventListener('click', function() {
     navToggleBurger.classList.add('main-nav__toggle--open');
     navToggleCross.classList.remove('main-nav__toggle--open');  }
 });
+
+var submitForm = document.querySelector('.button--competition-form');
+var requerdFields = document.querySelectorAll('.competition-form__input--require');
+var succsessModal = document.querySelector('.modal--request');
+var errorModal = document.querySelector('.modal--error');
+
+submitForm.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  var isValid = true;
+  for (var i = 0; i < requerdFields.length; i++) {
+    var input = requerdFields[i];
+    if(!input.value) {
+      input.classList.add('competition-form__input--error')
+      isValid = false;
+      break;
+    }
+  }
+
+  if (isValid) {
+    succsessModal.classList.add('modal--open');
+  } else {
+    errorModal.classList.add('modal--open');
+  }
+});
+
+
+var modalErrorButton = document.querySelector('.button--modal-error');
+var modalSuccsessButton = document.querySelector('.button--modal-request');
+
+modalErrorButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  errorModal.classList.remove('modal--open');
+});
+
+modalSuccsessButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  succsessModal.classList.remove('modal--open');
+});
