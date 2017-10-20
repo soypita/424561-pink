@@ -1,5 +1,6 @@
 .competition-form {
   width: 100%;
+  margin-bottom: 11px;
 
   .competition-form__wrapper {
     width: 320px;
@@ -86,9 +87,9 @@
     outline: none;
     border-radius: 2px;
     border: solid 2px $grey;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 21px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
   }
 
   .competition-form__input:hover,
@@ -103,7 +104,7 @@
 
   .competition-form__textarea {
     width: 255px;
-    min-height: 168px;
+    min-height: 178px;
     padding-top: 14px;
   }
 
@@ -373,9 +374,10 @@
     }
 
     .competition-form__input--contact {
-      width: 474px;
+      width: 409px;
       padding-top: 5px;
       padding-left: 21px;
+      padding-right: 65px;
       padding-bottom: 5px;
     }
 
@@ -413,27 +415,27 @@
       content: "";
       position: absolute;
       width: 62px;
-      height: 60px;
-      background-color: $grey;
+      height: 59px;
+      background-color: #f2f2f2;
       background-image: url("../img/sprite-bg.svg");
       background-position: -3199px -719px;
       background-repeat: no-repeat;
       border-radius: 2px;
-      right: 53px;
-      top: 44px;
+      right: 57px;
+      top: 45px;
     }
 
     .competition-form__field--mail::before {
       content: "";
       position: absolute;
       width: 62px;
-      height: 60px;
+      height: 58px;
       background-color: $grey;
       background-image: url("../img/sprite-bg.svg");
       background-position: -3199px -1715px;
       background-repeat: no-repeat;
       border-radius: 2px;
-      right: 54px;
+      right: 58px;
       top: 177px;
     }
 
@@ -617,7 +619,7 @@
     }
 
     .competition-form__input--contact {
-      width: 350px;
+      width: 285px;
     }
 
     .competition-form__field--contact {
@@ -632,12 +634,14 @@
     }
 
     .competition-form__field--phone::before {
-      top: 39px;
-      left: 372px;
+      height: 57px;
+      top: 40px;
+      left: 370px;
     }
 
     .competition-form__field--mail::before {
-      right: 51px;
+      height: 57px;
+      right: 53px;
       top: 40px;
     }
 

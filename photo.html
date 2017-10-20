@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Pink-Photo</title>
   <script>
-    // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
+  <script src="js/classList.min.js"></script>
 </head>
 <body>
 <header class="header">
-  <nav class="main-nav main-nav--closed main-nav--nojs">
+  <nav class="main-nav main-nav--nojs">
     <div class="main-nav__wrapper">
       <div class="header__logo-wrapper">
         <a class="header__logo" href="index.html">
@@ -29,7 +29,15 @@
             <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
           </svg>
         </a>
-        <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="button main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__toggle-logo main-nav__toggle--open" width="23.867" height="23.867">
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+          </svg>
+          <svg class="main-nav__toggle-logo" width="49.945" height="24.007">
+            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item-current">
@@ -61,8 +69,8 @@
     <article class="photo-card photo-card--best">
       <a class="photo-card__full-link photo-card__full-link--best" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -85,8 +93,8 @@
     <article class="users-photo__item photo-card">
       <a class="photo-card__full-link" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
@@ -107,8 +115,8 @@
     <article class="users-photo__item photo-card">
       <a class="photo-card__full-link" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
@@ -129,8 +137,8 @@
     <article class="users-photo__item photo-card">
       <a class="photo-card__full-link" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
@@ -151,9 +159,9 @@
     <article class="users-photo__item photo-card">
       <a class="photo-card__full-link" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
@@ -173,8 +181,8 @@
     <article class="users-photo__item photo-card">
       <a class="photo-card__full-link" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
@@ -195,8 +203,8 @@
     <article class="users-photo__item photo-card">
       <a href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
@@ -225,8 +233,8 @@
     <div class="photo-upload__wrapper">
       <p class="photo-upload__media">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
@@ -236,23 +244,23 @@
       </p>
       <div class="photo-upload__processing-body">
       <div class="photo-upload__filters">
-        <button class="photo-upload__filter">
-          <svg class="photo-upload__filter-crop photo-upload__filter--current" width="48px" height="48px">
+        <button class="photo-upload__filter photo-upload__filter--current" type="button">
+          <svg class="photo-upload__filter-crop " width="48px" height="48px">
             <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
           </svg>
         </button>
-        <button class="photo-upload__filter">
+        <button class="photo-upload__filter" type="button">
           <svg class="photo-upload__filter-fill" width="48px" height="48px">
             <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
           </svg>
         </button>
-        <button class="photo-upload__filter">
+        <button class="photo-upload__filter" type="button">
           <svg class="photo-upload__filter-contrast" width="31.92px" height="31.92px">
             <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
           </svg>
         </button>
-        <div class="photo-upload__manipulator">
-          <svg class="photo-upload__tumble" width="253px" height="253px">
+        <div class="photo-upload__manipulator photo-upload__manipulator--current">
+          <svg class="photo-upload__tumble photo-upload__tumble--active" width="253px" height="253px">
             <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
           </svg>
         </div>
@@ -309,6 +317,6 @@
     </a>
   </div>
 </footer>
-<script type="text/javascript" src="js/pink-active.js"></script>
+<script type="text/javascript" src="js/photo-pink.js"></script>
 </body>
 </html>

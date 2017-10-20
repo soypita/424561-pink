@@ -83,15 +83,15 @@
   }
 
   .reviews__slide--first:checked ~ .reviews__list .reviews__item--first {
-    display: block;
+    display: flex;
   }
 
   .reviews__slide--second:checked ~ .reviews__list .reviews__item--second {
-    display: block;
+    display: flex;
   }
 
   .reviews__slide--third:checked ~ .reviews__list .reviews__item--third {
-    display: block;
+    display: flex;
   }
 
   @media (min-width: $tablet-width) {
