@@ -18,6 +18,7 @@
     flex-direction: column;
     margin-bottom: 4px;
     justify-content: flex-start;
+    text-align: left;
   }
 
   .photo-card__title {
@@ -33,6 +34,7 @@
     margin-left: 17px;
     text-align: left;
     padding-bottom: 11px;
+    word-wrap: break-word;
   }
 
   .photo-card__user-name {
@@ -49,6 +51,7 @@
     margin-right: auto;
     margin-left: 17px;
     padding-left: 32px;
+    text-align: left;
   }
 
   .photo-card__like-button::before {
@@ -69,7 +72,6 @@
 
   .photo-card__full-link {
     font-size: 0;
-    background-color: #8a939c;
   }
 
   .photo-card__full-link--best {

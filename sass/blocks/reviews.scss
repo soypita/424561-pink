@@ -9,10 +9,12 @@
     @include set-fonts($title-font-size, $bold-font-weight, 30px);
     color: black;
     font-style: normal;
+    word-wrap: break-word;
   }
 
   .reviews__author-information {
     display: none;
+    word-wrap: break-word;
   }
 
   .reviews__text {
@@ -23,6 +25,7 @@
     padding-left: 18px;
     font-size: 14px;
     line-height: 30px;
+    word-wrap: break-word;
   }
 
   .reviews__list {
@@ -72,7 +75,7 @@
   .reviews__slide--first:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider1"],
   .reviews__slide--second:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider2"],
   .reviews__slide--third:checked ~ .reviews__toggles .reviews__toggle[for="reviews-slider3"] {
-    box-shadow: 0 0 0 2px $dark-blue;
+    box-shadow: 0 0 0 3px $dark-blue;
     background-color: white;
   }
 
@@ -120,8 +123,8 @@
     }
 
     .reviews__toggles {
-      top: 221px;
-      left: 45%;
+      top: 235px;
+      left: 46%;
     }
   }
 

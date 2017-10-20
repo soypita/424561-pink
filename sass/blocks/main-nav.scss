@@ -3,7 +3,6 @@
   position: relative;
   z-index: 1;
 
-
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -39,6 +38,7 @@
     list-style: none;
     margin: 0 auto;
     flex-grow: 1;
+    flex-wrap: wrap;
   }
 
   .main-nav__link {
@@ -59,6 +59,10 @@
 
   &--nojs .main-nav__list {
     display: block;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__toggle-logo {

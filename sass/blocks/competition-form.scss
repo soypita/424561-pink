@@ -20,6 +20,7 @@
     line-height: 30px;
     text-align: center;
     margin: 0 auto;
+    word-wrap: break-word;
   }
 
   .competition-form__description-invite {
@@ -64,6 +65,7 @@
     color: $dark-blue;
     font-size: 18px;
     line-height: 30px;
+    word-break: break-word;
   }
 
   .competition-form__label--user-info,
@@ -189,6 +191,11 @@
     border: solid 2px $grey;
     left: -67px;
     top: -7px;
+  }
+
+  .competition-form__input--checkbox:disabled + .competition-form__label--checkbox,
+  .competition-form__input--radio:disabled + .competition-form__label--radio {
+    opacity: 0.3;
   }
 
   .competition-form__input--checkbox:checked + .competition-form__label--checkbox::before {
@@ -323,7 +330,7 @@
 
     .competition-form__field--user-info {
       flex-direction: row;
-      margin-bottom: 37px;
+      margin-bottom: 31px;
     }
 
     .competition-form__field--user-info:last-of-type {
@@ -414,22 +421,22 @@
     .competition-form__field--phone::before {
       content: "";
       position: absolute;
-      width: 62px;
-      height: 59px;
+      width: 58px;
+      height: 57px;
       background-color: #f2f2f2;
-      background-image: url("../img/sprite-bg.svg");
+      background-image: url(../img/sprite-bg.svg);
       background-position: -3199px -719px;
       background-repeat: no-repeat;
       border-radius: 2px;
-      right: 57px;
-      top: 45px;
+      right: 58px;
+      top: 46px;
     }
 
     .competition-form__field--mail::before {
       content: "";
       position: absolute;
-      width: 62px;
-      height: 58px;
+      width: 58px;
+      height: 57px;
       background-color: $grey;
       background-image: url("../img/sprite-bg.svg");
       background-position: -3199px -1715px;
@@ -464,8 +471,8 @@
     }
 
     .competition-form__title {
-      top: -26px;
-      left: 21px;
+      top: -23px;
+      left: 29px;
     }
 
     .competition-form__title--textarea {
@@ -624,7 +631,7 @@
 
     .competition-form__field--contact {
       width: 390px;
-      padding-top: 38px;
+      padding-top: 44px;
       padding-left: 42px;
       padding-bottom: 7px;
     }
@@ -635,14 +642,14 @@
 
     .competition-form__field--phone::before {
       height: 57px;
-      top: 40px;
-      left: 370px;
+      top: 46px;
+      left: 373px;
     }
 
     .competition-form__field--mail::before {
       height: 57px;
-      right: 53px;
-      top: 40px;
+      right: 54px;
+      top: 46px;
     }
 
     .competition-form__label--check {
@@ -657,6 +664,10 @@
     .competition-form__label--radio::before {
       left: -56px;
       top: -4px;
+    }
+
+    .competition-form__field--user-info {
+      margin-bottom: 35px;
     }
   }
 }

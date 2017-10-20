@@ -49,7 +49,7 @@
   .kits__slide--first:checked ~ .kits__toggles .kits__toggle[for="kits-slider1"],
   .kits__slide--second:checked ~ .kits__toggles .kits__toggle[for="kits-slider2"],
   .kits__slide--third:checked ~ .kits__toggles .kits__toggle[for="kits-slider3"] {
-    box-shadow: 0 0 0 2px $dark-blue;
+    box-shadow: 0 0 0 3px $dark-blue;
     background-color: white;
   }
 
@@ -100,14 +100,14 @@
     background-image: url("../img/bg/icon-yes.svg");
     background-position: right;
     background-position-x: 229px;
-    background-size: 32px;
+    background-size: 29px;
   }
 
   .kits__feature-check--no {
     background-image: url("../img/bg/icon-no.svg");
     background-position: right;
     background-position-x: 229px;
-    background-size: 32px;
+    background-size: 29px;
   }
 
 
@@ -180,6 +180,7 @@
 
     .kits_wrapper {
       width: $tablet-width;
+      padding-bottom: 0;
     }
 
     .kits__table {
@@ -269,7 +270,7 @@
 
     &::before {
       height: 110px;
-      top: -105px;
+      top: -104px;
     }
 
     .kits_wrapper {

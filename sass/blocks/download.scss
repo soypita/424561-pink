@@ -21,15 +21,13 @@
 
   .download__info {
     @include reset();
-
     color: #dfdfe0;
     font-weight: 300;
     padding-left: 19px;
     padding-bottom: 30px;
-
     width: 280px;
-
     text-align: center;
+    word-wrap: break-word;
   }
 
   .download__link {

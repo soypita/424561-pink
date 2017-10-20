@@ -4,11 +4,17 @@
 
   .effect__promo {
     @include reset();
+    word-wrap: break-word;
   }
 
   .effect__wrapper {
     width: 320px;
     margin: 0 auto;
+  }
+
+  .effect__description,
+  .effect__link {
+    word-wrap: break-word;
   }
 
   @media (min-width: $tablet-width) {
