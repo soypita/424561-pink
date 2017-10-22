@@ -13,7 +13,7 @@
   .photo-card__description {
     background-color: $grey;
     padding-bottom: 20px;
-    width: 100%;
+    width: 280px;
     display: flex;
     flex-direction: column;
     margin-bottom: 4px;
@@ -112,6 +112,7 @@
     }
 
     .photo-card__description {
+      width: 300px;
       min-height: 135px;
     }
 
@@ -177,7 +178,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     width: 320px;
 
     &--best {

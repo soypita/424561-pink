@@ -19,6 +19,7 @@
 
   .photo-upload__upload-button,
   .photo-upload__discard-button {
+    display: block;
     color: $red;
     font-size: 18px;
     border: solid 3px $red;
@@ -76,9 +77,11 @@
 
   .photo-upload__media {
     @include reset();
+    width: 280px;
   }
 
   .photo-upload__processing-body {
+    width: 280px;
     padding-top: 35px;
   }
 
@@ -152,7 +155,7 @@
   .photo-upload__manipulator::after {
     content: "";
     position: absolute;
-    width: 132%;
+    width: 313px;
     height: 1px;
     background-color: #dddfe0;
     top: 36px;

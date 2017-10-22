@@ -1,6 +1,5 @@
 .reviews {
   width: 100%;
-
   padding-top: 41px;
   padding-bottom: 48px;
   text-align: center;
@@ -149,9 +148,9 @@
       height: 64px;
       top: -100px;
       left: 46%;
-      background-image: url("../img/sprite-bg.svg");
+      background-image: url("../img/bg/icon-quotes.svg");
       background-repeat: no-repeat;
-      background-position: -239px -1356px;
+      background-position: center;
     }
 
     .reviews__list {
@@ -166,9 +165,9 @@
       width: 25px;
       height: 54px;
       left: 10px;
-      top: 42px;
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -2692px -760px;
+      top: 33px;
+      background-image: url("../img/bg/icon-review-arrow-left.svg");
+      background-position: center;
       background-repeat: no-repeat;
       opacity: 0.3;
     }
@@ -181,9 +180,9 @@
       width: 25px;
       height: 54px;
       right: 10px;
-      top: 42px;
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -2696px -1287px;
+      top: 33px;
+      background-image: url("../img/bg/icon-review-arrow-right.svg");
+      background-position: center;
       background-repeat: no-repeat;
       opacity: 0.3;
     }
@@ -197,7 +196,6 @@
     .reviews__toggle-next:active {
       opacity: 0.1;
     }
-
 
     .reviews__text {
       width: 700px;

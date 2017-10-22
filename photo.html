@@ -6,7 +6,7 @@
   <link href="css/style.min.css" rel="stylesheet">
   <title>Pink-Photo</title>
   <script>
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script>
   <script src="js/svg4everybody.min.js"></script>
@@ -14,33 +14,36 @@
   <script src="js/classList.min.js"></script>
 </head>
 <body>
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="header">
   <nav class="main-nav main-nav--nojs">
     <div class="main-nav__wrapper">
       <div class="header__logo-wrapper">
         <a class="header__logo" href="index.html">
           <svg class="header__logo-image header__logo-image--desktop" width="146.3" height="40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+            <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
           <svg class="header__logo-image header__logo-image--tablet" width="146.3" height="40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+            <use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
           <svg class="header__logo-image header__logo-image--mobile" width="74.426" height="22.859">
-            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+            <use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
         </a>
         <button class="button main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg class="main-nav__toggle-logo main-nav__toggle--open" width="23.867" height="23.867">
-            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+            <use xlink:href="#icon-menu-cross"></use>
           </svg>
           <svg class="main-nav__toggle-logo" width="49.945" height="24.007">
-            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+            <use xlink:href="#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item-current">
+        <li class="site-list__item">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
@@ -56,15 +59,13 @@
     </div>
   </nav>
   <section class="intro intro--photo">
-    <h1 class="intro__title intro__title--photo">Фотографии
-      пользователей</h1>
+    <h1 class="intro__title intro__title--photo">Фотографии пользователей</h1>
   </section>
 </header>
 <main class="main">
   <section class="users-photo">
     <h2 class="users-photo__promo">
-      Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?
+      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
     </h2>
     <article class="photo-card photo-card--best">
       <a class="photo-card__full-link photo-card__full-link--best" href="#">
@@ -72,19 +73,17 @@
           <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
           <img class="photo-card__user-picture photo-card__user-picture--best" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="User picture">
-          </picture>
+        </picture>
       </a>
       <div class="photo-card__description photo-card__description--best">
         <p class="photo-card__title photo-card__title--best">
           <b class="photo-card__user-name">Анна</b> (5 минут назад)
         </p>
         <p class="photo-card__user-comment photo-card__user-comment--best">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-          вопросы!
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
         </p>
         <a class="button photo-card__like-button photo-card__like-button--best" href="#">
           <span class="visually-hidden">
@@ -95,163 +94,157 @@
       </div>
     </article>
     <div class="users-photo__wrapper">
-    <article class="users-photo__item photo-card">
-      <a class="photo-card__full-link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-        <img class="photo-card__user-picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Левон</b> (5 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Вчера он на луну летал, сегодня в руки к нам попал.
-        </p>
-        <a class="button photo-card__like-button" href="#">
+      <article class="users-photo__item photo-card">
+        <a class="photo-card__full-link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
+        </a>
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Левон</b> (5 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <a class="button photo-card__like-button" href="#">
           <span class="visually-hidden">
             Поставить лайк
           </span>
-          Нравится: 356
+            Нравится: 356
+          </a>
+        </div>
+      </article>
+      <article class="users-photo__item photo-card">
+        <a class="photo-card__full-link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
         </a>
-      </div>
-    </article>
-    <article class="users-photo__item photo-card">
-      <a class="photo-card__full-link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-        <img class="photo-card__user-picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Антон</b> (12 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Соседи будут рады!
-        </p>
-        <a class="button photo-card__like-button" href="#">
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Антон</b> (12 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Соседи будут рады!
+          </p>
+          <a class="button photo-card__like-button" href="#">
           <span class="visually-hidden">
             Поставить лайк
           </span>
-          Нравится: 666
+            Нравится: 666
+          </a>
+        </div>
+      </article>
+      <article class="users-photo__item photo-card">
+        <a class="photo-card__full-link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
         </a>
-      </div>
-    </article>
-    <article class="users-photo__item photo-card">
-      <a class="photo-card__full-link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-          <img class="photo-card__user-picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Борис</b> (20 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Здесь могла быть ваша цитата о высоком и вечном.
-        </p>
-        <a class="button photo-card__like-button" href="#">Нравится: 215</a>
-      </div>
-    </article>
-    <article class="users-photo__item photo-card">
-      <a class="photo-card__full-link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-          <img class="photo-card__user-picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Сергей</b> (25 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Самая кубанская в мире!
-        </p>
-        <a class="button photo-card__like-button" href="#">
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Борис</b> (20 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <a class="button photo-card__like-button" href="#">Нравится: 215</a>
+        </div>
+      </article>
+      <article class="users-photo__item photo-card">
+        <a class="photo-card__full-link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
+        </a>
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Сергей</b> (25 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Самая кубанская в мире!
+          </p>
+          <a class="button photo-card__like-button" href="#">
           <span class="visually-hidden">
             Поставить лайк
           </span>
-          Нравится: 4
+            Нравится: 4
+          </a>
+        </div>
+      </article>
+      <article class="users-photo__item photo-card">
+        <a class="photo-card__full-link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
         </a>
-      </div>
-    </article>
-    <article class="users-photo__item photo-card">
-      <a class="photo-card__full-link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-          <img class="photo-card__user-picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Максим</b> (40 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Где снег-то?
-        </p>
-        <a class="button photo-card__like-button" href="#">
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Максим</b> (40 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Где снег-то?
+          </p>
+          <a class="button photo-card__like-button" href="#">
           <span class="visually-hidden">
             Поставить лайк
           </span>
-          Нравится: 150
+            Нравится: 150
+          </a>
+        </div>
+      </article>
+      <article class="users-photo__item photo-card">
+        <a href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+            <img class="photo-card__user-picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="User picture">
+          </picture>
         </a>
-      </div>
-    </article>
-    <article class="users-photo__item photo-card">
-      <a href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-          <img class="photo-card__user-picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="User picture">
-        </picture>
-      </a>
-      <div class="photo-card__description">
-        <p class="photo-card__title">
-          <b class="photo-card__user-name">Надежда</b> (45 часов назад)
-        </p>
-        <p class="photo-card__user-comment">
-          Всем GM и взаимные лайки!
-        </p>
-        <a class="button photo-card__like-button" href="#">
+        <div class="photo-card__description">
+          <p class="photo-card__title">
+            <b class="photo-card__user-name">Надежда</b> (45 часов назад)
+          </p>
+          <p class="photo-card__user-comment">
+            Всем GM и взаимные лайки!
+          </p>
+          <a class="button photo-card__like-button" href="#">
           <span class="visually-hidden">
             Поставить лайк
           </span>
-          Нравится: 2560
-        </a>
-      </div>
-    </article>
+            Нравится: 2560
+          </a>
+        </div>
+      </article>
     </div>
   </section>
   <section class="photo-upload">
@@ -259,70 +252,69 @@
       Затмите их всех!<br>
       Выкладывайте все, что накопилось в телефоне!
     </p>
-  <form class="photo-upload__form" method="post" action="https://echo.htmlacademy.ru">
-    <div class="photo-upload__wrapper">
-      <p class="photo-upload__media">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-
-          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-          <img class="photo-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="User picture for upload">
-        </picture>
-      </p>
-      <div class="photo-upload__processing-body">
-      <div class="photo-upload__filters">
-        <button class="photo-upload__filter photo-upload__filter--current" type="button">
-          <span class="visually-hidden">Обрезать</span>
-          <svg class="photo-upload__filter-crop " width="48px" height="48px">
-            <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
-          </svg>
-        </button>
-        <button class="photo-upload__filter" type="button">
-          <span class="visually-hidden">Залить</span>
-          <svg class="photo-upload__filter-fill" width="48px" height="48px">
-            <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
-          </svg>
-        </button>
-        <button class="photo-upload__filter" type="button">
-          <span class="visually-hidden">Контраст</span>
-          <svg class="photo-upload__filter-contrast" width="31.92px" height="31.92px">
-            <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
-          </svg>
-        </button>
-        <div class="photo-upload__manipulator photo-upload__manipulator--current">
-          <svg class="photo-upload__tumble photo-upload__tumble--active" width="253px" height="253px">
-            <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
-          </svg>
+    <form class="photo-upload__form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="photo-upload__wrapper">
+        <p class="photo-upload__media">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photo-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="User picture for upload">
+          </picture>
+        </p>
+        <div class="photo-upload__processing-body">
+          <div class="photo-upload__filters">
+            <button class="photo-upload__filter photo-upload__filter--current" type="button">
+              <span class="visually-hidden">Обрезать</span>
+              <svg class="photo-upload__filter-crop" width="48px" height="48px">
+                <use xlink:href="#icon-editor-crop"></use>
+              </svg>
+            </button>
+            <button class="photo-upload__filter" type="button">
+              <span class="visually-hidden">Залить</span>
+              <svg class="photo-upload__filter-fill" width="48px" height="48px">
+                <use xlink:href="#icon-editor-fill"></use>
+              </svg>
+            </button>
+            <button class="photo-upload__filter" type="button">
+              <span class="visually-hidden">Контраст</span>
+              <svg class="photo-upload__filter-contrast" width="31.92px" height="31.92px">
+                <use xlink:href="#icon-editor-contrast"></use>
+              </svg>
+            </button>
+            <div class="photo-upload__manipulator photo-upload__manipulator--current">
+              <svg class="photo-upload__tumble photo-upload__tumble--active" width="253px" height="253px">
+                <use xlink:href="#icon-editor-diagram-fill"></use>
+              </svg>
+            </div>
+            <div class="photo-upload__manipulator">
+              <svg class="photo-upload__tumble" width="253px" height="253px">
+                <use xlink:href="#icon-editor-diagram-fill"></use>
+              </svg>
+            </div>
+            <div class="photo-upload__manipulator">
+              <svg class="photo-upload__tumble" width="253px" height="253px">
+                <use xlink:href="#icon-editor-diagram-fill"></use>
+              </svg>
+            </div>
+          </div>
+          <button type="submit" class="photo-upload__upload-button">Запостить</button>
+          <button type="reset" class="photo-upload__discard-button">Отмена</button>
         </div>
-        <div class="photo-upload__manipulator">
-          <svg class="photo-upload__tumble" width="253px" height="253px">
-            <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
-          </svg>
-        </div>
-        <div class="photo-upload__manipulator">
-          <svg class="photo-upload__tumble" width="253px" height="253px">
-            <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
-          </svg>
-        </div>
-        </div>
-      <button type="submit" class="photo-upload__upload-button">Запостить</button>
-      <button type="reset" class="photo-upload__discard-button">Отмена</button>
       </div>
-    </div>
-  </form>
+    </form>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
     <a class="footer__logo" href="index.html">
       <svg class="footer__logo-image footer__logo-image--desktop" width="146.3" height="40.375">
-        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        <use xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
       <svg class="footer__logo-image footer__logo-image--mobile" width="146.3" height="40.375">
-        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        <use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
     </a>
     <ul class="footer__social-list">
@@ -344,8 +336,8 @@
     </ul>
     <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано <span class="visually-hidden">Html Academy</span>
-      <svg class="footer__develop-logo"  width="26.943px" height="34.09px">
-        <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+      <svg class="footer__develop-logo" width="26.943px" height="34.09px">
+        <use xlink:href="#logo-htmlacademy"></use>
       </svg>
     </a>
   </div>

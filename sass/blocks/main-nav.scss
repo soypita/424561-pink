@@ -2,16 +2,13 @@
   width: 100%;
   position: relative;
   z-index: 1;
+  @include set-fonts($title-font-size, $bold-font-weight, 32px);
+  color: #ffffff;
+  background-color: $dark-blue;
 
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
-  @include set-fonts($title-font-size, $bold-font-weight, 32px);
-
-  color: #ffffff;
-
-  background-color: $dark-blue;
 
   .main-nav__wrapper {
     width: 100%;

@@ -12,6 +12,8 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 var del = require("del");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var run = require("run-sequence");
 
 gulp.task("style", function() {
@@ -58,6 +60,15 @@ var configInl = {
   },
 };
 
+
+gulp.task("html", function () {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("inlineSprite", function() {
   return gulp.src("img/inline/*.svg")
     .pipe(svgSprite(configInl))
@@ -94,7 +105,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html"]);
 });
 
 gulp.task("copy", function () {
@@ -102,7 +113,6 @@ gulp.task("copy", function () {
     "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**",
-    "*.html"
   ], {
     base: "."
   })
@@ -114,5 +124,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "inlineSprite", "bgSprite", done);
+  run("clean", "copy", "style", "inlineSprite", "bgSprite","html", done);
 });
