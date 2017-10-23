@@ -39,25 +39,25 @@
   }
 
   .download__link--ios::before {
-    background-image: url("../img/sprite-bg.svg");
+    background-image: url("../img/bg/logo-apple.svg");
     background-repeat: no-repeat;
-    background-position: -1335px -1354px;
+    background-position: center;
     right: 75px;
     top: 20px;
   }
 
   .download__link--android::before {
-    background-image: url("../img/sprite-bg.svg");
+    background-image: url("../img/bg/logo-android.svg");
     background-repeat: no-repeat;
-    background-position: -2698px -235px;
+    background-position: center;
     right: -4px;
     top: 25px;
   }
 
   .download__link--windows::before {
-    background-image: url("../img/sprite-bg.svg");
+    background-image: url("../img/bg/logo-microsoft.svg");
     background-repeat: no-repeat;
-    background-position: -237px -2449px;
+    background-position: center;
     left: 35px;
     top: 26px;
   }

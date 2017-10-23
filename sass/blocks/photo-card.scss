@@ -61,8 +61,8 @@
     height: 12px;
     left: 0;
     top: 6px;
-    background-image: url("../img/sprite-bg.svg");
-    background-position: -734px -2975px;
+    background-image: url("../img/bg/icon-heart.svg");
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -132,6 +132,7 @@
     .photo-card__user-comment {
       margin-left: 28px;
       margin-right: auto;
+      width: 245px;
     }
 
     .photo-card__description--best {

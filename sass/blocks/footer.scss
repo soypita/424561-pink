@@ -75,7 +75,7 @@
   .footer__develop-logo {
     position: absolute;
     top: -6px;
-    right: -38px;
+    right: -42px;
   }
 
   .footer__developer:hover .footer__develop-logo {
@@ -141,6 +141,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+
     .footer__wrapper {
       width: $desktop-width;
       padding-top: 18px;

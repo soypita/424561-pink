@@ -138,9 +138,8 @@
 
   .kits__title--hit {
     position: relative;
-    background-image: url("../img/sprite-bg.svg");
+    background-image: url("../img/bg/bg-hit.svg");
     background-repeat: no-repeat;
-    background-position: -241px -1902px;
   }
 
   .kits__title--hit::before {
@@ -188,8 +187,8 @@
     }
 
     .kits__title--hit {
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -1315px -817px;
+      background-image: url("../img/bg/bg-hit-tablet.svg");
+      background-position-x: -3px;
     }
 
     .kits__title--hit::before {
@@ -307,8 +306,7 @@
     }
 
     .kits__title--hit {
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -241px -1902px;
+      background-image: url("../img/bg/bg-hit.svg");
     }
 
     .kits__title--hit::before {
