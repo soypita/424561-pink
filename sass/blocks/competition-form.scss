@@ -512,6 +512,7 @@
     .competition-form__footer {
       width: 100%;
       padding-bottom: 3px;
+      padding-top: 21px;
     }
 
     .competition-form__description {
@@ -585,6 +586,7 @@
       max-width: 203px;
       padding-left: 60px;
       margin-left: 55px;
+      margin-top: 7px;
     }
 
     .competition-form__label--checkbox {
@@ -615,10 +617,6 @@
 
     .competition-form__list-item--achiev:nth-of-type(6) {
       order: 5;
-    }
-
-    .competition-form__list-item--achiev {
-      margin-top: 7px;
     }
 
     .competition-form__label--checkbox::before {
@@ -694,10 +692,6 @@
 
     .competition-form__label--contact-info {
       padding-bottom: 5px;
-    }
-
-    .competition-form__footer {
-      padding-top: 21px;
     }
   }
 }

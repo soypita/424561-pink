@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   z-index: 1;
+
   @include set-fonts($title-font-size, $bold-font-weight, 32px);
   color: #ffffff;
   background-color: $dark-blue;
