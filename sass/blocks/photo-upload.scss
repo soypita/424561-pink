@@ -40,7 +40,8 @@
     opacity: 0.1;
   }
 
-  .photo-upload__upload-button:hover {
+  .photo-upload__upload-button:hover,
+  .photo-upload__upload-button:focus {
     background-color: $red;
     color: white;
   }
@@ -50,7 +51,8 @@
     color: #e08195;
   }
 
-  .photo-upload__discard-button:hover {
+  .photo-upload__discard-button:hover,
+  .photo-upload__discard-button:focus {
     opacity: 0.3;
   }
 
@@ -111,7 +113,8 @@
     opacity: 0.3;
   }
 
-  .photo-upload__filter:hover {
+  .photo-upload__filter:hover,
+  .photo-upload__filter:focus {
     opacity: 0.5;
   }
 

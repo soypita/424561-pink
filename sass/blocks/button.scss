@@ -21,7 +21,8 @@
     outline: none;
   }
 
-  &--download-shop:hover {
+  &--download-shop:hover,
+  &--download-shop:focus {
     color: $red;
     background-color: white;
   }
@@ -46,7 +47,9 @@
   }
 
   &--competition-form:hover,
-  &--modal-action:hover {
+  &--modal-action:hover,
+  &--competition-form:focus,
+  &--modal-action:focus {
     background-color: #1c9b5e;
   }
 
@@ -90,7 +93,7 @@
   @media (min-width: $desktop-width) {
     &--competition-form {
       margin-top: 6px;
-      width: 299px;
+      width: 393px;
       margin-left: 10px;
     }
 

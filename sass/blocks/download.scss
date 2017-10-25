@@ -38,6 +38,10 @@
     height: 61px;
   }
 
+  .download__link:focus::before {
+    outline: 4px solid $grey;
+  }
+
   .download__link--ios::before {
     background-image: url("../img/bg/logo-apple.svg");
     background-repeat: no-repeat;

@@ -88,6 +88,10 @@
       margin-right: 91px;
       text-decoration: underline;
     }
+
+    .effect__link:focus {
+      color: $dark-blue;
+    }
   }
 
   @media (min-width: $desktop-width) {

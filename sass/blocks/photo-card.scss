@@ -66,12 +66,20 @@
     background-repeat: no-repeat;
   }
 
+  .photo-card__like-button:focus {
+    outline: 1px solid $dark-blue;
+  }
+
   .photo-card__description--best {
     width: 280px;
   }
 
   .photo-card__full-link {
     font-size: 0;
+  }
+
+  .photo-card__full-link:focus {
+    outline: 4px solid $dark-blue;
   }
 
   .photo-card__full-link--best {

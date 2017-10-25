@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding-bottom: 0;
+  padding-bottom: 51px;
 
   .footer__wrapper {
     width: 320px;
@@ -45,7 +45,8 @@
     border: solid 3px $grey;
   }
 
-  .footer__social-link:hover {
+  .footer__social-link:hover,
+  .footer__social-link:focus {
     border-color: $dark-blue;
   }
 
@@ -78,7 +79,8 @@
     right: -42px;
   }
 
-  .footer__developer:hover .footer__develop-logo {
+  .footer__developer:hover .footer__develop-logo,
+  .footer__developer:focus .footer__develop-logo {
     fill: $dark-blue;
   }
 
@@ -91,11 +93,12 @@
     padding-top: 11px;
   }
 
-  .footer__logo-image:hover {
+  .footer__logo:hover,
+  .footer__logo:focus {
     fill: $red;
   }
 
-  .footer__logo-image:active {
+  .footer__logo:active {
     fill: $dark-blue;
     opacity: 0.3;
   }

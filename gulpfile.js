@@ -124,5 +124,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "inlineSprite", "bgSprite","html", done);
+  run("clean", "copy", "style", "inlineSprite", "html", done);
 });

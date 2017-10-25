@@ -34,6 +34,7 @@
     border: none;
     padding-bottom: 20px;
     position: relative;
+    flex-wrap: wrap;
   }
 
   .competition-form__fieldset--contact-info {
@@ -197,8 +198,8 @@
   }
 
   .competition-form__input--checkbox:checked + .competition-form__label--checkbox::before {
-    background-image: url("../img/sprite-bg.svg");
-    background-position: -3213px -232px;
+    background-image: url("../img/bg/icon-yes-red.svg");
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -214,10 +215,18 @@
     top: -7px;
   }
 
+  .competition-form__input--checkbox:focus + .competition-form__label--checkbox::before {
+    border-color: $dark-blue;
+  }
+
   .competition-form__input--radio:checked + .competition-form__label--radio::before {
     background-image: url("../img/bg/icon-map-marker.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .competition-form__input--radio:focus + .competition-form__label--radio::before {
+    border-color: $dark-blue;
   }
 
   .competition-form__label--radio:hover::before,
@@ -422,8 +431,8 @@
       width: 58px;
       height: 57px;
       background-color: #f2f2f2;
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -3199px -719px;
+      background-image: url("../img/bg/icon-phone.svg");
+      background-position: center;
       background-repeat: no-repeat;
       border-radius: 2px;
       right: 58px;
@@ -436,8 +445,8 @@
       width: 58px;
       height: 57px;
       background-color: $grey;
-      background-image: url("../img/sprite-bg.svg");
-      background-position: -3199px -1715px;
+      background-image: url("../img/bg/icon-mail.svg");
+      background-position: center;
       background-repeat: no-repeat;
       border-radius: 2px;
       right: 58px;
@@ -465,7 +474,7 @@
       width: $desktop-width;
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 43px;
+      padding-top: 40px;
     }
 
     .competition-form__title {
@@ -484,7 +493,7 @@
       margin-left: 10px;
       margin-top: 64px;
       padding: 0;
-      padding-top: 42px;
+      padding-top: 44px;
       width: 936px;
     }
 
@@ -495,21 +504,27 @@
     .competition-form__textarea {
       min-height: 108px;
       margin-bottom: 45px;
-      padding-bottom: 3px;
+      padding-top: 15px;
+      padding-bottom: 0;
       width: 797px;
     }
 
     .competition-form__footer {
       width: 100%;
-      padding-bottom: 0;
+      padding-bottom: 3px;
     }
 
     .competition-form__description {
-      width: auto;
+      width: 858px;
       padding-bottom: 53px;
-      margin-left: 0;
-      margin-top: 3px;
+      margin-left: auto;
+      margin-top: 5px;
       margin-right: 8px;
+      text-align: center;
+    }
+
+    .competition-form__description--require {
+      text-align: right;
     }
 
     .competition-form__fieldset--user-info {
@@ -520,11 +535,13 @@
     }
 
     .competition-form__fieldset--achiev {
-      width: 895px;
+      width: 937px;
       padding-top: 0;
       margin-top: 62px;
       margin-left: 10px;
       padding-bottom: 16px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .competition-form__list {
@@ -537,13 +554,15 @@
     }
 
     .competition-form__list--achiev {
-      width: 100%;
+      width: 850px;
       flex-wrap: wrap;
       flex-direction: row;
-      margin-left: 0;
       justify-content: flex-start;
       padding-bottom: 0;
       padding-top: 50px;
+      padding-left: 25px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     .competition-form__fieldset--variant {
@@ -562,35 +581,44 @@
       margin-bottom: 44px;
     }
 
+    .competition-form__list-item--achiev {
+      width: 202px;
+      margin-top: 6px;
+      padding-left: 60px;
+    }
+
+    .competition-form__label--checkbox {
+      margin-right: 0;
+    }
+
     .competition-form__list-item--achiev:nth-of-type(1) {
       order: 0;
-      padding-left: 98px;
+      //margin-right: 54px;
     }
 
     .competition-form__list-item--achiev:nth-of-type(2) {
       order: 3;
-      padding-left: 97px;
-      padding-top: 2px;
+      //margin-right: 55px;
     }
 
     .competition-form__list-item--achiev:nth-of-type(3) {
       order: 1;
-      padding-left: 98px;
+      //margin-right: 33px;
     }
 
     .competition-form__list-item--achiev:nth-of-type(4) {
       order: 4;
-      padding-left: 137px;
+      //margin-right: 32px;
     }
 
     .competition-form__list-item--achiev:nth-of-type(5) {
       order: 2;
-      padding-left: 96px;
+      //flex-basis: 150px;
     }
 
     .competition-form__list-item--achiev:nth-of-type(6) {
       order: 5;
-      padding-left: 108px;
+      //flex-basis: 152px;
     }
 
     .competition-form__list-item--achiev {
@@ -606,7 +634,7 @@
     }
 
     .competition-form__fieldset--contact-info {
-      width: 896px;
+      width: 901px;
       margin-left: 9px;
       flex-direction: row;
       padding-top: 0;
@@ -646,7 +674,7 @@
 
     .competition-form__field--mail::before {
       height: 57px;
-      right: 54px;
+      right: 59px;
       top: 46px;
     }
 
@@ -666,6 +694,14 @@
 
     .competition-form__field--user-info {
       margin-bottom: 35px;
+    }
+
+    .competition-form__label--contact-info {
+      padding-bottom: 5px;
+    }
+
+    .competition-form__footer {
+      padding-top: 21px;
     }
   }
 }

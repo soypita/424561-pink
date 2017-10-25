@@ -20,11 +20,12 @@
     display: none;
   }
 
-  .header__logo-image:hover {
+  .header__logo:hover,
+  .header__logo:focus {
     fill: $red;
   }
 
-  .header__logo-image:active {
+  .header__logo:active {
     opacity: 0.3;
   }
 

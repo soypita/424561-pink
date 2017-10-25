@@ -42,7 +42,8 @@
     color: #ffffff;
   }
 
-  .main-nav__link:hover {
+  .main-nav__link:hover,
+  .main-nav__link:focus {
     color: $red;
   }
 
@@ -76,7 +77,8 @@
     opacity: 0.3;
   }
 
-  .main-nav__toggle:hover {
+  .main-nav__toggle:hover,
+  .main-nav__toggle:focus {
     fill: $red;
   }
 
