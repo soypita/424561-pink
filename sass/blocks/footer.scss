@@ -108,6 +108,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+
     .footer__wrapper {
       width: $tablet-width - 40px;
       display: flex;
@@ -144,7 +146,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 
     .footer__wrapper {
       width: $desktop-width;
@@ -153,7 +155,7 @@
 
     &--index {
       padding-top: 30px;
-      padding-bottom: 45px;
+      padding-bottom: 10px;
     }
 
     .footer__logo {
