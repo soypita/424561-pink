@@ -123,13 +123,16 @@
     .photo-card__description {
       width: 300px;
       min-height: 135px;
+      position: relative;
     }
 
     .photo-card__like-button {
+      position: absolute;
       margin-left: 28px;
-      margin-right: auto;
       margin-bottom: 0;
       padding-left: 0;
+      bottom: 0;
+      padding-bottom: 21px;
     }
 
     .photo-card__title {
@@ -164,10 +167,11 @@
     .photo-card__like-button--best {
       @include reset();
       order: 1;
-      margin-left: auto;
       margin-right: 57px;
       padding-top: 24px;
       margin-top: 0;
+      top: 0;
+      right: 1px;
     }
 
     .photo-card__like-button::before {
