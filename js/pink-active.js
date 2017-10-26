@@ -8,7 +8,7 @@ navMain.classList.add('main-nav--closed');
 navToggleCross.classList.remove('main-nav__toggle--open');
 navToggleBurger.classList.add('main-nav__toggle--open');
 
-navToogleClose.addEventListener('click', function() {
+navToogleClose.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navToggleBurger.classList.remove('main-nav__toggle--open');
@@ -16,7 +16,8 @@ navToogleClose.addEventListener('click', function() {
   } else {
     navMain.classList.add('main-nav--closed');
     navToggleBurger.classList.add('main-nav__toggle--open');
-    navToggleCross.classList.remove('main-nav__toggle--open');  }
+    navToggleCross.classList.remove('main-nav__toggle--open');
+  }
 });
 
 var reviewsNextButton = document.querySelector('.reviews__toggle-next');
@@ -24,15 +25,11 @@ var reviewsPrevButton = document.querySelector('.reviews__toggle-prev');
 var firstReview = document.querySelector('.reviews__slide--first');
 var secondReview = document.querySelector('.reviews__slide--second');
 var thirdReview = document.querySelector('.reviews__slide--third');
-
 var currentReview;
 
-reviewsNextButton.addEventListener('click', function() {
-
+reviewsNextButton.addEventListener('click', function () {
   currentReview = firstReview.checked ? 0 : (secondReview.checked ? 1 : 2);
-
   currentReview = (currentReview + 1) % 3;
-
   console.log(currentReview);
 
   switch (currentReview) {
@@ -51,12 +48,9 @@ reviewsNextButton.addEventListener('click', function() {
   }
 });
 
-reviewsPrevButton.addEventListener('click', function() {
-
+reviewsPrevButton.addEventListener('click', function () {
   currentReview = firstReview.checked ? 0 : (secondReview.checked ? 1 : 2);
-
   currentReview = ((currentReview - 1) + 3) % 3;
-
   console.log(currentReview);
 
   switch (currentReview) {

@@ -8,7 +8,7 @@ navMain.classList.add('main-nav--closed');
 navToggleCross.classList.remove('main-nav__toggle--open');
 navToggleBurger.classList.add('main-nav__toggle--open');
 
-navToogleClose.addEventListener('click', function() {
+navToogleClose.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navToggleBurger.classList.remove('main-nav__toggle--open');
@@ -16,22 +16,19 @@ navToogleClose.addEventListener('click', function() {
   } else {
     navMain.classList.add('main-nav--closed');
     navToggleBurger.classList.add('main-nav__toggle--open');
-    navToggleCross.classList.remove('main-nav__toggle--open');  }
+    navToggleCross.classList.remove('main-nav__toggle--open');
+  }
 });
-
-
 
 var firstFilter = document.querySelector('.photo-upload__filter:nth-of-type(1)');
 var secondFilter = document.querySelector('.photo-upload__filter:nth-of-type(2)');
 var thirdFilter = document.querySelector('.photo-upload__filter:nth-of-type(3)');
-
 var firstSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(1)');
 var secondSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(2)');
 var thirdSliderBlock = document.querySelector('.photo-upload__manipulator:nth-of-type(3)');
-
 var currentFilter = 0;
 
-firstFilter.addEventListener('click', function() {
+firstFilter.addEventListener('click', function () {
   switch (currentFilter) {
     case 1: {
       secondFilter.classList.remove('photo-upload__filter--current');
@@ -50,7 +47,7 @@ firstFilter.addEventListener('click', function() {
   currentFilter = 0;
 });
 
-secondFilter.addEventListener('click', function() {
+secondFilter.addEventListener('click', function () {
   switch (currentFilter) {
     case 0: {
       firstFilter.classList.remove('photo-upload__filter--current');
@@ -68,7 +65,7 @@ secondFilter.addEventListener('click', function() {
   currentFilter = 1;
 });
 
-thirdFilter.addEventListener('click', function() {
+thirdFilter.addEventListener('click', function () {
   switch (currentFilter) {
     case 0: {
       firstFilter.classList.remove('photo-upload__filter--current');

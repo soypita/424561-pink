@@ -8,7 +8,7 @@ navMain.classList.add('main-nav--closed');
 navToggleCross.classList.remove('main-nav__toggle--open');
 navToggleBurger.classList.add('main-nav__toggle--open');
 
-navToogleClose.addEventListener('click', function() {
+navToogleClose.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navToggleBurger.classList.remove('main-nav__toggle--open');
@@ -16,7 +16,8 @@ navToogleClose.addEventListener('click', function() {
   } else {
     navMain.classList.add('main-nav--closed');
     navToggleBurger.classList.add('main-nav__toggle--open');
-    navToggleCross.classList.remove('main-nav__toggle--open');  }
+    navToggleCross.classList.remove('main-nav__toggle--open');
+  }
 });
 
 var submitForm = document.querySelector('.button--competition-form');
@@ -24,12 +25,12 @@ var requerdFields = document.querySelectorAll('.competition-form__input--require
 var succsessModal = document.querySelector('.modal--request');
 var errorModal = document.querySelector('.modal--error');
 
-submitForm.addEventListener('click', function(evt) {
+submitForm.addEventListener('click', function (evt) {
   evt.preventDefault();
   var isValid = true;
   for (var i = 0; i < requerdFields.length; i++) {
     var input = requerdFields[i];
-    if(!input.value) {
+    if (!input.value) {
       input.classList.add('competition-form__input--error')
       isValid = false;
       break;
@@ -42,7 +43,6 @@ submitForm.addEventListener('click', function(evt) {
     errorModal.classList.add('modal--open');
   }
 });
-
 
 var modalErrorButton = document.querySelector('.button--modal-error');
 var modalSuccsessButton = document.querySelector('.button--modal-request');
